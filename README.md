@@ -1,10 +1,4 @@
-## WeLearn
-WeLearn adalah sebuah website online course yang saya bangun menggunakan laravel 9 tujuan pembuatan aplikasi adalah untuk pembelajaran. 
-Aplikasi ini masih dalam tahapan pengembangan baik dari fitur, clean code, dan juga peforma.
-
-![Imgur](https://imgur.com/J3zJXFw.png)
-
-## Cara Instalasi Project
+## INSTALATION
 
 Pastikan git cli sudah terinstall, kemudian jalankan perintah dibawah
 ```
@@ -15,13 +9,13 @@ Pastikan git cli sudah terinstall, kemudian jalankan perintah dibawah
 5. php artisan migrate --seed
 ```
 
-## Akun Admin
+## ADMIN ACCOUNT
 ```
 email : admin@gmail.com
 password : password
 ```
 
-## Fitur Aplikasi 
+## FEATURE
 - Terdapat 2 role yaitu : admin dan member
 - Mengelola Tags (Admin)
 - Mengelola Course (Admin)
@@ -43,16 +37,3 @@ password : password
 - List Transaksi (Member)
 - Search Data
 - Responsive
-
-## Fitur Yang Akan Dikembangkan
-- Penerbitan sertifikat untuk member setelah menyelesaikan course
-- Showcase project dari member
-- Daftar peringkat para member
-- Testimonial course
-- Flash sale
-- Diskon course
-- Artikel
-- Forum tanya jawab
-
-## License
-Aplikasi ini bersifat open source dapat digunakan oleh siapa pun dengan syarat tidak untuk di perjual belikan.
