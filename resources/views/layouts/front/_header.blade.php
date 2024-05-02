@@ -2,7 +2,7 @@
 <header class="header">
 
     <!-- Topbar - start -->
-    <div class="header_top">
+    {{-- <div class="header_top">
         <div class="container">
             <ul class="contactinfo nav nav-pills">
                 <li>
@@ -41,7 +41,7 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div> --}}
     <!-- Topbar - end -->
 
     <!-- Logo, Shop-menu - start -->
@@ -56,7 +56,7 @@
             <div class="shop-menu">
                 <ul>
 
-                    <li>
+                    {{-- <li>
                         <a href="wishlist.html">
                             <i class="fa fa-heart"></i>
                             <span class="shop-menu-ttl">Wishlist</span>
@@ -69,24 +69,26 @@
                             <i class="fa fa-bar-chart"></i>
                             <span class="shop-menu-ttl">Compare</span> (5)
                         </a>
-                    </li>
+                    </li> --}}
 
                     <li class="topauth">
-                        <a href="auth.html">
+                        <a href="{{ route('login') }}">
                             <i class="fa fa-lock"></i>
-                            <span class="shop-menu-ttl">Registration</span>
-                        </a>
-                        <a href="auth.html">
                             <span class="shop-menu-ttl">Login</span>
+                        </a>
+                        <a href="{{ route('register') }}">
+                            <span class="shop-menu-ttl">Registration</span>
                         </a>
                     </li>
 
                     <li>
                         <div class="h-cart">
-                            <a href="cart.html">
+                            <a href="{{ route('carts.index') }}">
                                 <i class="fa fa-shopping-cart"></i>
                                 <span class="shop-menu-ttl">Cart</span>
-                                (<b>0</b>)
+                                @auth
+                                (<b>{{ Auth::user()->carts()->count() }}</b>)
+                                @endauth
                             </a>
                         </div>
                     </li>
