@@ -23,4 +23,9 @@ class TransactionDetail extends Model
     {
         return $this->belongsTo(Series::class);
     }
+
+    // public function user()
+    // {
+    //     return $this->belongsTo(User::class);
+    // }
 }

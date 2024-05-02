@@ -52,6 +52,9 @@ trait HasSeries
                         ->addSelect(DB::raw('series.name as name, users.name as author, count(transaction_details.series_id) as total'))
                         ->groupBy('transaction_details.series_id')
                         ->paginate(7);
+        // $bestSeries = TransactionDetail::with('transaction','series')
+        // ->groupBy('transaction_details.series_id')
+
 
         return $bestSeries;
 
