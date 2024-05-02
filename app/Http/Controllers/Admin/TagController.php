@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\tag;
+use App\Models\Tag;
 use App\Traits\HasColor;
 use Illuminate\Http\Request;
 
