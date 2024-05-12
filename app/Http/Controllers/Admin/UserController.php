@@ -17,7 +17,7 @@ class UserController extends Controller
     public function index()
     {
         // get all users with roles, search and paginate
-        $users = User::with('roles')->when(request()->q, function($search){
+        $users = User::whereNot('email','admin@gmail.com')->with('roles')->when(request()->q, function($search){
             $search = $search->where('name', 'like', '%'.request()->q.'%');
         })->paginate(10);
 

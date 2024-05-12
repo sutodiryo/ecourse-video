@@ -1,2461 +1,1640 @@
-@extends('layouts.front.master')
+<html lang="zxx">
 
-@section('title', 'Homepage')
+<head>
+	<title>Necromancers - eSports Team &amp; Gaming HTML Template</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="eSports Team &amp; Gaming HTML Template">
+	<meta name="author" content="Dan Fisher">
+	<meta name="keywords" content="esports team news HTML template">
+	<link rel="shortcut icon" href="{{ asset('front-end/img/favicons/favicon.ico') }}">
+	<link rel="apple-touch-icon" sizes="120x120" href="{{ asset('front-end/img/favicons/favicon-120.png') }}">
+	<link rel="apple-touch-icon" sizes="152x152" href="{{ asset('front-end/img/favicons/favicon-152.png') }}"><!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width,initial-scale=1"><!-- Google Web Fonts
+	================================================== -->
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700" rel="stylesheet"><!-- CSS
+	================================================== --><!-- Vendor CSS -->
+	<link href="{{ asset('front-end/vendor/magnific-popup/css/magnific-popup.css') }}" rel="stylesheet">
+	<link href="{{ asset('front-end/vendor/slick/css/slick.css') }}" rel="stylesheet">
+	<link href="{{ asset('front-end/vendor/nanoscroller/css/nanoscroller.css') }}" rel="stylesheet">
+	<link href="{{ asset('front-end/vendor/fontawesome/css/brands.css') }}" rel="stylesheet"><!-- Template CSS-->
+	<link href="{{ asset('front-end/css/style.css') }}" rel="stylesheet"><!-- Custom CSS-->
+	<link href="{{ asset('front-end/css/custom.css') }}" rel="stylesheet">
+</head>
 
-@section('content')
-
-    <!-- Main Content - start -->
-    <main>
-        <section class="container">
-
-
-            <!-- Slider -->
-            <div class="fr-slider-wrap">
-                <div class="fr-slider">
-                    <ul class="slides">
-                        <li>
-                            <img src="{{ asset('front-assets/img/slider/slide1.jpg') }}" alt="">
-                            <div class="fr-slider-cont">
-                                <h3>MEGA SALE -30%</h3>
-                                <p>Winter collection for women's. <br>We all have choices for you. Check it out!</p>
-                                <p class="fr-slider-more-wrap">
-                                    <a class="fr-slider-more" href="#">View collection</a>
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="{{ asset('front-assets/img/slider/slide1.jpg') }}" alt="">
-                            <div class="fr-slider-cont">
-                                <h3>NEW COLLECTION</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Aliquam consequuntur
-                                    dolorem doloribus fuga harum</p>
-                                <p class="fr-slider-more-wrap">
-                                    <a class="fr-slider-more" href="#">Shopping now</a>
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="{{ asset('front-assets/img/slider/slide1.jpg') }}" alt="">
-                            <div class="fr-slider-cont">
-                                <h3>SUMMER TRENDS</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Aliquam consequuntur
-                                    dolorem doloribus fuga harum</p>
-                                <p class="fr-slider-more-wrap">
-                                    <a class="fr-slider-more" href="#">Start shopping</a>
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-
-            <!-- Popular Products -->
-            <div class="fr-pop-wrap">
-
-                <h3 class="component-ttl"><span>Popular products</span></h3>
-
-                <ul class="fr-pop-tabs sections-show">
-                    <li><a data-frpoptab-num="1" data-frpoptab="#frpoptab-tab-1" href="#" class="active">All
-                            Categories</a></li>
-                    <li><a data-frpoptab-num="2" data-frpoptab="#frpoptab-tab-2" href="#">Women</a></li>
-                    <li><a data-frpoptab-num="3" data-frpoptab="#frpoptab-tab-3" href="#">Men</a></li>
-                    <li><a data-frpoptab-num="4" data-frpoptab="#frpoptab-tab-4" href="#">Kids</a></li>
-                    <li><a data-frpoptab-num="5" data-frpoptab="#frpoptab-tab-5" href="#">Shoes</a></li>
-                </ul>
-
-                <div class="fr-pop-tab-cont">
-
-                    <p data-frpoptab-num="1" class="fr-pop-tab-mob active" data-frpoptab="#frpoptab-tab-1">All
-                        Categories</p>
-                    <div class="flexslider prod-items fr-pop-tab" id="frpoptab-tab-1">
-
-                        <ul class="slides">
-
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x350"
-                                            alt="Aspernatur excepturi rem"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Go to detail</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Aspernatur excepturi rem</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$90</b>
-                                </p>
-                                <div class="prod-i-skuwrapcolor">
-                                    <ul class="prod-i-skucolor">
-                                        <li class="bx_active"><img src="{{ asset('front-assets/img/color/red.jpg') }}"
-                                                alt="Red"></li>
-                                        <li><img src="{{ asset('front-assets/img/color/blue.jpg') }}" alt="Blue"></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/277x250" alt="Aperiam tempore"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Aperiam tempore</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$75</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x324" alt="Blanditiis eaque"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Blanditiis eaque</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$115</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x500"
-                                            alt="Excepturi ducimus"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Excepturi ducimus</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$105</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/329x250"
-                                            alt="Sit recusandae voluptas"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-
-                                    <div class="prod-sticker">
-                                        <p class="prod-sticker-1">NEW</p>
-                                    </div>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Sit recusandae voluptas</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$200</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x317"
-                                            alt="Consequuntur minus atque"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Consequuntur minus atque</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$160</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x329"
-                                            alt="Nostrum nihil ipsa"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Nostrum nihil ipsa</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$140</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x361"
-                                            alt="Non ex sapiente deserunt"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-
-                                    <div class="prod-sticker">
-                                        <p class="prod-sticker-3">-30%</p>
-                                        <p class="prod-sticker-4 countdown" data-date="29 Jan 2017, 14:30:00"></p>
-                                    </div>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Non ex sapiente deserunt</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$65</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x361"
-                                            alt="Amet tempore unde"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Amet tempore unde</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$85</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x361"
-                                            alt="Neque fugiat voluptates"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Neque fugiat voluptates</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$120</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x302"
-                                            alt="Amet tempore unde"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Amet tempore unde</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$165</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x327"
-                                            alt="Perspiciatis dolor"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Go to detail</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Perspiciatis dolor</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$205</b>
-                                </p>
-                                <div class="prod-i-skuwrapcolor">
-                                    <ul class="prod-i-skucolor">
-                                        <li class="bx_active"><img src="{{ asset('front-assets/img/color/red.jpg') }}"
-                                                alt="Red"></li>
-                                        <li><img src="{{ asset('front-assets/img/color/blue.jpg') }}" alt="Blue"></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x262"
-                                            alt="Veritatis officiis quae"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Veritatis officiis quae</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$90</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x292"
-                                            alt="Fuga numquam obcaecati"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Fuga numquam obcaecati</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$65</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x351" alt="Ratione magni"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Ratione magni</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$125</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x301"
-                                            alt="Asperiores sit sequi"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Asperiores sit sequi</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$140</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x322"
-                                            alt="Repudiandae accusamus"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Repudiandae accusamus</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$95</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x266"
-                                            alt="Quod praesentium illum"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Quod praesentium illum</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$80</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x301"
-                                            alt="Deleniti ut earum"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Deleniti ut earum</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$220</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x362"
-                                            alt="Voluptatem quibusdam"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Voluptatem quibusdam</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$185</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x422"
-                                            alt="Nisi provident atque"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Nisi provident atque</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$130</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x385"
-                                            alt="Eveniet nobis minus possimus"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-
-                                    <div class="prod-sticker">
-                                        <p class="prod-sticker-1">NEW</p>
-                                    </div>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Eveniet nobis minus possimus</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$80</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x288"
-                                            alt="Quis ex fugiat blanditiis"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Go to detail</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Quis ex fugiat blanditiis</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$150</b>
-                                </p>
-                                <div class="prod-i-skuwrapcolor">
-                                    <ul class="prod-i-skucolor">
-                                        <li class="bx_active"><img src="{{ asset('front-assets/img/color/red.jpg') }}"
-                                                alt="Red"></li>
-                                        <li><img src="{{ asset('front-assets/img/color/blue.jpg') }}" alt="Blue"></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x279" alt="Nisi autem error"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Nisi autem error</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$65</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x403"
-                                            alt="Quod soluta corrupti"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Quod soluta corrupti</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$175</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x280" alt="Ipsa doloremque"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Ipsa doloremque</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$85</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x409" alt="Dignissimos fuga"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Dignissimos fuga</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$205</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/252x250" alt="Nisi autem error"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Go to detail</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Nisi autem error</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$95</b>
-                                </p>
-                                <div class="prod-i-skuwrapcolor">
-                                    <ul class="prod-i-skucolor">
-                                        <li class="bx_active"><img src="img/color/red.jpg" alt="Red"></li>
-                                        <li><img src="img/color/blue.jpg" alt="Blue"></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/316x250"
-                                            alt="Tempora ea ratione vel"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-
-                                    <div class="prod-sticker">
-                                        <p class="prod-sticker-2">HIT</p>
-                                    </div>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Tempora ea ratione vel</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$120</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/281x250" alt="Minus sequi iste"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Minus sequi iste</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$135</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/265x250"
-                                            alt="Dignissimos fuga voluptates totam"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Dignissimos fuga voluptates totam</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$85</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/291x250"
-                                            alt="Perferendis recusandae"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Perferendis recusandae</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$70</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/277x250"
-                                            alt="Officiis nihil culpa"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Officiis nihil culpa</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$180</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/295x250"
-                                            alt="Distinctio modi quos"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Distinctio modi quos</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$195</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/301x250"
-                                            alt="Corrupti velit vero"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Corrupti velit vero</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$220</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/289x250"
-                                            alt="Dicta doloremque hic"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="qview-btn prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Dicta doloremque hic</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$90</b>
-                                </p>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                    <p data-frpoptab-num="2" class="fr-pop-tab-mob" data-frpoptab="#frpoptab-tab-2">Kids</p>
-                    <div class="flexslider prod-items fr-pop-tab" id="frpoptab-tab-2">
-
-                        <ul class="slides">
-
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x350"
-                                            alt="Aspernatur excepturi rem"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Go to detail</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Aspernatur excepturi rem</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$90</b>
-                                </p>
-                                <div class="prod-i-skuwrapcolor">
-                                    <ul class="prod-i-skucolor">
-                                        <li class="bx_active"><img src="img/color/red.jpg" alt="Red"></li>
-                                        <li><img src="img/color/blue.jpg" alt="Blue"></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/277x250" alt="Aperiam tempore"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Aperiam tempore</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$75</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x324" alt="Blanditiis eaque"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Blanditiis eaque</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$115</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x500"
-                                            alt="Excepturi ducimus"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Excepturi ducimus</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$105</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/329x250"
-                                            alt="Sit recusandae voluptas"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-
-                                    <div class="prod-sticker">
-                                        <p class="prod-sticker-1">NEW</p>
-                                    </div>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Sit recusandae voluptas</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$200</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x317"
-                                            alt="Consequuntur minus atque"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Consequuntur minus atque</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$160</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x329"
-                                            alt="Nostrum nihil ipsa"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Nostrum nihil ipsa</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$140</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x361"
-                                            alt="Non ex sapiente deserunt"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-
-                                    <div class="prod-sticker">
-                                        <p class="prod-sticker-3">-30%</p>
-                                        <p class="prod-sticker-4 countdown" data-date="29 Jan 2017, 14:30:00"></p>
-                                    </div>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Non ex sapiente deserunt</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$65</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x361"
-                                            alt="Amet tempore unde"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Amet tempore unde</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$85</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x361"
-                                            alt="Neque fugiat voluptates"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Neque fugiat voluptates</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$120</b>
-                                </p>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                    <p data-frpoptab-num="3" class="fr-pop-tab-mob" data-frpoptab="#frpoptab-tab-3">Women</p>
-                    <div class="flexslider prod-items fr-pop-tab" id="frpoptab-tab-3">
-
-                        <ul class="slides">
-
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x302"
-                                            alt="Amet tempore unde"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Amet tempore unde</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$165</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x327"
-                                            alt="Perspiciatis dolor"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Go to detail</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Perspiciatis dolor</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$205</b>
-                                </p>
-                                <div class="prod-i-skuwrapcolor">
-                                    <ul class="prod-i-skucolor">
-                                        <li class="bx_active"><img src="img/color/red.jpg" alt="Red"></li>
-                                        <li><img src="img/color/blue.jpg" alt="Blue"></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x262"
-                                            alt="Veritatis officiis quae"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Veritatis officiis quae</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$90</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x292"
-                                            alt="Fuga numquam obcaecati"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Fuga numquam obcaecati</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$65</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x351" alt="Ratione magni"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Ratione magni</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$125</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x301"
-                                            alt="Asperiores sit sequi"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Asperiores sit sequi</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$140</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x322"
-                                            alt="Repudiandae accusamus"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Repudiandae accusamus</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$95</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x266"
-                                            alt="Quod praesentium illum"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Quod praesentium illum</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$80</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x301"
-                                            alt="Deleniti ut earum"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Deleniti ut earum</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$220</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x362"
-                                            alt="Voluptatem quibusdam"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Voluptatem quibusdam</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$185</b>
-                                </p>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                    <p data-frpoptab-num="4" class="fr-pop-tab-mob" data-frpoptab="#frpoptab-tab-4">Men</p>
-                    <div class="flexslider prod-items fr-pop-tab" id="frpoptab-tab-4">
-
-                        <ul class="slides">
-
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x422"
-                                            alt="Nisi provident atque"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Nisi provident atque</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$130</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x385"
-                                            alt="Eveniet nobis minus possimus"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-
-                                    <div class="prod-sticker">
-                                        <p class="prod-sticker-1">NEW</p>
-                                    </div>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Eveniet nobis minus possimus</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$80</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x288"
-                                            alt="Quis ex fugiat blanditiis"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Go to detail</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Quis ex fugiat blanditiis</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$150</b>
-                                </p>
-                                <div class="prod-i-skuwrapcolor">
-                                    <ul class="prod-i-skucolor">
-                                        <li class="bx_active"><img src="img/color/red.jpg" alt="Red"></li>
-                                        <li><img src="img/color/blue.jpg" alt="Blue"></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x279"
-                                            alt="Nisi autem error"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Nisi autem error</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$65</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x403"
-                                            alt="Quod soluta corrupti"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Quod soluta corrupti</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$175</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x280"
-                                            alt="Ipsa doloremque"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Ipsa doloremque</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$85</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/250x409"
-                                            alt="Dignissimos fuga"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Dignissimos fuga</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$205</b>
-                                </p>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-
-                    <p data-frpoptab-num="5" class="fr-pop-tab-mob" data-frpoptab="#frpoptab-tab-5">Shoes</p>
-                    <div class="flexslider prod-items fr-pop-tab" id="frpoptab-tab-5">
-
-                        <ul class="slides">
-
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/252x250"
-                                            alt="Nisi autem error"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Go to detail</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Nisi autem error</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$95</b>
-                                </p>
-                                <div class="prod-i-skuwrapcolor">
-                                    <ul class="prod-i-skucolor">
-                                        <li class="bx_active"><img src="img/color/red.jpg" alt="Red"></li>
-                                        <li><img src="img/color/blue.jpg" alt="Blue"></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/316x250"
-                                            alt="Tempora ea ratione vel"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-
-                                    <div class="prod-sticker">
-                                        <p class="prod-sticker-2">HIT</p>
-                                    </div>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Tempora ea ratione vel</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$120</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/281x250"
-                                            alt="Minus sequi iste"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Minus sequi iste</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$135</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/265x250"
-                                            alt="Dignissimos fuga voluptates totam"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Dignissimos fuga voluptates totam</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$85</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/291x250"
-                                            alt="Perferendis recusandae"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Perferendis recusandae</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$70</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/277x250"
-                                            alt="Officiis nihil culpa"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Officiis nihil culpa</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$180</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/295x250"
-                                            alt="Distinctio modi quos"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Distinctio modi quos</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$195</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/301x250"
-                                            alt="Corrupti velit vero"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Corrupti velit vero</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$220</b>
-                                </p>
-                            </li>
-                            <li class="prod-i">
-                                <div class="prod-i-top">
-                                    <a href="product.html" class="prod-i-img"><!-- NO SPACE --><img
-                                            src="http://placehold.it/289x250"
-                                            alt="Dicta doloremque hic"><!-- NO SPACE --></a>
-                                    <p class="prod-i-info">
-                                        <a href="#" class="prod-i-favorites"><span>Wishlist</span><i
-                                                class="fa fa-heart"></i></a>
-                                        <a href="#" class="prod-i-qview"><span>Quick View</span><i
-                                                class="fa fa-search"></i></a>
-                                        <a class="prod-i-compare" href="#"><span>Compare</span><i
-                                                class="fa fa-bar-chart"></i></a>
-                                    </p>
-                                    <p class="prod-i-addwrap">
-                                        <a href="#" class="prod-i-add">Add to cart</a>
-                                    </p>
-                                </div>
-                                <h3>
-                                    <a href="product.html">Dicta doloremque hic</a>
-                                </h3>
-                                <p class="prod-i-price">
-                                    <b>$90</b>
-                                </p>
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-
-                </div><!-- .fr-pop-tab-cont -->
-
-
-            </div><!-- .fr-pop-wrap -->
-
-
-            <!-- Banners -->
-            <div class="banners-wrap">
-                <div class="banners-list">
-                    <div class="banner-i style_11">
-                        <span class="banner-i-bg" style="background: url(http://placehold.it/560x360);"></span>
-                        <div class="banner-i-cont">
-                            <p class="banner-i-subttl">NEW COLLECTION</p>
-                            <h3 class="banner-i-ttl">MEN'S<br>CLOTHING</h3>
-                            <p class="banner-i-link"><a href="section.html">View More</a></p>
-                        </div>
-                    </div>
-                    <div class="banner-i style_22">
-                        <span class="banner-i-bg" style="background: url(http://placehold.it/270x360);"></span>
-                        <div class="banner-i-cont">
-                            <p class="banner-i-subttl">GREAT COLLECTION</p>
-                            <h3 class="banner-i-ttl">CLOTHING<br>ACCESSORIES</h3>
-                            <p class="banner-i-link"><a href="section.html">Show more</a></p>
-                        </div>
-                    </div>
-                    <div class="banner-i style_21">
-                        <span class="banner-i-bg" style="background: url(http://placehold.it/270x360);"></span>
-                        <div class="banner-i-cont">
-                            <h3 class="banner-i-ttl">SPORT<br>CLOTHES</h3>
-                            <p class="banner-i-link"><a href="section.html">Go to catalog</a></p>
-                        </div>
-                    </div>
-                    <div class="banner-i style_21">
-                        <span class="banner-i-bg" style="background: url(http://placehold.it/270x360);"></span>
-                        <div class="banner-i-cont">
-                            <h3 class="banner-i-ttl">MEN AND <br>WOMEN SHOES</h3>
-                            <p class="banner-i-link"><a href="section.html">View More</a></p>
-                        </div>
-                    </div>
-                    <div class="banner-i style_22">
-                        <span class="banner-i-bg" style="background: url(http://placehold.it/270x360);"></span>
-                        <div class="banner-i-cont">
-                            <p class="banner-i-subttl">DISCOUNT -20%</p>
-                            <h3 class="banner-i-ttl">HATS<br>COLLECTION</h3>
-                            <p class="banner-i-link"><a href="section.html">Shop now</a></p>
-                        </div>
-                    </div>
-                    <div class="banner-i style_12">
-                        <span class="banner-i-bg" style="background: url(http://placehold.it/560x360);"></span>
-                        <div class="banner-i-cont">
-                            <p class="banner-i-subttl">STYLISH CLOTHES</p>
-                            <h3 class="banner-i-ttl">WOMEN'S COLLECTION</h3>
-                            <p>A great selection of dresses, <br>blouses and women's suits</p>
-                            <p class="banner-i-link"><a href="section.html">View More</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Special offer -->
-            <div class="discounts-wrap">
-                <h3 class="component-ttl"><span>Special offer</span></h3>
-                <div class="flexslider discounts-list">
-                    <ul class="slides">
-                        <li class="discounts-i">
-                            <a href="product.html" class="discounts-i-img">
-                                <img src="http://placehold.it/120x120" alt="Dicta doloremque">
-                            </a>
-                            <h3 class="discounts-i-ttl">
-                                <a href="product.html">Dicta doloremque</a>
-                            </h3>
-                            <p class="discounts-i-price">
-                                <b>$115</b> <del>$135</del>
-                            </p>
-                        </li>
-                        <li class="discounts-i">
-                            <a href="product.html" class="discounts-i-img">
-                                <img src="http://placehold.it/99x120" alt="Similique delectus">
-                            </a>
-                            <h3 class="discounts-i-ttl">
-                                <a href="product.html">Similique delectus</a>
-                            </h3>
-                            <p class="discounts-i-price">
-                                <b>$105</b> <del>$120</del>
-                            </p>
-                        </li>
-                        <li class="discounts-i">
-                            <a href="product.html" class="discounts-i-img">
-                                <img src="http://placehold.it/75x120" alt="Adipisci nemo">
-                            </a>
-                            <h3 class="discounts-i-ttl">
-                                <a href="product.html">Adipisci nemo</a>
-                            </h3>
-                            <p class="discounts-i-price">
-                                <b>$70</b> <del>$90</del>
-                            </p>
-                        </li>
-                        <li class="discounts-i">
-                            <a href="product.html" class="discounts-i-img">
-                                <img src="http://placehold.it/65x120" alt="Ullam harum">
-                            </a>
-                            <h3 class="discounts-i-ttl">
-                                <a href="product.html">Ullam harum</a>
-                            </h3>
-                            <p class="discounts-i-price">
-                                <b>$55</b> <del>$75</del>
-                            </p>
-                        </li>
-                        <li class="discounts-i">
-                            <a href="product.html" class="discounts-i-img">
-                                <img src="http://placehold.it/78x120" alt="Similique delectus">
-                            </a>
-                            <h3 class="discounts-i-ttl">
-                                <a href="product.html">Similique delectus</a>
-                            </h3>
-                            <p class="discounts-i-price">
-                                <b>$135</b> <del>$155</del>
-                            </p>
-                        </li>
-                        <li class="discounts-i">
-                            <a href="product.html" class="discounts-i-img">
-                                <img src="http://placehold.it/81x120" alt="Туфли Dr.Koffer">
-                            </a>
-                            <h3 class="discounts-i-ttl">
-                                <a href="product.html">Туфли Dr.Koffer</a>
-                            </h3>
-                            <p class="discounts-i-price">
-                                <b>$190</b> <del>$210</del>
-                            </p>
-                        </li>
-                        <li class="discounts-i">
-                            <a href="product.html" class="discounts-i-img">
-                                <img src="http://placehold.it/117x120" alt="Quod consequatur">
-                            </a>
-                            <h3 class="discounts-i-ttl">
-                                <a href="product.html">Quod consequatur</a>
-                            </h3>
-                            <p class="discounts-i-price">
-                                <b>$120</b> <del>$140</del>
-                            </p>
-                        </li>
-                        <li class="discounts-i">
-                            <a href="product.html" class="discounts-i-img">
-                                <img src="http://placehold.it/80x120" alt="Dolore fugit">
-                            </a>
-                            <h3 class="discounts-i-ttl">
-                                <a href="product.html">Dolore fugit</a>
-                            </h3>
-                            <p class="discounts-i-price">
-                                <b>$80</b> <del>$95</del>
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="discounts-info">
-                    <p>Special offer!<br>Limited time only</p>
-                    <a href="catalog-list.html">Shop now</a>
-                </div>
-            </div>
-
-
-            <!-- Latest news -->
-            <div class="posts-wrap">
-                <div class="posts-list">
-                    <div class="posts-i">
-                        <a class="posts-i-img" href="post.html">
-                            <span style="background: url(http://placehold.it/354x236)"></span>
-                        </a>
-                        <time class="posts-i-date" datetime="2016-11-09 00:00:00"><span>30</span> Jan</time>
-                        <div class="posts-i-info">
-                            <a href="blog.html" class="posts-i-ctg">Reviews</a>
-                            <h3 class="posts-i-ttl">
-                                <a href="post.html">Animi quaerat at</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="posts-i">
-                        <a class="posts-i-img" href="post.html">
-                            <span style="background: url(http://placehold.it/354x236)"></span>
-                        </a>
-                        <time class="posts-i-date" datetime="2016-11-09 00:00:00"><span>29</span> Jan</time>
-                        <div class="posts-i-info">
-                            <a href="blog.html" class="posts-i-ctg">Articles</a>
-                            <h3 class="posts-i-ttl">
-                                <a href="post.html">Ex atque commodi</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="posts-i">
-                        <a class="posts-i-img" href="post.html">
-                            <span style="background: url(http://placehold.it/354x236)"></span>
-                        </a>
-                        <time class="posts-i-date" datetime="2016-11-09 00:00:00"><span>25</span> Jan</time>
-                        <div class="posts-i-info">
-                            <a href="blog.html" class="posts-i-ctg">News</a>
-                            <h3 class="posts-i-ttl">
-                                <a href="post.html">Hic quod maxime deserunt</a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Testimonials -->
-            <div class="reviews-wrap">
-                <div class="reviewscar-wrap">
-                    <div class="swiper-container reviewscar">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <p>Corrupti velit, vero esse, aperiam error magni illum quos, accusantium debitis et
-                                    possimus recusandae tempora ad itaque dolorem veniam non voluptatem impedit iste?
-                                    Dicta doloremque hic porro aspernatur. Dolores eligendi similique, cumque, eius
-                                    veritatis</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <p>Distinctio modi, quos, vero quibusdam ab deserunt doloribus eligendi velit temporibus
-                                    ratione at est officia repellat? Adipisci nemo expedita rerum distinctio laudantium
-                                    nihil voluptatem ullam vel ex magnam velit aliquid voluptate voluptatum excepturi
-                                </p>
-                            </div>
-                            <div class="swiper-slide">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <p>Similique delectus totam ex cum magnam quasi, ipsam officiis amet temporibus enim
-                                    modi rerum quo maxime reprehenderit, deserunt, libero quas distinctio quos! Ullam
-                                    harum nesciunt omnis consectetur distinctio? Iste sunt, dolorem deserunt quibusdam
-                                </p>
-                            </div>
-                            <div class="swiper-slide">
-                                <p>Tempora ea ratione vel nisi, qui perferendis nulla, fugit aut, beatae, tempore modi.
-                                    Minus sequi iste, nam nobis, excepturi nihil consequuntur reprehenderit ipsam, quam
-                                    consequatur in. Esse, doloremque consectetur veniam quo ut voluptas necessitatibus
-                                </p>
-                            </div>
-                            <div class="swiper-slide">
-                                <p>Perferendis recusandae consequuntur quasi, non culpa. Minus porro officiis veniam
-                                    facilis praesentium expedita doloribus, recusandae aut dolore autem, modi
-                                    consequuntur rem perferendis dolores quisquam, sequi quas. Iusto et, eius laboriosam
-                                    beatae</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <p>Aliquid soluta nisi incidunt, dolores sequi itaque sunt et nesciunt delectus ipsam
-                                    est molestias illo obcaecati, totam ducimus cumque consequuntur modi, laudantium!
-                                    Temporibus vero odit quis, quibusdam maiores voluptatum sunt dolor tempora
-                                    architecto fugiat quam.</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <p>Ea reiciendis modi, molestiae dolores beatae facere quas consequatur delectus
-                                    ducimus, magni voluptates, eius, quia unde ut vitae doloribus illum! Optio saepe,
-                                    modi aliquid perferendis veniam</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <p>Ea reiciendis modi, molestiae dolores beatae facere quas consequatur delectus
-                                    ducimus, magni voluptates, eius, quia unde ut vitae doloribus illum! Optio saepe,
-                                    modi aliquid perferendis veniam</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <p>Quod soluta corrupti earum officia vel inventore vitae quidem, consequuntur odit
-                                    impedit, eaque dolorem odio praesentium iusto amet voluptatum distinctio iste dicta
-                                    maiores doloremque porro. Ipsa doloremque illum animi laborum quo in nemo delectus
-                                </p>
-                            </div>
-                            <div class="swiper-slide">
-                                <p>Eveniet nobis minus possimus eius, doloribus ex similique debitis nihil at facere
-                                    delectus unde, commodi, alias. Eius facilis, dolore officia veritatis, doloribus
-                                    voluptatem aliquid rem corporis quam officiis at dignissimos dolorum, velit
-                                    assumenda</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-container reviewscar-thumbs">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="http://placehold.it/120x120" alt="Aureole Jayde">
-                                <h3 class="reviewscar-ttl"><a href="reviews.html">Aureole Jayde</a></h3>
-                                <p class="reviewscar-post">Director</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="http://placehold.it/120x120" alt="Benjy Darrin">
-                                <h3 class="reviewscar-ttl"><a href="reviews.html">Benjy Darrin</a></h3>
-                                <p class="reviewscar-post">Designer</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="http://placehold.it/120x120" alt="Jeni Margie">
-                                <h3 class="reviewscar-ttl"><a href="reviews.html">Jeni Margie</a></h3>
-                                <p class="reviewscar-post">Developer</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="http://placehold.it/120x120" alt="Edweena Chelsea">
-                                <h3 class="reviewscar-ttl"><a href="reviews.html">Edweena Chelsea</a></h3>
-                                <p class="reviewscar-post">Manager</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="http://placehold.it/120x120" alt="Sean Rudolph">
-                                <h3 class="reviewscar-ttl"><a href="reviews.html">Sean Rudolph</a></h3>
-                                <p class="reviewscar-post">Designer</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="http://placehold.it/120x120" alt="Brigham Murphy">
-                                <h3 class="reviewscar-ttl"><a href="reviews.html">Brigham Murphy</a></h3>
-                                <p class="reviewscar-post">Director</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="http://placehold.it/120x120" alt="Barrie Roderick">
-                                <h3 class="reviewscar-ttl"><a href="reviews.html">Barrie Roderick</a></h3>
-                                <p class="reviewscar-post">Developer</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="http://placehold.it/120x120" alt="John Doe">
-                                <h3 class="reviewscar-ttl"><a href="reviews.html">John Doe</a></h3>
-                                <p class="reviewscar-post">Manager</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="http://placehold.it/120x120" alt="Shirlee Annabel">
-                                <h3 class="reviewscar-ttl"><a href="reviews.html">Shirlee Annabel</a></h3>
-                                <p class="reviewscar-post">Developer</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="http://placehold.it/120x120" alt="Lettice Alyce">
-                                <h3 class="reviewscar-ttl"><a href="reviews.html">Lettice Alyce</a></h3>
-                                <p class="reviewscar-post">Director</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="http://placehold.it/120x120" alt="Meriel Glory">
-                                <h3 class="reviewscar-ttl"><a href="reviews.html">Meriel Glory</a></h3>
-                                <p class="reviewscar-post">Manager</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="http://placehold.it/120x120" alt="Janene Alaina">
-                                <h3 class="reviewscar-ttl"><a href="reviews.html">Janene Alaina</a></h3>
-                                <p class="reviewscar-post">Manager</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Subscribe Form -->
-            <div class="newsletter">
-                <h3>Subscribe to us</h3>
-                <p>Enter your email if you want to receive our news</p>
-                <form action="#">
-                    <input placeholder="Your e-mail" type="text">
-                    <input name="OK" value="Subscribe" type="submit">
-                </form>
-            </div>
-
-            <!-- Quick View Product - start -->
-            <div class="qview-modal">
-                <div class="prod-wrap">
-                    <a href="product.html">
-                        <h1 class="main-ttl">
-                            <span>Reprehenderit adipisci</span>
-                        </h1>
-                    </a>
-                    <div class="prod-slider-wrap">
-                        <div class="prod-slider">
-                            <ul class="prod-slider-car">
-                                <li>
-                                    <a data-fancybox-group="popup-product" class="fancy-img"
-                                        href="http://placehold.it/500x525">
-                                        <img src="http://placehold.it/500x525" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-fancybox-group="popup-product" class="fancy-img"
-                                        href="http://placehold.it/500x591">
-                                        <img src="http://placehold.it/500x591" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-fancybox-group="popup-product" class="fancy-img"
-                                        href="http://placehold.it/500x525">
-                                        <img src="http://placehold.it/500x525" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-fancybox-group="popup-product" class="fancy-img"
-                                        href="http://placehold.it/500x722">
-                                        <img src="http://placehold.it/500x722" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-fancybox-group="popup-product" class="fancy-img"
-                                        href="http://placehold.it/500x722">
-                                        <img src="http://placehold.it/500x722" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-fancybox-group="popup-product" class="fancy-img"
-                                        href="http://placehold.it/500x722">
-                                        <img src="http://placehold.it/500x722" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-fancybox-group="popup-product" class="fancy-img"
-                                        href="http://placehold.it/500x722">
-                                        <img src="http://placehold.it/500x722" alt="">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="prod-thumbs">
-                            <ul class="prod-thumbs-car">
-                                <li>
-                                    <a data-slide-index="0" href="#">
-                                        <img src="http://placehold.it/500x525" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-slide-index="1" href="#">
-                                        <img src="http://placehold.it/500x591" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-slide-index="2" href="#">
-                                        <img src="http://placehold.it/500x525" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-slide-index="3" href="#">
-                                        <img src="http://placehold.it/500x722" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-slide-index="4" href="#">
-                                        <img src="http://placehold.it/500x722" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-slide-index="5" href="#">
-                                        <img src="http://placehold.it/500x722" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-slide-index="6" href="#">
-                                        <img src="http://placehold.it/500x722" alt="">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="prod-cont">
-                        <p class="prod-actions">
-                            <a href="#" class="prod-favorites"><i class="fa fa-heart"></i> Add to
-                                Wishlist</a>
-                            <a href="#" class="prod-compare"><i class="fa fa-bar-chart"></i> Compare</a>
-                        </p>
-                        <div class="prod-skuwrap">
-                            <p class="prod-skuttl">Color</p>
-                            <ul class="prod-skucolor">
-                                <li class="active">
-                                    <img src="img/color/blue.jpg" alt="">
-                                </li>
-                                <li>
-                                    <img src="img/color/red.jpg" alt="">
-                                </li>
-                                <li>
-                                    <img src="img/color/green.jpg" alt="">
-                                </li>
-                                <li>
-                                    <img src="img/color/yellow.jpg" alt="">
-                                </li>
-                                <li>
-                                    <img src="img/color/purple.jpg" alt="">
-                                </li>
-                            </ul>
-                            <p class="prod-skuttl">Sizes</p>
-                            <div class="offer-props-select">
-                                <p>XL</p>
-                                <ul>
-                                    <li><a href="#">XS</a></li>
-                                    <li><a href="#">S</a></li>
-                                    <li><a href="#">M</a></li>
-                                    <li class="active"><a href="#">XL</a></li>
-                                    <li><a href="#">L</a></li>
-                                    <li><a href="#">4XL</a></li>
-                                    <li><a href="#">XXL</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="prod-info">
-                            <p class="prod-price">
-                                <b class="item_current_price">$238</b>
-                            </p>
-                            <p class="prod-qnt">
-                                <input type="text" value="1">
-                                <a href="#" class="prod-plus"><i class="fa fa-angle-up"></i></a>
-                                <a href="#" class="prod-minus"><i class="fa fa-angle-down"></i></a>
-                            </p>
-                            <p class="prod-addwrap">
-                                <a href="#" class="prod-add">Add to cart</a>
-                            </p>
-                        </div>
-                        <ul class="prod-i-props">
-                            <li>
-                                <b>SKU</b> 05464207
-                            </li>
-                            <li>
-                                <b>Manufacturer</b> Mayoral
-                            </li>
-                            <li>
-                                <b>Material</b> Cotton
-                            </li>
-                            <li>
-                                <b>Pattern Type</b> Print
-                            </li>
-                            <li>
-                                <b>Wash</b> Colored
-                            </li>
-                            <li>
-                                <b>Style</b> Cute
-                            </li>
-                            <li>
-                                <b>Color</b> Blue, Red
-                            </li>
-                            <li><a href="#" class="prod-showprops">All Features</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- Quick View Product - end -->
-        </section>
-    </main>
-    <!-- Main Content - end -->
-
-@endsection
+<body class="site-layout--horizontal preloader-is--active">
+	<div class="site-wrapper"><!-- Header
+		================================================== -->
+		<header id="header" class="site-header site-header--bottom"><!-- Logo - Image Based -->
+			<div class="header-logo header-logo--img"><a href="index-2.html"><img src="{{ asset('front-end/img/logo.png') }}"
+						srcset="{{ public_path('front-end/img/logo@2x.png 2x') }}" alt="Necromancers"></a></div>
+			<!-- Logo - Image Based / End --><!-- Main Navigation -->
+			<nav class="main-nav">
+				<ul class="main-nav__list">
+					<li class=""><a href="home.html">Home</a></li>
+					<li class=""><a href="#">Teams</a>
+						<ul class="main-nav__sub">
+							<li class=""><a href="#">Team Selections</a>
+								<ul class="main-nav__sub main-nav__sub--dropup">
+									<li class=""><a href="team-selection-1.html">Team Selection v1</a></li>
+									<li class=""><a href="team-selection-2.html">Team Selection v2</a></li>
+									<li class=""><a href="team-selection-3.html">Team Selection v3</a></li>
+									<li class=""><a href="team-selection-4.html">Team Selection v4</a></li>
+								</ul>
+							</li>
+							<li class=""><a href="team-overview.html">Team Overview</a>
+								<ul class="main-nav__sub">
+									<li class=""><a href="team-overview.html">Team Overview v1</a></li>
+									<li class=""><a href="team-overview-2.html">Team Overview v2</a></li>
+								</ul>
+							</li>
+							<li class=""><a href="team-player-1.html">Player Page</a></li>
+						</ul>
+					</li>
+					<li class=""><a href="#">Matches</a>
+						<ul class="main-nav__sub">
+							<li class=""><a href="matches-scores.html">Match Scores</a></li>
+							<li class=""><a href="matches-upcoming.html">Upcoming Matches</a></li>
+							<li class=""><a href="matches-standings.html">Standings</a></li>
+							<li class=""><a href="#">Match Stats</a>
+								<ul class="main-nav__sub">
+									<li class=""><a href="matches-stats-1.html">Match Stats v1</a></li>
+									<li class=""><a href="matches-stats-2.html">Match Stats v2</a></li>
+									<li class=""><a href="matches-stats-3.html">Match Stats v3</a></li>
+								</ul>
+							</li>
+							<li class=""><a href="#">Match Lineups</a>
+								<ul class="main-nav__sub">
+									<li class=""><a href="matches-lineups-1.html">Match Lineups v1</a></li>
+									<li class=""><a href="matches-lineups-2.html">Match Lineups v2</a></li>
+									<li class=""><a href="matches-lineups-3.html">Match Lineups v3</a></li>
+								</ul>
+							</li>
+							<li class=""><a href="#">Match Overviews</a>
+								<ul class="main-nav__sub">
+									<li class=""><a href="matches-overview-1.html">Match Overview v1</a></li>
+									<li class=""><a href="matches-overview-2.html">Match Overview v2</a></li>
+								</ul>
+							</li>
+							<li class=""><a href="matches-replay.html">Match Replay</a></li>
+						</ul>
+					</li>
+					<li class=""><a href="#">News</a>
+						<ul class="main-nav__sub">
+							<li class=""><a href="blog-1.html">News v1</a></li>
+							<li class=""><a href="blog-2.html">News v2</a></li>
+							<li class=""><a href="blog-3.html">News v3</a></li>
+							<li class=""><a href="blog-4.html">News v4</a></li>
+							<li class=""><a href="blog-classic.html">News Classic <span
+										class="badge badge-danger">New</span></a></li>
+							<li class=""><a href="blog-post.html">Post Page</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Features</a>
+						<div class="main-nav__megamenu">
+							<div class="row">
+								<div class="col-md-4">
+									<h6 class="main-nav__title">Main Pages</h6>
+									<div class="row">
+										<ul class="col-md-4">
+											<li class=""><a href="index-2.html">Landing Image</a></li>
+											<li class=""><a href="index-3.html">Landing Video</a></li>
+											<li class=""><a href="blog-1.html">News v1</a></li>
+											<li class=""><a href="blog-2.html">News v2</a></li>
+											<li class=""><a href="blog-3.html">News v3</a></li>
+											<li class=""><a href="blog-4.html">News v4</a></li>
+											<li class=""><a href="blog-classic.html">News Classic <span
+														class="badge badge-danger">New</span></a></li>
+										</ul>
+										<ul class="col-md-4">
+											<li class=""><a href="shop-account-settings.html">Account Settings</a></li>
+											<li class=""><a href="shop-account-orders.html">Account Orders</a></li>
+											<li class=""><a href="login-register.html">Login & Register</a></li>
+											<li class=""><a href="features-about-us.html">About Us</a></li>
+											<li class=""><a href="features-contact-us.html">Contact Us</a></li>
+											<li class=""><a href="features-faqs.html">FAQs</a></li>
+										</ul>
+										<ul class="col-md-4">
+											<li class=""><a href="management-and-staff.html">MGMT & Staff</a></li>
+											<li class=""><a href="streams-archive.html">Streams Page</a></li>
+											<li class=""><a href="partners.html">Our Partners</a></li>
+											<li class=""><a href="features-shortcodes.html">Shortcodes</a></li>
+											<li class=""><a href="features-typography.html">Typography</a></li>
+											<li class=""><a href="features-icons.html">Icons <span
+														class="badge badge-danger">New</span></a></li>
+											<li class=""><a href="features-bg-1.html">Backgrounds</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="row">
+										<h6 class="col-md-8 main-nav__title">Team Pages</h6>
+										<h6 class="col-md-4 main-nav__title">Player Pages</h6>
+									</div>
+									<div class="row">
+										<ul class="col-md-4">
+											<li class=""><a href="team-selection-1.html">Team Selection v1</a></li>
+											<li class=""><a href="team-selection-2.html">Team Selection v2</a></li>
+											<li class=""><a href="team-selection-3.html">Team Selection v3</a></li>
+											<li class=""><a href="team-selection-4.html">Team Selection v4</a></li>
+											<li class=""><a href="team-overview.html">Team Overview v1</a></li>
+											<li class=""><a href="team-overview-2.html">Team Overview v2</a></li>
+										</ul>
+										<ul class="col-md-4">
+											<li><a href="team-overviewbc83.html?slide=1">Team Statistics</a></li>
+											<li><a href="team-overviewe57f.html?slide=2">Team Achv</a></li>
+											<li><a href="team-overview0c37.html?slide=3">Team Matches</a></li>
+										</ul>
+										<ul class="col-md-4">
+											<li><a href="team-player-1.html">Player Overview</a></li>
+											<li><a href="team-player-1bc83.html?slide=1">Player Statistics</a></li>
+											<li><a href="team-player-1e57f.html?slide=2">Player Achv</a></li>
+											<li><a href="team-player-10c37.html?slide=3">Player Hardware</a></li>
+											<li><a href="team-player-11438.html?slide=4">Player Stream</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="row">
+										<h6 class="col-md-8 main-nav__title">Match Pages</h6>
+										<h6 class="col-md-4 main-nav__title">Shop Pages</h6>
+									</div>
+									<div class="row">
+										<ul class="col-md-4">
+											<li class=""><a href="matches-scores.html">Match Scores</a></li>
+											<li class=""><a href="matches-upcoming.html">Upcoming Matches</a></li>
+											<li class=""><a href="matches-standings.html">Standings</a></li>
+											<li class=""><a href="matches-overview-1.html">Overview v1</a></li>
+											<li class=""><a href="matches-overview-2.html">Overview v2</a></li>
+											<li class=""><a href="matches-stats-1.html">Match Stats v1</a></li>
+										</ul>
+										<ul class="col-md-4">
+											<li class=""><a href="matches-stats-2.html">Match Stats v2</a></li>
+											<li class=""><a href="matches-stats-3.html">Match Stats v3</a></li>
+											<li class=""><a href="matches-lineups-1.html">Match Lineups v1</a></li>
+											<li class=""><a href="matches-lineups-2.html">Match Lineups v2</a></li>
+											<li class=""><a href="matches-lineups-3.html">Match Lineups v3</a></li>
+											<li class=""><a href="matches-replay.html">Match Replay</a></li>
+										</ul>
+										<ul class="col-md-4">
+											<li class="active"><a href="shop.html">Shop Page v1</a></li>
+											<li class=""><a href="shop-2.html">Shop Page v2</a></li>
+											<li class=""><a href="shop-product.html">Product Page</a></li>
+											<li class=""><a href="shop-checkout.html">Checkout Page</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="active"><a href="#">Shop</a>
+						<ul class="main-nav__sub">
+							<li class="active"><a href="shop.html">Shop Page v1</a></li>
+							<li class=""><a href="shop-2.html">Shop Page v2</a></li>
+							<li class=""><a href="shop-product.html">Product Page</a></li>
+							<li class=""><a href="shop-checkout.html">Checkout Page</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav><!-- Main Navigation / End --><!-- Header Actions -->
+			<div class="header-actions">
+				<div class="header-pagination"><a href="#" class="header-scroll-arrow header-scroll-arrow--left"><svg
+							role="img" class="df-icon df-icon--left-arrow">
+							<use xlink:href="{{ asset('front-end/img/necromancers.svg#left-arrow') }}" />
+						</svg></a>
+					<ol class="header-pagination--list">
+						<li><a href="#">01</a></li>
+						<li><a href="#">02</a></li>
+						<li><span>...</span></li>
+						<li><a href="#">08</a></li>
+					</ol><a href="#" class="header-scroll-arrow header-scroll-arrow--right"><svg role="img"
+							class="df-icon df-icon--right-arrow">
+							<use xlink:href="{{ asset('front-end/img/necromancers.svg#right-arrow') }}" />
+						</svg></a>
+				</div>
+				<div class="header-filter-toggle"><svg role="img" class="df-icon df-icon--filter">
+						<use xlink:href="{{ asset('front-end/img/necromancers.svg#filter') }}" />
+					</svg>
+					<div class="filter-menu">
+						<form action="#" class="filter-menu__form">
+							<div class="filter-menu__select"><label class="filter-menu__label">Category</label> <select
+									class="cs-select">
+									<option value="" selected="selected">All Categories</option>
+									<option value="">Esports</option>
+									<option value="">Gaming</option>
+									<option value="">Videos</option>
+								</select></div>
+							<div class="filter-menu__select"><label class="filter-menu__label">Filter By</label> <select
+									class="cs-select">
+									<option value="" selected="selected">Article Date</option>
+									<option value="">Comments</option>
+									<option value="">Popularity</option>
+								</select></div>
+							<div class="filter-menu__select"><label class="filter-menu__label">Order</label> <select
+									class="cs-select">
+									<option value="" selected="selected">Ascending</option>
+									<option value="">Descending</option>
+								</select></div>
+							<div class="filter-menu__submit"><button type="submit"
+									class="btn btn-primary btn-sm btn-block">Filter News</button></div>
+						</form>
+					</div>
+				</div>
+				<div class="header-top-bar-toggle d-md-none hide"><svg role="img" class="df-icon df-icon--joystick">
+						<use xlink:href="{{ asset('front-end/img/necromancers.svg#joystick') }}" />
+					</svg> <svg role="img" class="df-icon df-icon--close">
+						<use xlink:href="{{ asset('front-end/img/necromancers.svg#close') }}" />
+					</svg></div>
+				<div class="header-social-toggle d-none d-md-block"><svg role="img" class="df-icon df-icon--thumb-up">
+						<use xlink:href="{{ asset('front-end/img/necromancers.svg#thumb-up') }}" />
+					</svg> <span class="header-social-toggle__plus">&nbsp;</span>
+					<ul class="social-menu social-menu--header">
+						<li><a href="https://discord.gg/xxxx') }}"><span class="link-subtitle">Discord</span>Necrochat</a>
+						</li>
+						<li><a href="https://twitch.tv/"><span class="link-subtitle">Twitch</span>Necroplay</a></li>
+						<li><a href="https://twitter.com/danfisher_dev"><span
+									class="link-subtitle">Twitter</span>Necrotwt</a></li>
+						<li><a href="https://www.facebook.com/danfisher.dev/"><span
+									class="link-subtitle">Facebook</span>Necrogame</a></li>
+					</ul>
+				</div>
+				<div class="header-cart-toggle"><svg role="img" class="df-icon df-icon--bag">
+						<use xlink:href="{{ asset('front-end/img/necromancers.svg#bag') }}" />
+					</svg> <svg role="img" class="df-icon df-icon--close">
+						<use xlink:href="{{ asset('front-end/img/necromancers.svg#close') }}" />
+					</svg> <span class="header-cart-toggle__items-count">4</span></div>
+				<div class="header-search-toggle"><svg role="img" class="df-icon df-icon--search">
+						<use xlink:href="{{ asset('front-end/img/necromancers.svg#search') }}" />
+					</svg> <svg role="img" class="df-icon df-icon--search-close">
+						<use xlink:href="{{ asset('front-end/img/necromancers.svg#search-close') }}" />
+					</svg></div>
+				<div class="header-account hide">
+					<div class="header-account__avatar"><img src="{{ asset('front-end/img/samples/account-user-avatar.jpg') }}"
+							srcset="{{ public_path('front-end/img/samples/account-user-avatar@2x.jpg 2x') }}" alt=""></div>
+					<div class="header-account__body">Hello!<div class="header-account__name">James Spiegel</div>
+					</div>
+					<div class="header-account__icon"><a href="shop-account-settings.html"><svg role="img"
+								class="df-icon df-icon--account">
+								<use xlink:href="{{ asset('front-end/img/necromancers.svg#account') }}" />
+							</svg> </a><a href="login-register.html"><svg role="img" class="df-icon df-icon--logout">
+								<use xlink:href="{{ asset('front-end/img/necromancers.svg#logout') }}" />
+							</svg></a></div>
+				</div>
+				<div class="header-menu-toggle">
+					<div class="header-menu-toggle__inner"><span>&nbsp;</span> <span>&nbsp;</span> <span>&nbsp;</span>
+					</div>
+				</div>
+			</div><!-- Header Actions / End -->
+		</header><!-- Header / End --><!-- Content
+		================================================== -->
+		<main class="site-content" id="wrapper">
+			<div class="widget-area widger-area--before-loop">
+				<div class="widget widget-featured-product bg-image bg--ph-03">
+					<div class="widget__subtitle">Featured Item</div>
+					<h1 class="widget__title h2"><span class="color-primary">Necromancers</span> men's t-shirt</h1>
+					<div class="widget__thumbnail"><img class=""
+							src="{{ asset('front-end/img/samples/widget-featured-product-img-01.png') }}" alt="">
+						<div class="widget__price"><a class="add-icon" href="shop-product.html"></a>
+							<div class="widget__price-label">Get it for</div>
+							<div class="widget__price-count">$<span class="color-primary">24.99</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content shop-layout--style-1">
+				<article class="product">
+					<div class="product__thumbnail"><a href="shop-product.html"><img
+								src="{{ asset('front-end/img/samples/product-img-01.png') }}" alt=""></a></div>
+					<div class="product__body">
+						<div class="product__header">
+							<ul class="product__cats list-unstyled">
+								<li class="product__cats-item color-warning"><a href="#">Framed prints</a></li>
+							</ul>
+							<h2 class="product__title h4"><a href="shop-product.html">Magimons black framed print</a>
+							</h2>
+							<ul class="product__meta list-unstyled">
+								<li class="product__meta-item product__price">$38.00</li>
+								<li class="product__meta-item product__ratings">
+									<div class="fas star-rating"><span style="width: 80%;">&nbsp;</span></div>
+								</li>
+							</ul>
+						</div>
+						<div class="product__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt ut labore...</div><a href="shop-product.html"
+							class="btn btn-secondary">Add to cart +</a>
+					</div>
+				</article>
+				<article class="product">
+					<div class="product__thumbnail"><a href="shop-product.html"><img
+								src="{{ asset('front-end/img/samples/product-img-02.png') }}" alt=""></a></div>
+					<div class="product__body">
+						<div class="product__header">
+							<ul class="product__cats list-unstyled">
+								<li class="product__cats-item color-warning"><a href="#">Coffee mugs</a></li>
+							</ul>
+							<h2 class="product__title h4"><a href="shop-product.html">Necromancers ennamel mug</a></h2>
+							<ul class="product__meta list-unstyled">
+								<li class="product__meta-item product__price">$16.00</li>
+								<li class="product__meta-item product__ratings">
+									<div class="fas star-rating"><span style="width: 60%;">&nbsp;</span></div>
+								</li>
+							</ul>
+						</div>
+						<div class="product__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt ut labore...</div><a href="shop-product.html"
+							class="btn btn-secondary">Add to cart +</a>
+					</div>
+				</article>
+				<article class="product">
+					<div class="product__thumbnail"><a href="shop-product.html"><img
+								src="{{ asset('front-end/img/samples/product-img-03.png') }}" alt=""></a></div>
+					<div class="product__body">
+						<div class="product__header">
+							<ul class="product__cats list-unstyled">
+								<li class="product__cats-item color-warning"><a href="#">Clothing</a></li>
+							</ul>
+							<h2 class="product__title h4"><a href="shop-product.html">Necromancers women&#x27;s
+									t-shirt</a></h2>
+							<ul class="product__meta list-unstyled">
+								<li class="product__meta-item product__price">$24.99</li>
+								<li class="product__meta-item product__ratings">
+									<div class="fas star-rating"><span style="width: 100%;">&nbsp;</span></div>
+								</li>
+							</ul>
+						</div>
+						<div class="product__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt ut labore...</div><a href="shop-product.html"
+							class="btn btn-secondary">Add to cart +</a>
+					</div>
+				</article>
+				<article class="product">
+					<div class="product__thumbnail"><a href="shop-product.html"><img
+								src="{{ asset('front-end/img/samples/product-img-04.png') }}" alt=""></a></div>
+					<div class="product__body">
+						<div class="product__header">
+							<ul class="product__cats list-unstyled">
+								<li class="product__cats-item color-warning"><a href="#">Framed prints</a></li>
+							</ul>
+							<h2 class="product__title h4"><a href="shop-product.html">Guardians white frame print</a>
+							</h2>
+							<ul class="product__meta list-unstyled">
+								<li class="product__meta-item product__price">$32.00</li>
+								<li class="product__meta-item product__ratings">
+									<div class="fas star-rating"><span style="width: 80%;">&nbsp;</span></div>
+								</li>
+							</ul>
+						</div>
+						<div class="product__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt ut labore...</div><a href="shop-product.html"
+							class="btn btn-secondary">Add to cart +</a>
+					</div>
+				</article>
+				<article class="product">
+					<div class="product__thumbnail"><a href="shop-product.html"><img
+								src="{{ asset('front-end/img/samples/product-img-01.png') }}" alt=""></a></div>
+					<div class="product__body">
+						<div class="product__header">
+							<ul class="product__cats list-unstyled">
+								<li class="product__cats-item color-warning"><a href="#">Framed prints</a></li>
+							</ul>
+							<h2 class="product__title h4"><a href="shop-product.html">Magimons black framed print</a>
+							</h2>
+							<ul class="product__meta list-unstyled">
+								<li class="product__meta-item product__price">$38.00</li>
+								<li class="product__meta-item product__ratings">
+									<div class="fas star-rating"><span style="width: 80%;">&nbsp;</span></div>
+								</li>
+							</ul>
+						</div>
+						<div class="product__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt ut labore...</div><a href="shop-product.html"
+							class="btn btn-secondary">Add to cart +</a>
+					</div>
+				</article>
+				<article class="product">
+					<div class="product__thumbnail"><a href="shop-product.html"><img
+								src="{{ asset('front-end/img/samples/product-img-02.png') }}" alt=""></a></div>
+					<div class="product__body">
+						<div class="product__header">
+							<ul class="product__cats list-unstyled">
+								<li class="product__cats-item color-warning"><a href="#">Coffee mugs</a></li>
+							</ul>
+							<h2 class="product__title h4"><a href="shop-product.html">Necromancers ennamel mug</a></h2>
+							<ul class="product__meta list-unstyled">
+								<li class="product__meta-item product__price">$16.00</li>
+								<li class="product__meta-item product__ratings">
+									<div class="fas star-rating"><span style="width: 60%;">&nbsp;</span></div>
+								</li>
+							</ul>
+						</div>
+						<div class="product__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt ut labore...</div><a href="shop-product.html"
+							class="btn btn-secondary">Add to cart +</a>
+					</div>
+				</article>
+			</div>
+		</main><!-- Overlay -->
+		<div class="site-overlay"></div><!-- Overlay / End --><!-- Cart Panel -->
+		<div class="cart-panel">
+			<h4 class="cart-panel__title text-white">Shopping Cart (<span class="cart-panel__items-count">4</span>)</h4>
+			<div class="cart-panel__content">
+				<div class="table-responsive">
+					<table class="table shop-table">
+						<thead>
+							<tr>
+								<th class="product__info">Product</th>
+								<th class="product__quantity">Quantity</th>
+								<th class="product__total">Total</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="product__info">
+									<figure class="product__thumb"><a href="#"><img
+												src="{{ asset('front-end/img/cart-panel-img-01.jpg') }}" alt=""></a></figure>
+									<div class="product__info-content">
+										<h5 class="product__name"><a href="#">Magimons Black Frame Print</a></h5><span
+											class="product__cat">Framed Prints</span> <span
+											class="product__info-details">24"x12" | Glossy</span>
+									</div>
+								</td>
+								<td class="product__quantity">
+									<div class="quantity-control"><button
+											class="quantity-control__minus">&nbsp;</button> <input type="number"
+											step="1" value="1" size="4"> <button
+											class="quantity-control__plus">&nbsp;</button></div>
+								</td>
+								<td class="product__total"><span class="product__total-currency">$</span>38.00</td>
+								<td class="product__remove"><a href="#" class="product__remove-icon"></a></td>
+							</tr>
+							<tr>
+								<td class="product__info">
+									<figure class="product__thumb"><a href="#"><img
+												src="{{ asset('front-end/img/cart-panel-img-02.jpg') }}" alt=""></a></figure>
+									<div class="product__info-content">
+										<h5 class="product__name"><a href="#">Necromancers Men's T-Shirt</a></h5><span
+											class="product__cat">Clothing</span> <span
+											class="product__info-details">Black | Medium</span>
+									</div>
+								</td>
+								<td class="product__quantity">
+									<div class="quantity-control"><button
+											class="quantity-control__minus">&nbsp;</button> <input type="number"
+											step="1" value="2" size="4"> <button
+											class="quantity-control__plus">&nbsp;</button></div>
+								</td>
+								<td class="product__total"><span class="product__total-currency">$</span>49.98</td>
+								<td class="product__remove"><a href="#" class="product__remove-icon"></a></td>
+							</tr>
+							<tr>
+								<td class="product__info">
+									<figure class="product__thumb"><a href="#"><img
+												src="{{ asset('front-end/img/cart-panel-img-03.jpg') }}" alt=""></a></figure>
+									<div class="product__info-content">
+										<h5 class="product__name"><a href="#">Necromancers Ennamel Mug</a></h5><span
+											class="product__cat">Coffee Mugs</span> <span
+											class="product__info-details">White</span>
+									</div>
+								</td>
+								<td class="product__quantity">
+									<div class="quantity-control"><button
+											class="quantity-control__minus">&nbsp;</button> <input type="number"
+											step="1" value="1" size="4"> <button
+											class="quantity-control__plus">&nbsp;</button></div>
+								</td>
+								<td class="product__total"><span class="product__total-currency">$</span>16.00</td>
+								<td class="product__remove"><a href="#" class="product__remove-icon"></a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="cart-panel__totals">
+					<div class="table-responsive">
+						<table class="table">
+							<tfoot>
+								<tr class="cart-panel__subtotal">
+									<th>Cart Subtotal</th>
+									<td><span class="amount"><span class="amount-currency">$</span>103.98</span></td>
+								</tr>
+								<tr class="cart-panel__shipping">
+									<th>Estimated Shipping</th>
+									<td><span class="amount"><span class="amount-currency">$</span>14.00</span></td>
+								</tr>
+								<tr class="cart-panel__order-total">
+									<th>Cart Total</th>
+									<td><span class="amount"><span class="amount-currency">$</span>117.98</span></td>
+								</tr>
+							</tfoot>
+						</table><a href="shop-checkout.html" class="btn btn-primary">Go to checkout</a>
+					</div>
+				</div>
+			</div>
+		</div><!-- Cart Panel / End --><!-- Search Panel -->
+		<div class="search-panel">
+			<div class="search-panel__content">
+				<form action="#" id="header-search-form" class="search-form search-form--header"><input type="text"
+						class="form-control" value="" placeholder="What are you looking for...?"></form><span>Write what
+					you are looking for, choose the filters and press enter to begin your search!</span>
+			</div>
+		</div><!-- Search Panel / End --><!-- Menu Panel -->
+		<div class="menu-panel">
+			<ul class="menu-panel__mobile-bar list-unstyled d-md-none">
+				<li class="mobile-bar-item"><a class="mobile-bar-item__header collapsed" data-toggle="collapse"
+						href="#mobile_collapse_1" role="button" aria-expanded="false"
+						aria-controls="mobile_collapse_1">Main Links <span class="main-nav__toggle">&nbsp;</span></a>
+					<div id="mobile_collapse_1" class="collapse mobile-bar-item__body"><!-- Mobile Navigation -->
+						<nav class="mobile-nav">
+							<ul class="mobile-nav__list">
+								<li class=""><a href="#">Main Pages</a>
+									<ul class="mobile-nav__sub">
+										<li class=""><a href="index-2.html">Landing Image</a></li>
+										<li class=""><a href="index-3.html">Landing Video</a></li>
+										<li class=""><a href="home.html">Home page</a></li>
+										<li class=""><a href="blog-post.html">Post Page</a></li>
+										<li class=""><a href="blog-1.html">News v1</a></li>
+										<li class=""><a href="blog-2.html">News v2</a></li>
+										<li class=""><a href="blog-3.html">News v3</a></li>
+										<li class=""><a href="blog-4.html">News v4</a></li>
+										<li class=""><a href="blog-classic.html">News Classic <span
+													class="badge badge-danger">New</span></a></li>
+										<li class=""><a href="shop-account-settings.html">Account Settings</a></li>
+										<li class=""><a href="shop-account-orders.html">Account Orders</a></li>
+										<li class=""><a href="login-register.html">Login & Register</a></li>
+										<li class=""><a href="features-about-us.html">About Us</a></li>
+										<li class=""><a href="features-contact-us.html">Contact Us</a></li>
+										<li class=""><a href="features-faqs.html">FAQs</a></li>
+										<li class=""><a href="management-and-staff.html">Management & Staff</a></li>
+										<li class=""><a href="streams-archive.html">Streams Page</a></li>
+										<li class=""><a href="partners.html">Our Partners</a></li>
+										<li class=""><a href="features-shortcodes.html">Shortcodes</a></li>
+										<li class=""><a href="features-typography.html">Typography</a></li>
+										<li class=""><a href="features-icons.html">Icons <span
+													class="badge badge-danger">New</span></a></li>
+										<li class=""><a href="features-bg-1.html">Backgrounds</a></li>
+									</ul>
+								</li>
+								<li class=""><a href="#">Team Pages</a>
+									<ul class="mobile-nav__sub">
+										<li class=""><a href="team-selection-1.html">Team Selection v1</a></li>
+										<li class=""><a href="team-selection-2.html">Team Selection v2</a></li>
+										<li class=""><a href="team-selection-3.html">Team Selection v3</a></li>
+										<li class=""><a href="team-selection-4.html">Team Selection v4</a></li>
+										<li class=""><a href="team-overview.html">Team Overview v1</a></li>
+										<li class=""><a href="team-overview-2.html">Team Overview v2</a></li>
+										<li><a href="team-overviewbc83.html?slide=1">Team Statistics</a></li>
+										<li><a href="team-overviewe57f.html?slide=2">Team Achievements</a></li>
+										<li><a href="team-overview0c37.html?slide=3">Team Matches</a></li>
+									</ul>
+								</li>
+								<li class=""><a href="#">Player Pages</a>
+									<ul class="mobile-nav__sub">
+										<li><a href="team-player-1.html">Player Overview</a></li>
+										<li><a href="team-player-1bc83.html?slide=1">Player Statistics</a></li>
+										<li><a href="team-player-1e57f.html?slide=2">Player Achievements</a></li>
+										<li><a href="team-player-10c37.html?slide=3">Player Hardware</a></li>
+										<li><a href="team-player-11438.html?slide=4">Player Stream</a></li>
+									</ul>
+								</li>
+								<li class=""><a href="#">Match Pages</a>
+									<ul class="mobile-nav__sub">
+										<li class=""><a href="matches-scores.html">Match Scores</a></li>
+										<li class=""><a href="matches-upcoming.html">Upcoming Matches</a></li>
+										<li class=""><a href="matches-standings.html">Standings</a></li>
+										<li class=""><a href="matches-overview-1.html">Match Overview v1</a></li>
+										<li class=""><a href="matches-overview-2.html">Match Overview v2</a></li>
+										<li class=""><a href="matches-stats-1.html">Match Stats v1</a></li>
+										<li class=""><a href="matches-stats-2.html">Match Stats v2</a></li>
+										<li class=""><a href="matches-stats-3.html">Match Stats v3</a></li>
+										<li class=""><a href="matches-lineups-1.html">Match Lineups v1</a></li>
+										<li class=""><a href="matches-lineups-2.html">Match Lineups v2</a></li>
+										<li class=""><a href="matches-lineups-3.html">Match Lineups v3</a></li>
+										<li class=""><a href="matches-replay.html">Match Replay</a></li>
+									</ul>
+								</li>
+								<li class="active"><a href="#">Shop Pages</a>
+									<ul class="mobile-nav__sub">
+										<li class="active"><a href="shop.html">Shop Page v1</a></li>
+										<li class=""><a href="shop-2.html">Shop Page v2</a></li>
+										<li class=""><a href="shop-product.html">Product Page</a></li>
+										<li class=""><a href="shop-checkout.html">Checkout Page</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav><!-- Mobile Navigation / End -->
+					</div>
+				</li>
+				<li class="mobile-bar-item"><a class="mobile-bar-item__header collapsed" data-toggle="collapse"
+						href="#mobile_collapse_2" role="button" aria-expanded="false"
+						aria-controls="mobile_collapse_2">Social Links <span class="main-nav__toggle">&nbsp;</span></a>
+					<div id="mobile_collapse_2" class="collapse mobile-bar-item__body">
+						<ul class="social-menu social-menu--mobile-bar">
+							<li><a href="https://www.facebook.com/danfisher.dev/"><span>Facebook</span></a></li>
+							<li><a href="https://twitter.com/danfisher_dev"><span>Twitter</span></a></li>
+							<li><a href="https://twitch.tv/"><span>Twitch</span></a></li>
+							<li><a href="https://discordapp.com/"><span>Discord</span></a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="mobile-bar-item mobile-bar-item--info"><a class="mobile-bar-item__header collapsed"
+						data-toggle="collapse" href="#mobile_collapse_3" role="button" aria-expanded="false"
+						aria-controls="mobile_collapse_3">Get in Touch! <span class="main-nav__toggle">&nbsp;</span></a>
+					<div id="mobile_collapse_3" class="collapse mobile-bar-item__body">
+						<div class="mobile-bar-item__inner">
+							<ul class="list-unstyled">
+								<li class="info-box') }}">
+									<div class="info-box__label">Max Parker - Recruiter</div>
+									<div class="info-box__content"><a href="mailto:#">mp-recruit<span
+												class="color-primary">@</span>necromancers.com</a></div>
+								</li>
+								<li class="info-box') }}">
+									<div class="info-box__label">Be our partner!</div>
+									<div class="info-box__content"><a href="mailto:#">partners<span
+												class="color-primary">@</span>necromancers.com</a></div>
+								</li>
+								<li class="info-box') }}">
+									<div class="info-box__label">General inquiries</div>
+									<div class="info-box__content"><a href="mailto:#">inquiries<span
+												class="color-primary">@</span>necromancers.com</a></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="mobile-bar-item mobile-bar-item--partners"><a id="mobile_collapse_4h"
+						class="mobile-bar-item__header collapsed" data-toggle="collapse" href="#mobile_collapse_4"
+						role="button" aria-expanded="false" aria-controls="mobile_collapse_4">Our Partners <span
+							class="main-nav__toggle">&nbsp;</span></a>
+					<div id="mobile_collapse_4" class="collapse mobile-bar-item__body">
+						<div class="mobile-bar-item__inner">
+							<ul class="widget-partners-mobile-carousel">
+								<li><img src="{{ asset('front-end/img/samples/partner-carousel-img-01.png') }}" alt=""></li>
+								<li><img src="{{ asset('front-end/img/samples/partner-carousel-img-02.png') }}" alt=""></li>
+								<li><img src="{{ asset('front-end/img/samples/partner-carousel-img-03.png') }}" alt=""></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="mobile-bar-item"><a class="mobile-bar-item__header" href="shop-account-settings.html">Account
+						Settings</a></li>
+				<li class="mobile-bar-item"><a class="mobile-bar-item__header" href="login-register.html">Logout</a>
+				</li>
+			</ul>
+			<div class="menu-panel__top-bar">
+				<div class="top-bar-filter"><label class="top-bar-filter__label">Competitions</label> <select
+						class="cs-select">
+						<option value="all" selected="selected">All Competitions</option>
+						<option value="x2018">Xenowatch 2018 Tournament</option>
+						<option value="xwleague">Xenowatch West League</option>
+						<option value="xeleague">Xenowatch East League</option>
+						<option value="xusacup">Xenowatch USA Cup</option>
+					</select></div>
+				<ul class="top-bar-carousel">
+					<li class="top-bar-carousel__headline x2018"><span>Xenowatch 2018 Tournament</span></li>
+					<li class="top-bar-carousel__item x2018">
+						<div class="match-score-inline">
+							<div class="match-score-inline__body">
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
+												alt="NCR Logo"></figure>
+										<figcaption>
+											<div class="match-team__name">NCR</div>
+											<div class="match-team__country">USA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result match-result--winner-right"><span
+											class="match-result__score">2</span></div>
+									<div class="match-result match-result--live"><span
+											class="match-result__label">25:42</span></div>
+								</div>
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-2" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-rhinos-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-rhinos-30@2x.png 2x') }}" alt="RRH Logo">
+										</figure>
+										<figcaption>
+											<div class="match-team__name">RRH</div>
+											<div class="match-team__country">JPN</div>
+										</figcaption>
+									</figure>
+									<div class="match-result"><span class="match-result__score">1</span></div>
+									<div class="match-result"><span class="match-result__label">01/12</span></div>
+								</div>
+							</div>
+							<div class="match-score-inline__footer">
+								<ul class="match-stats-links">
+									<li><a href="matches-overview-1.html"><svg role="img"
+												class="df-icon df-icon--overview">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
+											</svg></a></li>
+									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
+											</svg></a></li>
+									<li><a href="matches-lineups-1.html"><svg role="img"
+												class="df-icon df-icon--lineups">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
+											</svg></a></li>
+									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
+											</svg></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="top-bar-carousel__item x2018">
+						<div class="match-score-inline">
+							<div class="match-score-inline__body">
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-5" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-eagles-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-eagles-30@2x.png 2x') }}" alt="FEG Logo">
+										</figure>
+										<figcaption>
+											<div class="match-team__name">FEG</div>
+											<div class="match-team__country">FRA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result match-result--winner-right"><span
+											class="match-result__score">4</span></div>
+									<div class="match-result"><span class="match-result__label">Final</span></div>
+								</div>
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
+												alt="NCR Logo"></figure>
+										<figcaption>
+											<div class="match-team__name">NCR</div>
+											<div class="match-team__country">USA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result"><span class="match-result__score">3</span></div>
+									<div class="match-result"><span class="match-result__label">01/09</span></div>
+								</div>
+							</div>
+							<div class="match-score-inline__footer">
+								<ul class="match-stats-links">
+									<li><a href="matches-overview-1.html"><svg role="img"
+												class="df-icon df-icon--overview">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
+											</svg></a></li>
+									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
+											</svg></a></li>
+									<li><a href="matches-lineups-1.html"><svg role="img"
+												class="df-icon df-icon--lineups">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
+											</svg></a></li>
+									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
+											</svg></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="top-bar-carousel__item x2018">
+						<div class="match-score-inline">
+							<div class="match-score-inline__body">
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
+												alt="NCR Logo"></figure>
+										<figcaption>
+											<div class="match-team__name">NCR</div>
+											<div class="match-team__country">USA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result"><span class="match-result__score">1</span></div>
+									<div class="match-result"><span class="match-result__label">Final</span></div>
+								</div>
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-3" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-bulls-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-bulls-30@2x.png 2x') }}" alt="AGB Logo">
+										</figure>
+										<figcaption>
+											<div class="match-team__name">AGB</div>
+											<div class="match-team__country">SPA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result match-result--winner-right"><span
+											class="match-result__score">3</span></div>
+									<div class="match-result"><span class="match-result__label">01/05</span></div>
+								</div>
+							</div>
+							<div class="match-score-inline__footer">
+								<ul class="match-stats-links">
+									<li><a href="matches-overview-1.html"><svg role="img"
+												class="df-icon df-icon--overview">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
+											</svg></a></li>
+									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
+											</svg></a></li>
+									<li><a href="matches-lineups-1.html"><svg role="img"
+												class="df-icon df-icon--lineups">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
+											</svg></a></li>
+									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
+											</svg></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="top-bar-carousel__item x2018">
+						<div class="match-score-inline">
+							<div class="match-score-inline__body">
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-4" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-panthers-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-panthers-30@2x.png 2x') }}" alt="ICP Logo">
+										</figure>
+										<figcaption>
+											<div class="match-team__name">ICP</div>
+											<div class="match-team__country">POR</div>
+										</figcaption>
+									</figure>
+									<div class="match-result"><span class="match-result__score">0</span></div>
+									<div class="match-result"><span class="match-result__label">Final</span></div>
+								</div>
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
+												alt="NCR Logo"></figure>
+										<figcaption>
+											<div class="match-team__name">NCR</div>
+											<div class="match-team__country">USA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result match-result--winner-right"><span
+											class="match-result__score">5</span></div>
+									<div class="match-result"><span class="match-result__label">01/02</span></div>
+								</div>
+							</div>
+							<div class="match-score-inline__footer">
+								<ul class="match-stats-links">
+									<li><a href="matches-overview-1.html"><svg role="img"
+												class="df-icon df-icon--overview">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
+											</svg></a></li>
+									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
+											</svg></a></li>
+									<li><a href="matches-lineups-1.html"><svg role="img"
+												class="df-icon df-icon--lineups">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
+											</svg></a></li>
+									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
+											</svg></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="top-bar-carousel__headline xwleague"><span>Xenowatch West League</span></li>
+					<li class="top-bar-carousel__item xwleague">
+						<div class="match-score-inline">
+							<div class="match-score-inline__body">
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
+												alt="NCR Logo"></figure>
+										<figcaption>
+											<div class="match-team__name">NCR</div>
+											<div class="match-team__country">USA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result match-result--winner-right"><span
+											class="match-result__score">1</span></div>
+									<div class="match-result match-result--live"><span
+											class="match-result__label">12:33</span></div>
+								</div>
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-2" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-rhinos-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-rhinos-30@2x.png 2x') }}" alt="RRH Logo">
+										</figure>
+										<figcaption>
+											<div class="match-team__name">RRH</div>
+											<div class="match-team__country">JPN</div>
+										</figcaption>
+									</figure>
+									<div class="match-result"><span class="match-result__score">0</span></div>
+									<div class="match-result"><span class="match-result__label">01/12</span></div>
+								</div>
+							</div>
+							<div class="match-score-inline__footer">
+								<ul class="match-stats-links">
+									<li><a href="matches-overview-1.html"><svg role="img"
+												class="df-icon df-icon--overview">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
+											</svg></a></li>
+									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
+											</svg></a></li>
+									<li><a href="matches-lineups-1.html"><svg role="img"
+												class="df-icon df-icon--lineups">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
+											</svg></a></li>
+									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
+											</svg></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="top-bar-carousel__item xwleague">
+						<div class="match-score-inline">
+							<div class="match-score-inline__body">
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-4" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-panthers-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-panthers-30@2x.png 2x') }}" alt="ICP Logo">
+										</figure>
+										<figcaption>
+											<div class="match-team__name">ICP</div>
+											<div class="match-team__country">POR</div>
+										</figcaption>
+									</figure>
+									<div class="match-result"><span class="match-result__score">0</span></div>
+									<div class="match-result"><span class="match-result__label">Final</span></div>
+								</div>
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
+												alt="NCR Logo"></figure>
+										<figcaption>
+											<div class="match-team__name">NCR</div>
+											<div class="match-team__country">USA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result match-result--winner-right"><span
+											class="match-result__score">3</span></div>
+									<div class="match-result"><span class="match-result__label">01/07</span></div>
+								</div>
+							</div>
+							<div class="match-score-inline__footer">
+								<ul class="match-stats-links">
+									<li><a href="matches-overview-1.html"><svg role="img"
+												class="df-icon df-icon--overview">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
+											</svg></a></li>
+									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
+											</svg></a></li>
+									<li><a href="matches-lineups-1.html"><svg role="img"
+												class="df-icon df-icon--lineups">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
+											</svg></a></li>
+									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
+											</svg></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="top-bar-carousel__item xwleague">
+						<div class="match-score-inline">
+							<div class="match-score-inline__body">
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-5" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-eagles-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-eagles-30@2x.png 2x') }}" alt="FEG Logo">
+										</figure>
+										<figcaption>
+											<div class="match-team__name">FEG</div>
+											<div class="match-team__country">FRA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result match-result--winner-right"><span
+											class="match-result__score">5</span></div>
+									<div class="match-result"><span class="match-result__label">Final</span></div>
+								</div>
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
+												alt="NCR Logo"></figure>
+										<figcaption>
+											<div class="match-team__name">NCR</div>
+											<div class="match-team__country">USA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result"><span class="match-result__score">2</span></div>
+									<div class="match-result"><span class="match-result__label">01/04</span></div>
+								</div>
+							</div>
+							<div class="match-score-inline__footer">
+								<ul class="match-stats-links">
+									<li><a href="matches-overview-1.html"><svg role="img"
+												class="df-icon df-icon--overview">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
+											</svg></a></li>
+									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
+											</svg></a></li>
+									<li><a href="matches-lineups-1.html"><svg role="img"
+												class="df-icon df-icon--lineups">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
+											</svg></a></li>
+									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
+											</svg></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="top-bar-carousel__item xwleague">
+						<div class="match-score-inline">
+							<div class="match-score-inline__body">
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
+												alt="NCR Logo"></figure>
+										<figcaption>
+											<div class="match-team__name">NCR</div>
+											<div class="match-team__country">USA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result"><span class="match-result__score">1</span></div>
+									<div class="match-result"><span class="match-result__label">Final</span></div>
+								</div>
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-3" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-bulls-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-bulls-30@2x.png 2x') }}" alt="AGB Logo">
+										</figure>
+										<figcaption>
+											<div class="match-team__name">AGB</div>
+											<div class="match-team__country">SPA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result match-result--winner-right"><span
+											class="match-result__score">3</span></div>
+									<div class="match-result"><span class="match-result__label">01/03</span></div>
+								</div>
+							</div>
+							<div class="match-score-inline__footer">
+								<ul class="match-stats-links">
+									<li><a href="matches-overview-1.html"><svg role="img"
+												class="df-icon df-icon--overview">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
+											</svg></a></li>
+									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
+											</svg></a></li>
+									<li><a href="matches-lineups-1.html"><svg role="img"
+												class="df-icon df-icon--lineups">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
+											</svg></a></li>
+									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
+											</svg></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="top-bar-carousel__headline xeleague"><span>Xenowatch East League</span></li>
+					<li class="top-bar-carousel__item xeleague">
+						<div class="match-score-inline">
+							<div class="match-score-inline__body">
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
+												alt="NCR Logo"></figure>
+										<figcaption>
+											<div class="match-team__name">NCR</div>
+											<div class="match-team__country">USA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result match-result--winner-right"><span
+											class="match-result__score">4</span></div>
+									<div class="match-result"><span class="match-result__label">Final</span></div>
+								</div>
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-2" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-rhinos-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-rhinos-30@2x.png 2x') }}" alt="RRH Logo">
+										</figure>
+										<figcaption>
+											<div class="match-team__name">RRH</div>
+											<div class="match-team__country">JPN</div>
+										</figcaption>
+									</figure>
+									<div class="match-result"><span class="match-result__score">1</span></div>
+									<div class="match-result"><span class="match-result__label">12/18</span></div>
+								</div>
+							</div>
+							<div class="match-score-inline__footer">
+								<ul class="match-stats-links">
+									<li><a href="matches-overview-1.html"><svg role="img"
+												class="df-icon df-icon--overview">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
+											</svg></a></li>
+									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
+											</svg></a></li>
+									<li><a href="matches-lineups-1.html"><svg role="img"
+												class="df-icon df-icon--lineups">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
+											</svg></a></li>
+									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
+											</svg></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="top-bar-carousel__item xeleague">
+						<div class="match-score-inline">
+							<div class="match-score-inline__body">
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
+												alt="NCR Logo"></figure>
+										<figcaption>
+											<div class="match-team__name">NCR</div>
+											<div class="match-team__country">USA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result match-result--winner-right"><span
+											class="match-result__score">4</span></div>
+									<div class="match-result"><span class="match-result__label">Final</span></div>
+								</div>
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-3" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-bulls-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-bulls-30@2x.png 2x') }}" alt="AGB Logo">
+										</figure>
+										<figcaption>
+											<div class="match-team__name">AGB</div>
+											<div class="match-team__country">SPA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result"><span class="match-result__score">3</span></div>
+									<div class="match-result"><span class="match-result__label">12/11</span></div>
+								</div>
+							</div>
+							<div class="match-score-inline__footer">
+								<ul class="match-stats-links">
+									<li><a href="matches-overview-1.html"><svg role="img"
+												class="df-icon df-icon--overview">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
+											</svg></a></li>
+									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
+											</svg></a></li>
+									<li><a href="matches-lineups-1.html"><svg role="img"
+												class="df-icon df-icon--lineups">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
+											</svg></a></li>
+									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
+											</svg></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="top-bar-carousel__item xeleague">
+						<div class="match-score-inline">
+							<div class="match-score-inline__body">
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-4" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-panthers-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-panthers-30@2x.png 2x') }}" alt="ICP Logo">
+										</figure>
+										<figcaption>
+											<div class="match-team__name">ICP</div>
+											<div class="match-team__country">POR</div>
+										</figcaption>
+									</figure>
+									<div class="match-result"><span class="match-result__score">0</span></div>
+									<div class="match-result"><span class="match-result__label">Final</span></div>
+								</div>
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
+												alt="NCR Logo"></figure>
+										<figcaption>
+											<div class="match-team__name">NCR</div>
+											<div class="match-team__country">USA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result match-result--winner-right"><span
+											class="match-result__score">2</span></div>
+									<div class="match-result"><span class="match-result__label">12/09</span></div>
+								</div>
+							</div>
+							<div class="match-score-inline__footer">
+								<ul class="match-stats-links">
+									<li><a href="matches-overview-1.html"><svg role="img"
+												class="df-icon df-icon--overview">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
+											</svg></a></li>
+									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
+											</svg></a></li>
+									<li><a href="matches-lineups-1.html"><svg role="img"
+												class="df-icon df-icon--lineups">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
+											</svg></a></li>
+									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
+											</svg></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="top-bar-carousel__headline xusacup"><span>Xenowatch USA Cup</span></li>
+					<li class="top-bar-carousel__item xusacup">
+						<div class="match-score-inline">
+							<div class="match-score-inline__body">
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
+												alt="NCR Logo"></figure>
+										<figcaption>
+											<div class="match-team__name">NCR</div>
+											<div class="match-team__country">USA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result"><span class="match-result__score">1</span></div>
+									<div class="match-result"><span class="match-result__label">Final</span></div>
+								</div>
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-3" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-bulls-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-bulls-30@2x.png 2x') }}" alt="AGB Logo">
+										</figure>
+										<figcaption>
+											<div class="match-team__name">AGB</div>
+											<div class="match-team__country">SPA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result match-result--winner-right"><span
+											class="match-result__score">3</span></div>
+									<div class="match-result"><span class="match-result__label">11/17</span></div>
+								</div>
+							</div>
+							<div class="match-score-inline__footer">
+								<ul class="match-stats-links">
+									<li><a href="matches-overview-1.html"><svg role="img"
+												class="df-icon df-icon--overview">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
+											</svg></a></li>
+									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
+											</svg></a></li>
+									<li><a href="matches-lineups-1.html"><svg role="img"
+												class="df-icon df-icon--lineups">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
+											</svg></a></li>
+									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
+											</svg></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="top-bar-carousel__item xusacup">
+						<div class="match-score-inline">
+							<div class="match-score-inline__body">
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-5" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-eagles-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-eagles-30@2x.png 2x') }}" alt="FEG Logo">
+										</figure>
+										<figcaption>
+											<div class="match-team__name">FEG</div>
+											<div class="match-team__country">FRA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result match-result--winner-right"><span
+											class="match-result__score">2</span></div>
+									<div class="match-result"><span class="match-result__label">Final</span></div>
+								</div>
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
+												alt="NCR Logo"></figure>
+										<figcaption>
+											<div class="match-team__name">NCR</div>
+											<div class="match-team__country">USA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result"><span class="match-result__score">1</span></div>
+									<div class="match-result"><span class="match-result__label">11/11</span></div>
+								</div>
+							</div>
+							<div class="match-score-inline__footer">
+								<ul class="match-stats-links">
+									<li><a href="matches-overview-1.html"><svg role="img"
+												class="df-icon df-icon--overview">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
+											</svg></a></li>
+									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
+											</svg></a></li>
+									<li><a href="matches-lineups-1.html"><svg role="img"
+												class="df-icon df-icon--lineups">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
+											</svg></a></li>
+									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
+											</svg></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="top-bar-carousel__item xusacup">
+						<div class="match-score-inline">
+							<div class="match-score-inline__body">
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-4" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-panthers-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-panthers-30@2x.png 2x') }}" alt="ICP Logo">
+										</figure>
+										<figcaption>
+											<div class="match-team__name">ICP</div>
+											<div class="match-team__country">POR</div>
+										</figcaption>
+									</figure>
+									<div class="match-result match-result--winner-right"><span
+											class="match-result__score">3</span></div>
+									<div class="match-result"><span class="match-result__label">Final</span></div>
+								</div>
+								<div class="match-score-inline__body-inner">
+									<figure class="match-team" role="group">
+										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
+												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
+												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
+												alt="NCR Logo"></figure>
+										<figcaption>
+											<div class="match-team__name">NCR</div>
+											<div class="match-team__country">USA</div>
+										</figcaption>
+									</figure>
+									<div class="match-result"><span class="match-result__score">2</span></div>
+									<div class="match-result"><span class="match-result__label">11/06</span></div>
+								</div>
+							</div>
+							<div class="match-score-inline__footer">
+								<ul class="match-stats-links">
+									<li><a href="matches-overview-1.html"><svg role="img"
+												class="df-icon df-icon--overview">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
+											</svg></a></li>
+									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
+											</svg></a></li>
+									<li><a href="matches-lineups-1.html"><svg role="img"
+												class="df-icon df-icon--lineups">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
+											</svg></a></li>
+									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
+												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
+											</svg></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="menu-panel__content d-none d-md-flex') }}">
+				<div class="menu-panel__navigation">
+					<div id="dl-menu" class="dl-menuwrapper"><!-- <button class="dl-trigger">Open Menu</button> -->
+						<ul class="dl-menu dl-menuopen">
+							<li class=""><a href="home.html">Home</a></li>
+							<li class=""><a href="team-selection-2.html">Teams</a>
+								<ul class="dl-submenu">
+									<li class=""><a href="#">Team Selections</a>
+										<ul class="dl-submenu">
+											<li class=""><a href="team-selection-1.html">Team Selection v1</a></li>
+											<li class=""><a href="team-selection-2.html">Team Selection v2</a></li>
+											<li class=""><a href="team-selection-3.html">Team Selection v3</a></li>
+											<li class=""><a href="team-selection-4.html">Team Selection v4</a></li>
+										</ul>
+									</li>
+									<li class=""><a href="team-overview.html">Team Overview</a>
+										<ul class="dl-submenu">
+											<li class=""><a href="team-overview.html">Team Overview v1</a></li>
+											<li class=""><a href="team-overview-2.html">Team Overview v2</a></li>
+										</ul>
+									</li>
+									<li class=""><a href="team-player-1.html">Player Page</a></li>
+								</ul>
+							</li>
+							<li class=""><a href="#">Matches</a>
+								<ul class="dl-submenu">
+									<li class=""><a href="matches-scores.html">Match Scores</a></li>
+									<li class=""><a href="matches-upcoming.html">Upcoming Matches</a></li>
+									<li class=""><a href="matches-standings.html">Standings</a></li>
+									<li class=""><a href="#">Match Stats</a>
+										<ul class="dl-submenu">
+											<li class=""><a href="matches-stats-1.html">Match Stats v1</a></li>
+											<li class=""><a href="matches-stats-2.html">Match Stats v2</a></li>
+											<li class=""><a href="matches-stats-3.html">Match Stats v3</a></li>
+										</ul>
+									</li>
+									<li class=""><a href="#">Match Lineups</a>
+										<ul class="dl-submenu">
+											<li class=""><a href="matches-lineups-1.html">Match Lineups v1</a></li>
+											<li class=""><a href="matches-lineups-2.html">Match Lineups v2</a></li>
+											<li class=""><a href="matches-lineups-3.html">Match Lineups v3</a></li>
+										</ul>
+									</li>
+									<li class=""><a href="#">Match Overviews</a>
+										<ul class="dl-submenu">
+											<li class=""><a href="matches-overview-1.html">Match Overview v1</a></li>
+											<li class=""><a href="matches-overview-2.html">Match Overview v2</a></li>
+										</ul>
+									</li>
+									<li class=""><a href="matches-replay.html">Match Replay</a></li>
+								</ul>
+							</li>
+							<li class=""><a href="blog-1.html">News</a></li>
+							<li><a href="#">Features</a>
+								<ul class="dl-submenu dl-megamenu">
+									<div class="row">
+										<ul class="col-md-6 col-lg-4">
+											<li class=""><a href="index-2.html">Landing Image</a></li>
+											<li class=""><a href="index-3.html">Landing Video</a></li>
+											<li class=""><a href="home.html">Home page</a></li>
+											<li class=""><a href="blog-1.html">News v1</a></li>
+											<li class=""><a href="blog-2.html">News v2</a></li>
+											<li class=""><a href="blog-3.html">News v3</a></li>
+											<li class=""><a href="blog-4.html">News v4</a></li>
+											<li class=""><a href="blog-classic.html">News Classic <span
+														class="badge badge-danger">New</span></a></li>
+											<li class=""><a href="blog-post.html">Post Page</a></li>
+											<li class=""><a href="shop-account-settings.html">Account Settings</a></li>
+										</ul>
+										<ul class="col-md-6 col-lg-4">
+											<li class=""><a href="shop-account-orders.html">Account Orders</a></li>
+											<li class=""><a href="login-register.html">Login & Register</a></li>
+											<li class=""><a href="features-about-us.html">About Us</a></li>
+											<li class=""><a href="features-faqs.html">FAQs</a></li>
+											<li class=""><a href="features-contact-us.html">Contact Us</a></li>
+											<li class=""><a href="management-and-staff.html">Management & Staff</a></li>
+											<li class=""><a href="streams-archive.html">Streams Page</a></li>
+											<li class=""><a href="partners.html">Our Partners</a></li>
+										</ul>
+										<ul class="col-md-12 col-lg-4">
+											<li class=""><a href="features-shortcodes.html">Shortcodes</a></li>
+											<li class=""><a href="features-typography.html">Typography</a></li>
+											<li class=""><a href="features-icons.html">Icons <span
+														class="badge badge-danger">New</span></a></li>
+											<li class=""><a href="features-bg-1.html">Backgrounds</a></li>
+										</ul>
+									</div>
+								</ul>
+							</li>
+							<li class="active"><a href="shop.html">Shop</a>
+								<ul class="dl-submenu">
+									<li class="active"><a href="shop.html">Shop Page v1</a></li>
+									<li class=""><a href="shop-2.html">Shop Page v2</a></li>
+									<li class=""><a href="shop-product.html">Product Page</a></li>
+									<li class=""><a href="shop-checkout.html">Checkout Page</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="menu-panel__widget-area">
+					<div class="row">
+						<div class="col-md-12 col-lg-6 col-xl-5"><!-- Widget: Text -->
+							<section class="widget widget-text">
+								<h5 class="widget__title">Join our team</h5>
+								<div class="widget__content">
+									<p>We’re always looking for new talent to join our teams. If you wanna join us, just
+										send us and email and we’ll get back to you!</p>
+									<div class="info-box') }}">
+										<div class="info-box__label">Max Parker - Recruiter</div>
+										<div class="info-box__content"><a href="mailto:#">mp-recruit<span
+													class="color-primary">@</span>necromancers.com</a></div>
+									</div>
+									<div class="info-box') }}">
+										<div class="info-box__label">Be our partner!</div>
+										<div class="info-box__content"><a href="mailto:#">partners<span
+													class="color-primary">@</span>necromancers.com</a></div>
+									</div>
+								</div>
+							</section><!-- Widget: Text / End -->
+						</div>
+						<div class="col-md-12 col-lg-6 col-xl-5 offset-xl-2 mt-5 mt-lg-0"><!-- Widget: Contact Info -->
+							<section class="widget widget-contact-info">
+								<h5 class="widget__title">Contact Info</h5>
+								<div class="widget__content">
+									<p>If you have any questions, just send us and email and don’t forget to follow and
+										like all our social accounts to keep updated!</p>
+									<div class="info-box') }}">
+										<div class="info-box__label">General inquiries</div>
+										<div class="info-box__content"><a href="mailto:#">inquiries<span
+													class="color-primary">@</span>necromancers.com</a></div>
+									</div>
+									<ul class="social-menu social-menu--default">
+										<li><a href="https://www.facebook.com/danfisher.dev/"></a></li>
+										<li><a href="https://twitter.com/danfisher_dev"></a></li>
+										<li><a href="https://twitch.tv/"></a></li>
+										<li><a href="https://discord.gg/xxxx') }}"></a></li>
+									</ul>
+								</div>
+							</section><!-- Widget: Contact Info / End -->
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12"><!-- Widget: Partners Carousel -->
+							<section class="widget widget-partners-carousel">
+								<h5 class="widget__title">Our Partners</h5>
+								<div class="widget__content">
+									<ul>
+										<li><img src="{{ asset('front-end/img/samples/partner-carousel-img-01.png') }}" alt=""></li>
+										<li><img src="{{ asset('front-end/img/samples/partner-carousel-img-02.png') }}" alt=""></li>
+										<li><img src="{{ asset('front-end/img/samples/partner-carousel-img-03.png') }}" alt=""></li>
+										<li><img src="{{ asset('front-end/img/samples/partner-carousel-img-01.png') }}" alt=""></li>
+										<li><img src="{{ asset('front-end/img/samples/partner-carousel-img-02.png') }}" alt=""></li>
+										<li><img src="{{ asset('front-end/img/samples/partner-carousel-img-03.png') }}" alt=""></li>
+									</ul>
+								</div>
+							</section><!-- Widget: Partners Carousel / End -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- Menu Panel / End -->
+	</div>
+	<div class="preloader-overlay">
+		<div id="js-preloader" class="preloader">
+			<div class="preloader-inner fadeInUp">
+				<div class="pong-loader"></div><svg role="img" class="df-icon df-icon--preloader-arcade">
+					<use xlink:href="{{ asset('front-end/img/necromancers.svg#preloader-arcade') }}" />
+				</svg>
+			</div>
+		</div>
+	</div><!-- The cursor elements -->
+	<div class="df-custom-cursor-wrap">
+		<div id="df-custom-cursor"></div>
+	</div><!-- Javascript Files
+	================================================== --><!-- Core JS -->
+	<script src="{{ asset('front-end/vendor/jquery/jquery.min.js') }}"></script>
+	<script src="{{ asset('front-end/vendor/jquery/jquery-migrate.min.js') }}"></script>
+	<script src="{{ asset('front-end/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+	<script src="{{ asset('front-end/js/core.js') }}"></script><!-- Vendor JS --><!-- Template JS -->
+	<script src="{{ asset('front-end/js/init.js') }}"></script>
+	<script src="{{ asset('front-end/js/custom.js') }}"></script><!-- Duotone SVG color filter --> <svg xmlns="http://www.w3.org/2000/svg"
+		class="svg-filters">
+		<filter id="duotone_base">
+			<feColorMatrix type="matrix') }}" result="grayscale" values="1 0 0 0 0
+								1 0 0 0 0
+								1 0 0 0 0
+								0 0 0 1 0') }}" />
+			<feComponentTransfer color-interpolation-filters="sRGB" result="duotone_base_filter">
+				<feFuncR type="table" tableValues="0.082352941176471 0.419607843137255"></feFuncR>
+				<feFuncG type="table" tableValues="0.090196078431373 0.443137254901961"></feFuncG>
+				<feFuncB type="table" tableValues="0.125490196078431 0.6"></feFuncB>
+				<feFuncA type="table" tableValues="0 1"></feFuncA>
+			</feComponentTransfer>
+		</filter>
+	</svg>
+</body>
+</html>

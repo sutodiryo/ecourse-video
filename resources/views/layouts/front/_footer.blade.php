@@ -198,7 +198,7 @@
                     </li>
                 </ul>
                 <div class="footer-copyright">
-                    <i><a href="https://themeforest.net/user/real-web?ref=real-web">Real-Web</a></i> © Copyright
+                    <i><a href="#">Real-Web</a></i> © Copyright
                     2017
                 </div>
             </div>
