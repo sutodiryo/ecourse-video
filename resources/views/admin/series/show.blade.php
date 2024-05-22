@@ -6,6 +6,9 @@
     <div class="container-xl">
         <div class="row">
             <div class="col-12">
+                <a href="{{ route('admin.videos.create', $series->slug) }}" class="btn btn-primary mb-3">
+                    <i class="fas fa-plus mr-2"></i> Add Video
+                </a>
                 <x-card.card title="List Videos - {{ $series->name }}">
                     <x-card.card-list>
                         @forelse($videos as $i => $video)
