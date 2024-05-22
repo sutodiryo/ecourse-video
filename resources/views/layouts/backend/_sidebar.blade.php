@@ -4,7 +4,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <a href="/" class="navbar-brand navbar-brand-autodark">
-            <h2 class="font-weight-bold text-azure"><span class="text-red">MBC</span> Course</h2>
+            <h2 class="font-weight-bold text-azure"><span class="text-red">MBC</span></h2>
             {{-- <h2 class="font-weight-bold text-azure">We<span class="text-red">Learn</span></h2> --}}
         </a>
         <div class="navbar-nav flex-row d-lg-none">
