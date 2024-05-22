@@ -28,8 +28,8 @@ class SeriesUpdateRequest extends FormRequest
             'price' => 'required',
             'description' => 'required',
             'cover' =>'mimes:jpg,png,jpeg',
-            'level' => 'required',
-            'status' => 'required'
+            // 'level' => 'required',
+            // 'status' => 'required'
         ];
     }
 }

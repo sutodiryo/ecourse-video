@@ -39,7 +39,7 @@
                         @foreach ($series->tags as $tag)
                             <span class="badge bg-{{ $tag->color }}">{{ $tag->name }}</span>
                         @endforeach
-                        <p class="text-muted">{{ $series->description }}</p>
+                        <p class="text-muted">{!! $series->description !!}</p>
                         <p class="text-muted">{{ $series->videos->count() }} Episodes </p>
                     </div>
                 </div>

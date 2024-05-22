@@ -27,7 +27,7 @@
                         <x-form.input type="file" title="Series cover" name="cover" value="" placeholder="" />
                         <x-form.textarea title="Series Description" name="description" value=""
                             placeholder="Input series description" />
-                        <div class="row">
+                        {{-- <div class="row">
                             <div class="col-6">
                                 <x-form.select-group title="Series Level">
                                     <label class="form-selectgroup-item">
@@ -65,7 +65,7 @@
                                     </label>
                                 </x-form.checkbox>
                             </div>
-                        </div>
+                        </div> --}}
                         <x-button.button-save title="Save" icon="save" class="btn btn-primary" />
                         <x-button.button-link class="btn btn-dark text-white" title="Go Back" icon="arrow-left"
                             url="{{ route('admin.series.index') }}">

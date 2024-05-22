@@ -15,7 +15,7 @@
         </div>
         <div class="row">
             @foreach ($series as $data)
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-6">
                     <a class="text-dark" href="{{ route('series.show', $data->slug) }}">
                         <div class="card card-stacked">
                             @if ($data->created_at < now()->addMonth(1))
@@ -23,13 +23,15 @@
                                     New
                                 </div>
                             @else
-                                <div class="ribbon bg-teal">
+                                {{-- <div class="ribbon bg-teal">
                                     Oldest
-                                </div>
+                                </div> --}}
                             @endif
                             <div class="card-body">
                                 <h3 class="card-title">{{ $data->name }}</h3>
-                                <p class="text-muted">{{ $data->description }}</p>
+                                <img src="{{ $data->cover }}" class="img-fluid" alt="">
+
+                                <p class="text-muted">{!! $data->description !!}</p>
                                 <div class="d-flex justify-content-between">
                                     <div>
                                         {{ $data->videos->count() }} Episode
@@ -41,7 +43,7 @@
                             </div>
                             <div class="card-footer">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="text-dark">
+                                    {{-- <div class="text-dark">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-device-desktop-analytics" width="24"
                                             height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
@@ -68,7 +70,7 @@
                                             <path d="M9 12l2 2l4 -4"></path>
                                         </svg>
                                         {{ $data->status == 1 ? 'Completed' : 'Developed' }}
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                         </div>

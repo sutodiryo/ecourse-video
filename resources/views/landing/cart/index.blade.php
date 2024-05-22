@@ -52,17 +52,18 @@
                     <div class="list-group">
                         <div class="d-flex justify-content-between align-items-center">
                             <div>
-                                <h3 class="text-uppercase">Mandiri</h3>
+                                <h3 class="text-uppercase">BCA</h3>
                                 <div>
-                                    <h4>43231230xx</h4>
+                                    <h4>0154652431</h4>
+                                    <h4>An. PT FJS Corp International</h4>
                                 </div>
                             </div>
                             <div class="avatar">
-                                <img src="{{ asset('dist/img/payments/livin.png') }}" />
+                                <img src="{{ asset('dist/img/payments/bca.png') }}" />
                             </div>
                         </div>
                         <hr class="mt-2 mb-2" />
-                        <div class="d-flex justify-content-between align-items-center">
+                        {{-- <div class="d-flex justify-content-between align-items-center">
                             <div>
                                 <h3 class="text-uppercase">Gopay</h3>
                                 <div>
@@ -84,7 +85,7 @@
                             <span class="avatar">
                                 <img src="{{ asset('dist/img/payments/ovo.png') }}" />
                             </span>
-                        </div>
+                        </div> --}}
                     </div>
                 </x-card.card>
             </div>
@@ -92,15 +93,15 @@
                 <x-card.card title="Payment Confirmation">
                     <form action="{{ route('transactions.store') }}" method="POST">
                         @csrf
-                        <x-form.input title="Full Name" name="name_of_bank" value="" placeholder="Rafi Tafiqurrahman"
+                        <x-form.input title="Nomor Rekening" name="bank_transfer" value="" placeholder="Nomor Rekening Anda" type="text" />
+                        <x-form.input title="Nama Lengkap Rekening" name="name_of_bank" value="" placeholder="Nama Lengkap Anda"
                             type="text" />
-                        <x-form.input title="Your Bank" name="bank_transfer" value="" placeholder="Mandiri" type="text" />
                         <x-form.select title="Bank Transfer" name="method_of_payment">
-                            <option value="mandiri">Mandiri</option>
-                            <option value="gopay">Gopay</option>
-                            <option value="ovo">Ovo</option>
+                            <option value="BCA">Bank BCA</option>
+                            {{-- <option value="gopay">Gopay</option>
+                            <option value="ovo">Ovo</option> --}}
                         </x-form.select>
-                        <x-form.input title="Date Transfer" name="date_transfer" value="" placeholder="" type="date" />
+                        <x-form.input title="Tanggal Transfer" name="date_transfer" value="" placeholder="" type="date" />
                         <x-form.input title="Total Price" name="" value="Rp. {{ number_format($grandTotal) }}"
                             placeholder="" type="text" disabled />
                         <x-button.button-save icon="check" title="Confirmation"

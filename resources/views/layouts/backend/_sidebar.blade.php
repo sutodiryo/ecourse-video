@@ -4,7 +4,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <a href="/" class="navbar-brand navbar-brand-autodark">
-            <h2 class="font-weight-bold text-azure"><span class="text-red">M1T</span> Course</h2>
+            <h2 class="font-weight-bold text-azure"><span class="text-red">MBC</span> Course</h2>
             {{-- <h2 class="font-weight-bold text-azure">We<span class="text-red">Learn</span></h2> --}}
         </a>
         <div class="navbar-nav flex-row d-lg-none">
@@ -98,25 +98,42 @@
                         <a class="nav-link {{ Route::is('admin.series*') ? 'active' : '' }}"
                             href="{{ route('admin.series.index') }}">
                             <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-video icon-video"
-                                {{-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-video" --}}
-                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
-                                    stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <circle cx="14" cy="17" r="3"></circle>
-                                    <path d="M17 17v-13h4"></path>
-                                    <path d="M13 5h-10"></path>
-                                    <line x1="3" y1="9" x2="13" y2="9"></line>
-                                    <path d="M9 13h-6"></path>
-                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
+                                    <path d="M10 9l5 3l-5 3z" />
+                                  </svg>
+                                {{-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-video">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M15 10l4.553 -2.276a1 1 0 0 1 1.447 .894v6.764a1 1 0 0 1 -1.447 .894l-4.553 -2.276v-4z" />
+                                    <path d="M3 6m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
+                                  </svg> --}}
                             </span>
                             <span class="nav-link-title">
-                                Class
+                                Series
                             </span>
                         </a>
                     </li>
-                    <div class="hr-text hr-text-left ml-2 mb-2 mt-3">User Management</div>
+
                     <li class="nav-item">
+                        <a class="nav-link {{ Route::is('admin.frontend*') ? 'active' : '' }}"
+                            href="{{ route('admin.frontend.index') }}">
+                            <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-view-360">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                                    <path d="M12 12m-4 0a4 9 0 1 0 8 0a4 9 0 1 0 -8 0" />
+                                    <path d="M3 12c0 2.21 4.03 4 9 4s9 -1.79 9 -4s-4.03 -4 -9 -4s-9 1.79 -9 4z" />
+                                  </svg>
+                            </span>
+                            <span class="nav-link-title">
+                                Front End
+                            </span>
+                        </a>
+                    </li>
+
+                    <div class="hr-text hr-text-left ml-2 mb-2 mt-3">User Management</div>
+                    {{-- <li class="nav-item">
                         <a class="nav-link {{ Route::is('admin.roles*') ? 'active' : '' }}"
                             href="{{ route('admin.roles.index') }}">
                             <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
@@ -153,7 +170,7 @@
                                 Permissions
                             </span>
                         </a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link {{ Route::is('admin.users*') ? 'active' : '' }}"
                             href="{{ route('admin.users.index') }}">

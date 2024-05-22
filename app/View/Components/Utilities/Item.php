@@ -6,17 +6,17 @@ use Illuminate\View\Component;
 
 class Item extends Component
 {
-    public $date, $level, $status, $episode, $members;
+    public $date, $episode, $members;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($date, $level, $status, $episode, $members)
+    public function __construct($date, $episode, $members)
     {
         $this->date = $date;
-        $this->level = $level;
-        $this->status = $status;
+        // $this->level = $level;
+        // $this->status = $status;
         $this->episode = $episode;
         $this->members = $members;
     }

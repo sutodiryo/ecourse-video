@@ -48,7 +48,7 @@
                 </x-utilities.widget>
             </div>
             <div class="col-md-6 col-lg-3">
-                <x-utilities.widget title="Profits" subTitle="Rp. {{ number_format($profits) }}" class="bg-teal">
+                <x-utilities.widget title="Income" subTitle="Rp. {{ number_format($income) }}" class="bg-teal">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-coin" width="24" height="24"
                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                         stroke-linejoin="round">

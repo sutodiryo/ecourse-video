@@ -24,7 +24,7 @@
                             @foreach ($transactions as $i => $transaction)
                                 <tr>
                                     <td class="text-muted">{{ $i + $transactions->firstItem() }}</td>
-                                    <td class="text-primary">{{ $transaction->invoice }}</td>
+                                    <td class="text-primary"><a href="{{ route('admin.transactions.show', $transaction->invoice) }}">{{ $transaction->invoice }}</a></td>
                                     <td class="text-muted">{{ $transaction->name_of_bank }}</td>
                                     <td class="text-muted">{{ $transaction->bank_transfer }}</td>
                                     <td class="text-muted">{{ $transaction->method_of_payment }}</td>

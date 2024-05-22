@@ -3,16 +3,47 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
+            <a href=".">
+                <img src="{{ asset('static/mbc-asal.png') }}" width="110" height="32" alt="" class="navbar-brand-image">
+                {{-- <img src="./static/logo.svg" width="110" height="32" alt="Tabler" class="navbar-brand-image"> --}}
+            </a>
+        </h1>
         {{-- <a href="#" class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pr-0 pr-md-3">
             <img src="{{ asset('static/logo.svg') }}" alt="Tabler" class="navbar-brand-image">
         </a> --}}
-        <a href="/" class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pr-0 pr-md-3 mt-2">
-            <h2 class="font-weight-bold text-azure">We<span class="text-red">Learn</span></h2>
-        </a>
+        {{-- <a href="/" class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pr-0 pr-md-3 mt-2">
+            <h2 class="font-weight-bold text-azure">MBC<span class="text-red"> Course</span></h2>
+        </a> --}}
         <div class="navbar-nav flex-row order-md-last">
             @guest
-                <a href="{{ route('login') }}" class="nav-item mr-2">Login</a>
-                <a href="{{ route('register') }}" class="nav-item">Register</a>
+                <div class="btn-list">
+                    <a href="{{ route('login') }}" class="btn btn-pill btn-outline-success" rel="noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-login-2">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M9 8v-2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2" />
+                            <path d="M3 12h13l-3 -3" />
+                            <path d="M13 15l3 -3" />
+                        </svg>
+                        Masuk
+                    </a>
+                    <a href="{{ route('register') }}" class="btn btn-pill btn-outline-primary" rel="noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                            <path d="M16 19h6" />
+                            <path d="M19 16v6" />
+                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4" />
+                        </svg>
+                        Daftar
+                    </a>
+                </div>
+                {{-- <a href="{{ route('login') }}" class="nav-item mr-2">Login</a>
+                <a href="{{ route('register') }}" class="nav-item">Register</a> --}}
             @endguest
             @auth
                 <div class="nav-item dropdown d-none d-md-flex mr-3">
@@ -71,8 +102,8 @@
                         <a class="dropdown-item" href="{{ route('logout') }}"
                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon dropdown-item-icon" width="24"
-                                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round">
+                                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z"></path>
                                 <path d="M7 6a7.75 7.75 0 1 0 10 0"></path>
                                 <line x1="12" y1="4" x2="12" y2="12"></line>
@@ -132,7 +163,7 @@
                         </span>
                     </a>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a class="nav-link" href="{{ route('articles') }}">
                         <span class="nav-link-icon d-md-none d-lg-inline-block">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-news"
@@ -151,7 +182,94 @@
                             Articles
                         </span>
                     </a>
-                </li>
+                </li> --}}
+
+
+                @auth
+
+                    <li class="nav-item">
+                        <a class="nav-link {{ Route::is('member.dashboard') ? 'active' : '' }}"
+                            href="{{ route('member.dashboard') }}">
+                            <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-layout-dashboard" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M4 4h6v8h-6z"></path>
+                                    <path d="M4 16h6v4h-6z"></path>
+                                    <path d="M14 12h6v8h-6z"></path>
+                                    <path d="M14 4h6v4h-6z"></path>
+                                </svg>
+                            </span>
+                            <span class="nav-link-title">
+                                Dashboard
+                            </span>
+                        </a>
+                    </li>
+
+                    {{-- <li class="nav-item">
+                        <a class="nav-link {{ Route::is('member.series*') ? 'active' : '' }}"
+                            href="{{ route('member.series.index') }}">
+                            <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-playlist"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <circle cx="14" cy="17" r="3"></circle>
+                                    <path d="M17 17v-13h4"></path>
+                                    <path d="M13 5h-10"></path>
+                                    <line x1="3" y1="9" x2="13" y2="9"></line>
+                                    <path d="M9 13h-6"></path>
+                                </svg>
+                            </span>
+                            <span class="nav-link-title">
+                                My Series
+                            </span>
+                        </a>
+                    </li> --}}
+
+                    <li class="nav-item">
+                        <a class="nav-link {{ Route::is('member.transactions*') ? 'active' : '' }}"
+                            href="{{ route('member.transactions.index') }}">
+                            <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cash"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <rect x="7" y="9" width="14" height="10" rx="2">
+                                    </rect>
+                                    <circle cx="14" cy="14" r="2"></circle>
+                                    <path d="M17 9v-2a2 2 0 0 0 -2 -2h-10a2 2 0 0 0 -2 2v6a2 2 0 0 0 2 2h2"></path>
+                                </svg>
+                            </span>
+                            <span class="nav-link-title">
+                                Transactions
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link {{ Route::is('member.profile*') ? 'active' : '' }}"
+                            href="{{ route('member.profile.index') }}">
+                            <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                    <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path>
+                                </svg>
+                            </span>
+                            <span class="nav-link-title">
+                                Profile
+                            </span>
+                        </a>
+                    </li>
+
+                @endauth
+
             </ul>
             {{-- <div class="my-2 my-md-0 flex-grow-1 flex-md-grow-0 order-first order-md-last">
                 <form action="." method="get">

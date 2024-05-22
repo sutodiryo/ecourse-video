@@ -11,7 +11,7 @@ Dark mode
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600;700&display=swap");
 :root {
   --blue: #206bc4;
-  --azure: #45aaf2;
+  --azure: #ad3737;
   --indigo: #6574cd;
   --purple: #a55eea;
   --pink: #f66d9b;
@@ -29,7 +29,7 @@ Dark mode
   --primary: #206bc4;
   --secondary: #6e7582;
   --success: #5eba00;
-  --info: #45aaf2;
+  --info: #ad3737;
   --warning: #fab005;
   --danger: #cd201f;
   --light: #f5f7fb;
@@ -2509,8 +2509,8 @@ progress {
 
 .btn-info {
   color: #ffffff;
-  background-color: #45aaf2;
-  border-color: #45aaf2; }
+  background-color: #ad3737;
+  border-color: #ad3737; }
   .btn-info:hover {
     color: #ffffff;
     background-color: #219af0;
@@ -2530,8 +2530,8 @@ progress {
       box-shadow: 0 0 0 0.2rem rgba(97, 183, 244, 0.5); }
   .btn-info:disabled, .btn-info.disabled {
     color: #ffffff;
-    background-color: #45aaf2;
-    border-color: #45aaf2; }
+    background-color: #ad3737;
+    border-color: #ad3737; }
 
 .btn-warning {
   color: #ffffff;
@@ -2695,22 +2695,22 @@ progress {
     background-color: transparent; }
 
 .btn-outline-info {
-  color: #45aaf2;
-  border-color: #45aaf2; }
+  color: #ad3737;
+  border-color: #ad3737; }
   .btn-outline-info:hover {
     color: #ffffff;
-    background-color: #45aaf2;
-    border-color: #45aaf2; }
+    background-color: #ad3737;
+    border-color: #ad3737; }
   .btn-outline-info:focus, .btn-outline-info.focus {
     box-shadow: 0 0 0 0.2rem rgba(69, 170, 242, 0.5); }
   .btn-outline-info:active, .btn-outline-info.active, .btn-outline-info.dropdown-toggle.show {
     color: #ffffff;
-    background-color: #45aaf2;
-    border-color: #45aaf2; }
+    background-color: #ad3737;
+    border-color: #ad3737; }
     .btn-outline-info:active:focus, .btn-outline-info.active:focus, .btn-outline-info.dropdown-toggle.show:focus {
       box-shadow: 0 0 0 0.2rem rgba(69, 170, 242, 0.5); }
   .btn-outline-info:disabled, .btn-outline-info.disabled {
-    color: #45aaf2;
+    color: #ad3737;
     background-color: transparent; }
 
 .btn-outline-warning {
@@ -4612,7 +4612,7 @@ button.close {
     color: #376e00; }
 
 .link-info {
-  color: #45aaf2; }
+  color: #ad3737; }
   .link-info:hover, .link-info:focus {
     color: #0f86db; }
 
@@ -4883,7 +4883,7 @@ button.close {
   border-color: #5eba00 !important; }
 
 .border-info {
-  border-color: #45aaf2 !important; }
+  border-color: #ad3737 !important; }
 
 .border-warning {
   border-color: #fab005 !important; }
@@ -5615,7 +5615,7 @@ button.close {
   color: #5eba00 !important; }
 
 .text-info {
-  color: #45aaf2 !important; }
+  color: #ad3737 !important; }
 
 .text-warning {
   color: #fab005 !important; }
@@ -5669,7 +5669,7 @@ button.close {
   background-color: #5eba00 !important; }
 
 .bg-info {
-  background-color: #45aaf2 !important; }
+  background-color: #ad3737 !important; }
 
 .bg-warning {
   background-color: #fab005 !important; }
@@ -10689,7 +10689,7 @@ Dimmer
   .ribbon.bg-blue-lt {
     border-color: #d2e1f3 !important; }
   .ribbon.bg-azure {
-    border-color: #45aaf2; }
+    border-color: #ad3737; }
   .ribbon.bg-azure-lt {
     border-color: #daeefc !important; }
   .ribbon.bg-indigo {
@@ -10875,11 +10875,11 @@ Dimmer
 
 .steps-azure .step-item:after, .steps-azure .step-item:before {
   color: #ffffff;
-  background: #45aaf2; }
+  background: #ad3737; }
 
 .steps-azure .step-item.active:before {
   color: inherit;
-  border-color: #45aaf2; }
+  border-color: #ad3737; }
 
 .steps-indigo .step-item:after, .steps-indigo .step-item:before {
   color: #ffffff;
@@ -11589,13 +11589,13 @@ SOCIAL COLORS
   background: #d2e1f3 !important; }
 
 .bg-azure {
-  background: #45aaf2; }
+  background: #ad3737; }
 
 .text-azure {
-  color: #45aaf2 !important; }
+  color: #ad3737 !important; }
 
 .bg-azure-lt {
-  color: #45aaf2 !important;
+  color: #ad3737 !important;
   background: #daeefc !important; }
 
 .bg-indigo {

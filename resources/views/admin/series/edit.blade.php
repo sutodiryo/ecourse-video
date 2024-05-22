@@ -32,10 +32,10 @@
                         <img src="{{ $series->cover }}" alt="{{ $series->name }}" class="img-fluid mb-3 " width="20%" />
                         <x-form.input type="file" title="Series cover" name="cover" value="{{ $series->cover }}"
                             placeholder="" />
-                        <x-form.textarea title="Series Description" name="description" placeholder="">
-                            {{ $series->description }}
-                        </x-form.textarea>
-                        <div class="row">
+                        <x-form.tinymce title="Series Description" name="description" placeholder="">
+                            {!! $series->description !!}
+                        </x-form.tinymce>
+                        {{-- <div class="row">
                             <div class="col-6">
                                 <x-form.select-group title="Series Level">
                                     <label class="form-selectgroup-item">
@@ -75,7 +75,7 @@
                                     </label>
                                 </x-form.checkbox>
                             </div>
-                        </div>
+                        </div> --}}
                         <x-button.button-save title="Save" icon="save" class="btn-primary" />
                         <x-button.button-link class="btn btn-dark text-white" title="Go Back" icon="arrow-left"
                             url="{{ route('admin.series.index') }}">

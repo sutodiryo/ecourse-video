@@ -30,11 +30,16 @@ class DashboardController extends Controller
         // count all series
         $series = Series::count();
         // sum all transaction
-        $profits = TransactionDetail::sum('grand_total');
+        $income = TransactionDetail::whereHas('transaction', function ($q) {
+            $q->where('status', 1);
+        })->sum('grand_total');
+
+        $expense = 0;
+        $profits = $income - $expense;
         // call method bestSeries from Trait HasSeries
         $bestSeries = $this->bestSeries();
 
         // return view
-        return view('admin.dashboard', compact('transactionVerified', 'members', 'series', 'profits', 'bestSeries'));
+        return view('admin.dashboard', compact('transactionVerified', 'members', 'series', 'income', 'bestSeries'));
     }
 }

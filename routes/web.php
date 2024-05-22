@@ -78,7 +78,18 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.',  'middleware' => ['auth', '
         Route::delete('delete/{video:id}', 'destroy')->name('videos.destroy');
         // edit videos
         Route::get('edit/{series:slug}/{video:video_code}', 'edit')->name('videos.edit');
-        Route::put('{series:slug}/{video:video_code}', 'upda')->name('videos.update');
+        Route::put('{series:slug}/{video:video_code}', 'update')->name('videos.update');
+    });
+
+    Route::controller(App\Http\Controllers\Admin\FrontendController::class)->prefix('frontend')->group(function(){
+        // add videos by slug series
+        Route::get('/', 'index')->name('frontend.index');
+        // Route::post('add/{series:slug}', 'store')->name('frontend.store');
+        // delete videos
+        // Route::delete('delete/{video:id}', 'destroy')->name('videos.destroy');
+        // edit videos
+        // Route::get('edit/{series:slug}/{video:video_code}', 'edit')->name('videos.edit');
+        Route::put('{id}', 'update')->name('frontend.update');
     });
     // route users
     Route::resource('users', App\Http\Controllers\Admin\UserController::class)->only('index', 'update');
@@ -88,6 +99,11 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.',  'middleware' => ['auth', '
     Route::resource('permissions', App\Http\Controllers\Admin\PermissionController::class);
     // route transactions
     Route::resource('transactions', App\Http\Controllers\Admin\TransactionController::class);
+
+    Route::controller(App\Http\Controllers\Admin\TransactionController::class)->prefix('transactions')->group(function(){
+        Route::get('/', 'index')->name('transactions.index');
+        Route::get('{transaction:invoice}', 'show')->name('transactions.show');
+    });
 });
 
 

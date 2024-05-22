@@ -1,4 +1,4 @@
-@extends('layouts.backend.master')
+@extends('layouts.frontend.master')
 
 @section('title', 'Transaction Details')
 

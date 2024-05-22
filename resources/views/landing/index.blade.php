@@ -1,1640 +1,1000 @@
-<html lang="zxx">
+@extends('layouts.arsha.master')
 
-<head>
-	<title>Necromancers - eSports Team &amp; Gaming HTML Template</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="eSports Team &amp; Gaming HTML Template">
-	<meta name="author" content="Dan Fisher">
-	<meta name="keywords" content="esports team news HTML template">
-	<link rel="shortcut icon" href="{{ asset('front-end/img/favicons/favicon.ico') }}">
-	<link rel="apple-touch-icon" sizes="120x120" href="{{ asset('front-end/img/favicons/favicon-120.png') }}">
-	<link rel="apple-touch-icon" sizes="152x152" href="{{ asset('front-end/img/favicons/favicon-152.png') }}"><!-- Mobile Specific Metas
-	================================================== -->
-	<meta name="viewport" content="width=device-width,initial-scale=1"><!-- Google Web Fonts
-	================================================== -->
-	<link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700" rel="stylesheet"><!-- CSS
-	================================================== --><!-- Vendor CSS -->
-	<link href="{{ asset('front-end/vendor/magnific-popup/css/magnific-popup.css') }}" rel="stylesheet">
-	<link href="{{ asset('front-end/vendor/slick/css/slick.css') }}" rel="stylesheet">
-	<link href="{{ asset('front-end/vendor/nanoscroller/css/nanoscroller.css') }}" rel="stylesheet">
-	<link href="{{ asset('front-end/vendor/fontawesome/css/brands.css') }}" rel="stylesheet"><!-- Template CSS-->
-	<link href="{{ asset('front-end/css/style.css') }}" rel="stylesheet"><!-- Custom CSS-->
-	<link href="{{ asset('front-end/css/custom.css') }}" rel="stylesheet">
-</head>
+@section('title', 'Homepage')
 
-<body class="site-layout--horizontal preloader-is--active">
-	<div class="site-wrapper"><!-- Header
-		================================================== -->
-		<header id="header" class="site-header site-header--bottom"><!-- Logo - Image Based -->
-			<div class="header-logo header-logo--img"><a href="index-2.html"><img src="{{ asset('front-end/img/logo.png') }}"
-						srcset="{{ public_path('front-end/img/logo@2x.png 2x') }}" alt="Necromancers"></a></div>
-			<!-- Logo - Image Based / End --><!-- Main Navigation -->
-			<nav class="main-nav">
-				<ul class="main-nav__list">
-					<li class=""><a href="home.html">Home</a></li>
-					<li class=""><a href="#">Teams</a>
-						<ul class="main-nav__sub">
-							<li class=""><a href="#">Team Selections</a>
-								<ul class="main-nav__sub main-nav__sub--dropup">
-									<li class=""><a href="team-selection-1.html">Team Selection v1</a></li>
-									<li class=""><a href="team-selection-2.html">Team Selection v2</a></li>
-									<li class=""><a href="team-selection-3.html">Team Selection v3</a></li>
-									<li class=""><a href="team-selection-4.html">Team Selection v4</a></li>
-								</ul>
-							</li>
-							<li class=""><a href="team-overview.html">Team Overview</a>
-								<ul class="main-nav__sub">
-									<li class=""><a href="team-overview.html">Team Overview v1</a></li>
-									<li class=""><a href="team-overview-2.html">Team Overview v2</a></li>
-								</ul>
-							</li>
-							<li class=""><a href="team-player-1.html">Player Page</a></li>
-						</ul>
-					</li>
-					<li class=""><a href="#">Matches</a>
-						<ul class="main-nav__sub">
-							<li class=""><a href="matches-scores.html">Match Scores</a></li>
-							<li class=""><a href="matches-upcoming.html">Upcoming Matches</a></li>
-							<li class=""><a href="matches-standings.html">Standings</a></li>
-							<li class=""><a href="#">Match Stats</a>
-								<ul class="main-nav__sub">
-									<li class=""><a href="matches-stats-1.html">Match Stats v1</a></li>
-									<li class=""><a href="matches-stats-2.html">Match Stats v2</a></li>
-									<li class=""><a href="matches-stats-3.html">Match Stats v3</a></li>
-								</ul>
-							</li>
-							<li class=""><a href="#">Match Lineups</a>
-								<ul class="main-nav__sub">
-									<li class=""><a href="matches-lineups-1.html">Match Lineups v1</a></li>
-									<li class=""><a href="matches-lineups-2.html">Match Lineups v2</a></li>
-									<li class=""><a href="matches-lineups-3.html">Match Lineups v3</a></li>
-								</ul>
-							</li>
-							<li class=""><a href="#">Match Overviews</a>
-								<ul class="main-nav__sub">
-									<li class=""><a href="matches-overview-1.html">Match Overview v1</a></li>
-									<li class=""><a href="matches-overview-2.html">Match Overview v2</a></li>
-								</ul>
-							</li>
-							<li class=""><a href="matches-replay.html">Match Replay</a></li>
-						</ul>
-					</li>
-					<li class=""><a href="#">News</a>
-						<ul class="main-nav__sub">
-							<li class=""><a href="blog-1.html">News v1</a></li>
-							<li class=""><a href="blog-2.html">News v2</a></li>
-							<li class=""><a href="blog-3.html">News v3</a></li>
-							<li class=""><a href="blog-4.html">News v4</a></li>
-							<li class=""><a href="blog-classic.html">News Classic <span
-										class="badge badge-danger">New</span></a></li>
-							<li class=""><a href="blog-post.html">Post Page</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Features</a>
-						<div class="main-nav__megamenu">
-							<div class="row">
-								<div class="col-md-4">
-									<h6 class="main-nav__title">Main Pages</h6>
-									<div class="row">
-										<ul class="col-md-4">
-											<li class=""><a href="index-2.html">Landing Image</a></li>
-											<li class=""><a href="index-3.html">Landing Video</a></li>
-											<li class=""><a href="blog-1.html">News v1</a></li>
-											<li class=""><a href="blog-2.html">News v2</a></li>
-											<li class=""><a href="blog-3.html">News v3</a></li>
-											<li class=""><a href="blog-4.html">News v4</a></li>
-											<li class=""><a href="blog-classic.html">News Classic <span
-														class="badge badge-danger">New</span></a></li>
-										</ul>
-										<ul class="col-md-4">
-											<li class=""><a href="shop-account-settings.html">Account Settings</a></li>
-											<li class=""><a href="shop-account-orders.html">Account Orders</a></li>
-											<li class=""><a href="login-register.html">Login & Register</a></li>
-											<li class=""><a href="features-about-us.html">About Us</a></li>
-											<li class=""><a href="features-contact-us.html">Contact Us</a></li>
-											<li class=""><a href="features-faqs.html">FAQs</a></li>
-										</ul>
-										<ul class="col-md-4">
-											<li class=""><a href="management-and-staff.html">MGMT & Staff</a></li>
-											<li class=""><a href="streams-archive.html">Streams Page</a></li>
-											<li class=""><a href="partners.html">Our Partners</a></li>
-											<li class=""><a href="features-shortcodes.html">Shortcodes</a></li>
-											<li class=""><a href="features-typography.html">Typography</a></li>
-											<li class=""><a href="features-icons.html">Icons <span
-														class="badge badge-danger">New</span></a></li>
-											<li class=""><a href="features-bg-1.html">Backgrounds</a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="row">
-										<h6 class="col-md-8 main-nav__title">Team Pages</h6>
-										<h6 class="col-md-4 main-nav__title">Player Pages</h6>
-									</div>
-									<div class="row">
-										<ul class="col-md-4">
-											<li class=""><a href="team-selection-1.html">Team Selection v1</a></li>
-											<li class=""><a href="team-selection-2.html">Team Selection v2</a></li>
-											<li class=""><a href="team-selection-3.html">Team Selection v3</a></li>
-											<li class=""><a href="team-selection-4.html">Team Selection v4</a></li>
-											<li class=""><a href="team-overview.html">Team Overview v1</a></li>
-											<li class=""><a href="team-overview-2.html">Team Overview v2</a></li>
-										</ul>
-										<ul class="col-md-4">
-											<li><a href="team-overviewbc83.html?slide=1">Team Statistics</a></li>
-											<li><a href="team-overviewe57f.html?slide=2">Team Achv</a></li>
-											<li><a href="team-overview0c37.html?slide=3">Team Matches</a></li>
-										</ul>
-										<ul class="col-md-4">
-											<li><a href="team-player-1.html">Player Overview</a></li>
-											<li><a href="team-player-1bc83.html?slide=1">Player Statistics</a></li>
-											<li><a href="team-player-1e57f.html?slide=2">Player Achv</a></li>
-											<li><a href="team-player-10c37.html?slide=3">Player Hardware</a></li>
-											<li><a href="team-player-11438.html?slide=4">Player Stream</a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="row">
-										<h6 class="col-md-8 main-nav__title">Match Pages</h6>
-										<h6 class="col-md-4 main-nav__title">Shop Pages</h6>
-									</div>
-									<div class="row">
-										<ul class="col-md-4">
-											<li class=""><a href="matches-scores.html">Match Scores</a></li>
-											<li class=""><a href="matches-upcoming.html">Upcoming Matches</a></li>
-											<li class=""><a href="matches-standings.html">Standings</a></li>
-											<li class=""><a href="matches-overview-1.html">Overview v1</a></li>
-											<li class=""><a href="matches-overview-2.html">Overview v2</a></li>
-											<li class=""><a href="matches-stats-1.html">Match Stats v1</a></li>
-										</ul>
-										<ul class="col-md-4">
-											<li class=""><a href="matches-stats-2.html">Match Stats v2</a></li>
-											<li class=""><a href="matches-stats-3.html">Match Stats v3</a></li>
-											<li class=""><a href="matches-lineups-1.html">Match Lineups v1</a></li>
-											<li class=""><a href="matches-lineups-2.html">Match Lineups v2</a></li>
-											<li class=""><a href="matches-lineups-3.html">Match Lineups v3</a></li>
-											<li class=""><a href="matches-replay.html">Match Replay</a></li>
-										</ul>
-										<ul class="col-md-4">
-											<li class="active"><a href="shop.html">Shop Page v1</a></li>
-											<li class=""><a href="shop-2.html">Shop Page v2</a></li>
-											<li class=""><a href="shop-product.html">Product Page</a></li>
-											<li class=""><a href="shop-checkout.html">Checkout Page</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="active"><a href="#">Shop</a>
-						<ul class="main-nav__sub">
-							<li class="active"><a href="shop.html">Shop Page v1</a></li>
-							<li class=""><a href="shop-2.html">Shop Page v2</a></li>
-							<li class=""><a href="shop-product.html">Product Page</a></li>
-							<li class=""><a href="shop-checkout.html">Checkout Page</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav><!-- Main Navigation / End --><!-- Header Actions -->
-			<div class="header-actions">
-				<div class="header-pagination"><a href="#" class="header-scroll-arrow header-scroll-arrow--left"><svg
-							role="img" class="df-icon df-icon--left-arrow">
-							<use xlink:href="{{ asset('front-end/img/necromancers.svg#left-arrow') }}" />
-						</svg></a>
-					<ol class="header-pagination--list">
-						<li><a href="#">01</a></li>
-						<li><a href="#">02</a></li>
-						<li><span>...</span></li>
-						<li><a href="#">08</a></li>
-					</ol><a href="#" class="header-scroll-arrow header-scroll-arrow--right"><svg role="img"
-							class="df-icon df-icon--right-arrow">
-							<use xlink:href="{{ asset('front-end/img/necromancers.svg#right-arrow') }}" />
-						</svg></a>
-				</div>
-				<div class="header-filter-toggle"><svg role="img" class="df-icon df-icon--filter">
-						<use xlink:href="{{ asset('front-end/img/necromancers.svg#filter') }}" />
-					</svg>
-					<div class="filter-menu">
-						<form action="#" class="filter-menu__form">
-							<div class="filter-menu__select"><label class="filter-menu__label">Category</label> <select
-									class="cs-select">
-									<option value="" selected="selected">All Categories</option>
-									<option value="">Esports</option>
-									<option value="">Gaming</option>
-									<option value="">Videos</option>
-								</select></div>
-							<div class="filter-menu__select"><label class="filter-menu__label">Filter By</label> <select
-									class="cs-select">
-									<option value="" selected="selected">Article Date</option>
-									<option value="">Comments</option>
-									<option value="">Popularity</option>
-								</select></div>
-							<div class="filter-menu__select"><label class="filter-menu__label">Order</label> <select
-									class="cs-select">
-									<option value="" selected="selected">Ascending</option>
-									<option value="">Descending</option>
-								</select></div>
-							<div class="filter-menu__submit"><button type="submit"
-									class="btn btn-primary btn-sm btn-block">Filter News</button></div>
-						</form>
-					</div>
-				</div>
-				<div class="header-top-bar-toggle d-md-none hide"><svg role="img" class="df-icon df-icon--joystick">
-						<use xlink:href="{{ asset('front-end/img/necromancers.svg#joystick') }}" />
-					</svg> <svg role="img" class="df-icon df-icon--close">
-						<use xlink:href="{{ asset('front-end/img/necromancers.svg#close') }}" />
-					</svg></div>
-				<div class="header-social-toggle d-none d-md-block"><svg role="img" class="df-icon df-icon--thumb-up">
-						<use xlink:href="{{ asset('front-end/img/necromancers.svg#thumb-up') }}" />
-					</svg> <span class="header-social-toggle__plus">&nbsp;</span>
-					<ul class="social-menu social-menu--header">
-						<li><a href="https://discord.gg/xxxx') }}"><span class="link-subtitle">Discord</span>Necrochat</a>
-						</li>
-						<li><a href="https://twitch.tv/"><span class="link-subtitle">Twitch</span>Necroplay</a></li>
-						<li><a href="https://twitter.com/danfisher_dev"><span
-									class="link-subtitle">Twitter</span>Necrotwt</a></li>
-						<li><a href="https://www.facebook.com/danfisher.dev/"><span
-									class="link-subtitle">Facebook</span>Necrogame</a></li>
-					</ul>
-				</div>
-				<div class="header-cart-toggle"><svg role="img" class="df-icon df-icon--bag">
-						<use xlink:href="{{ asset('front-end/img/necromancers.svg#bag') }}" />
-					</svg> <svg role="img" class="df-icon df-icon--close">
-						<use xlink:href="{{ asset('front-end/img/necromancers.svg#close') }}" />
-					</svg> <span class="header-cart-toggle__items-count">4</span></div>
-				<div class="header-search-toggle"><svg role="img" class="df-icon df-icon--search">
-						<use xlink:href="{{ asset('front-end/img/necromancers.svg#search') }}" />
-					</svg> <svg role="img" class="df-icon df-icon--search-close">
-						<use xlink:href="{{ asset('front-end/img/necromancers.svg#search-close') }}" />
-					</svg></div>
-				<div class="header-account hide">
-					<div class="header-account__avatar"><img src="{{ asset('front-end/img/samples/account-user-avatar.jpg') }}"
-							srcset="{{ public_path('front-end/img/samples/account-user-avatar@2x.jpg 2x') }}" alt=""></div>
-					<div class="header-account__body">Hello!<div class="header-account__name">James Spiegel</div>
-					</div>
-					<div class="header-account__icon"><a href="shop-account-settings.html"><svg role="img"
-								class="df-icon df-icon--account">
-								<use xlink:href="{{ asset('front-end/img/necromancers.svg#account') }}" />
-							</svg> </a><a href="login-register.html"><svg role="img" class="df-icon df-icon--logout">
-								<use xlink:href="{{ asset('front-end/img/necromancers.svg#logout') }}" />
-							</svg></a></div>
-				</div>
-				<div class="header-menu-toggle">
-					<div class="header-menu-toggle__inner"><span>&nbsp;</span> <span>&nbsp;</span> <span>&nbsp;</span>
-					</div>
-				</div>
-			</div><!-- Header Actions / End -->
-		</header><!-- Header / End --><!-- Content
-		================================================== -->
-		<main class="site-content" id="wrapper">
-			<div class="widget-area widger-area--before-loop">
-				<div class="widget widget-featured-product bg-image bg--ph-03">
-					<div class="widget__subtitle">Featured Item</div>
-					<h1 class="widget__title h2"><span class="color-primary">Necromancers</span> men's t-shirt</h1>
-					<div class="widget__thumbnail"><img class=""
-							src="{{ asset('front-end/img/samples/widget-featured-product-img-01.png') }}" alt="">
-						<div class="widget__price"><a class="add-icon" href="shop-product.html"></a>
-							<div class="widget__price-label">Get it for</div>
-							<div class="widget__price-count">$<span class="color-primary">24.99</span></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="content shop-layout--style-1">
-				<article class="product">
-					<div class="product__thumbnail"><a href="shop-product.html"><img
-								src="{{ asset('front-end/img/samples/product-img-01.png') }}" alt=""></a></div>
-					<div class="product__body">
-						<div class="product__header">
-							<ul class="product__cats list-unstyled">
-								<li class="product__cats-item color-warning"><a href="#">Framed prints</a></li>
-							</ul>
-							<h2 class="product__title h4"><a href="shop-product.html">Magimons black framed print</a>
-							</h2>
-							<ul class="product__meta list-unstyled">
-								<li class="product__meta-item product__price">$38.00</li>
-								<li class="product__meta-item product__ratings">
-									<div class="fas star-rating"><span style="width: 80%;">&nbsp;</span></div>
-								</li>
-							</ul>
-						</div>
-						<div class="product__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-							eiusmod tempor incididunt ut labore...</div><a href="shop-product.html"
-							class="btn btn-secondary">Add to cart +</a>
-					</div>
-				</article>
-				<article class="product">
-					<div class="product__thumbnail"><a href="shop-product.html"><img
-								src="{{ asset('front-end/img/samples/product-img-02.png') }}" alt=""></a></div>
-					<div class="product__body">
-						<div class="product__header">
-							<ul class="product__cats list-unstyled">
-								<li class="product__cats-item color-warning"><a href="#">Coffee mugs</a></li>
-							</ul>
-							<h2 class="product__title h4"><a href="shop-product.html">Necromancers ennamel mug</a></h2>
-							<ul class="product__meta list-unstyled">
-								<li class="product__meta-item product__price">$16.00</li>
-								<li class="product__meta-item product__ratings">
-									<div class="fas star-rating"><span style="width: 60%;">&nbsp;</span></div>
-								</li>
-							</ul>
-						</div>
-						<div class="product__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-							eiusmod tempor incididunt ut labore...</div><a href="shop-product.html"
-							class="btn btn-secondary">Add to cart +</a>
-					</div>
-				</article>
-				<article class="product">
-					<div class="product__thumbnail"><a href="shop-product.html"><img
-								src="{{ asset('front-end/img/samples/product-img-03.png') }}" alt=""></a></div>
-					<div class="product__body">
-						<div class="product__header">
-							<ul class="product__cats list-unstyled">
-								<li class="product__cats-item color-warning"><a href="#">Clothing</a></li>
-							</ul>
-							<h2 class="product__title h4"><a href="shop-product.html">Necromancers women&#x27;s
-									t-shirt</a></h2>
-							<ul class="product__meta list-unstyled">
-								<li class="product__meta-item product__price">$24.99</li>
-								<li class="product__meta-item product__ratings">
-									<div class="fas star-rating"><span style="width: 100%;">&nbsp;</span></div>
-								</li>
-							</ul>
-						</div>
-						<div class="product__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-							eiusmod tempor incididunt ut labore...</div><a href="shop-product.html"
-							class="btn btn-secondary">Add to cart +</a>
-					</div>
-				</article>
-				<article class="product">
-					<div class="product__thumbnail"><a href="shop-product.html"><img
-								src="{{ asset('front-end/img/samples/product-img-04.png') }}" alt=""></a></div>
-					<div class="product__body">
-						<div class="product__header">
-							<ul class="product__cats list-unstyled">
-								<li class="product__cats-item color-warning"><a href="#">Framed prints</a></li>
-							</ul>
-							<h2 class="product__title h4"><a href="shop-product.html">Guardians white frame print</a>
-							</h2>
-							<ul class="product__meta list-unstyled">
-								<li class="product__meta-item product__price">$32.00</li>
-								<li class="product__meta-item product__ratings">
-									<div class="fas star-rating"><span style="width: 80%;">&nbsp;</span></div>
-								</li>
-							</ul>
-						</div>
-						<div class="product__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-							eiusmod tempor incididunt ut labore...</div><a href="shop-product.html"
-							class="btn btn-secondary">Add to cart +</a>
-					</div>
-				</article>
-				<article class="product">
-					<div class="product__thumbnail"><a href="shop-product.html"><img
-								src="{{ asset('front-end/img/samples/product-img-01.png') }}" alt=""></a></div>
-					<div class="product__body">
-						<div class="product__header">
-							<ul class="product__cats list-unstyled">
-								<li class="product__cats-item color-warning"><a href="#">Framed prints</a></li>
-							</ul>
-							<h2 class="product__title h4"><a href="shop-product.html">Magimons black framed print</a>
-							</h2>
-							<ul class="product__meta list-unstyled">
-								<li class="product__meta-item product__price">$38.00</li>
-								<li class="product__meta-item product__ratings">
-									<div class="fas star-rating"><span style="width: 80%;">&nbsp;</span></div>
-								</li>
-							</ul>
-						</div>
-						<div class="product__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-							eiusmod tempor incididunt ut labore...</div><a href="shop-product.html"
-							class="btn btn-secondary">Add to cart +</a>
-					</div>
-				</article>
-				<article class="product">
-					<div class="product__thumbnail"><a href="shop-product.html"><img
-								src="{{ asset('front-end/img/samples/product-img-02.png') }}" alt=""></a></div>
-					<div class="product__body">
-						<div class="product__header">
-							<ul class="product__cats list-unstyled">
-								<li class="product__cats-item color-warning"><a href="#">Coffee mugs</a></li>
-							</ul>
-							<h2 class="product__title h4"><a href="shop-product.html">Necromancers ennamel mug</a></h2>
-							<ul class="product__meta list-unstyled">
-								<li class="product__meta-item product__price">$16.00</li>
-								<li class="product__meta-item product__ratings">
-									<div class="fas star-rating"><span style="width: 60%;">&nbsp;</span></div>
-								</li>
-							</ul>
-						</div>
-						<div class="product__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-							eiusmod tempor incididunt ut labore...</div><a href="shop-product.html"
-							class="btn btn-secondary">Add to cart +</a>
-					</div>
-				</article>
-			</div>
-		</main><!-- Overlay -->
-		<div class="site-overlay"></div><!-- Overlay / End --><!-- Cart Panel -->
-		<div class="cart-panel">
-			<h4 class="cart-panel__title text-white">Shopping Cart (<span class="cart-panel__items-count">4</span>)</h4>
-			<div class="cart-panel__content">
-				<div class="table-responsive">
-					<table class="table shop-table">
-						<thead>
-							<tr>
-								<th class="product__info">Product</th>
-								<th class="product__quantity">Quantity</th>
-								<th class="product__total">Total</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="product__info">
-									<figure class="product__thumb"><a href="#"><img
-												src="{{ asset('front-end/img/cart-panel-img-01.jpg') }}" alt=""></a></figure>
-									<div class="product__info-content">
-										<h5 class="product__name"><a href="#">Magimons Black Frame Print</a></h5><span
-											class="product__cat">Framed Prints</span> <span
-											class="product__info-details">24"x12" | Glossy</span>
-									</div>
-								</td>
-								<td class="product__quantity">
-									<div class="quantity-control"><button
-											class="quantity-control__minus">&nbsp;</button> <input type="number"
-											step="1" value="1" size="4"> <button
-											class="quantity-control__plus">&nbsp;</button></div>
-								</td>
-								<td class="product__total"><span class="product__total-currency">$</span>38.00</td>
-								<td class="product__remove"><a href="#" class="product__remove-icon"></a></td>
-							</tr>
-							<tr>
-								<td class="product__info">
-									<figure class="product__thumb"><a href="#"><img
-												src="{{ asset('front-end/img/cart-panel-img-02.jpg') }}" alt=""></a></figure>
-									<div class="product__info-content">
-										<h5 class="product__name"><a href="#">Necromancers Men's T-Shirt</a></h5><span
-											class="product__cat">Clothing</span> <span
-											class="product__info-details">Black | Medium</span>
-									</div>
-								</td>
-								<td class="product__quantity">
-									<div class="quantity-control"><button
-											class="quantity-control__minus">&nbsp;</button> <input type="number"
-											step="1" value="2" size="4"> <button
-											class="quantity-control__plus">&nbsp;</button></div>
-								</td>
-								<td class="product__total"><span class="product__total-currency">$</span>49.98</td>
-								<td class="product__remove"><a href="#" class="product__remove-icon"></a></td>
-							</tr>
-							<tr>
-								<td class="product__info">
-									<figure class="product__thumb"><a href="#"><img
-												src="{{ asset('front-end/img/cart-panel-img-03.jpg') }}" alt=""></a></figure>
-									<div class="product__info-content">
-										<h5 class="product__name"><a href="#">Necromancers Ennamel Mug</a></h5><span
-											class="product__cat">Coffee Mugs</span> <span
-											class="product__info-details">White</span>
-									</div>
-								</td>
-								<td class="product__quantity">
-									<div class="quantity-control"><button
-											class="quantity-control__minus">&nbsp;</button> <input type="number"
-											step="1" value="1" size="4"> <button
-											class="quantity-control__plus">&nbsp;</button></div>
-								</td>
-								<td class="product__total"><span class="product__total-currency">$</span>16.00</td>
-								<td class="product__remove"><a href="#" class="product__remove-icon"></a></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="cart-panel__totals">
-					<div class="table-responsive">
-						<table class="table">
-							<tfoot>
-								<tr class="cart-panel__subtotal">
-									<th>Cart Subtotal</th>
-									<td><span class="amount"><span class="amount-currency">$</span>103.98</span></td>
-								</tr>
-								<tr class="cart-panel__shipping">
-									<th>Estimated Shipping</th>
-									<td><span class="amount"><span class="amount-currency">$</span>14.00</span></td>
-								</tr>
-								<tr class="cart-panel__order-total">
-									<th>Cart Total</th>
-									<td><span class="amount"><span class="amount-currency">$</span>117.98</span></td>
-								</tr>
-							</tfoot>
-						</table><a href="shop-checkout.html" class="btn btn-primary">Go to checkout</a>
-					</div>
-				</div>
-			</div>
-		</div><!-- Cart Panel / End --><!-- Search Panel -->
-		<div class="search-panel">
-			<div class="search-panel__content">
-				<form action="#" id="header-search-form" class="search-form search-form--header"><input type="text"
-						class="form-control" value="" placeholder="What are you looking for...?"></form><span>Write what
-					you are looking for, choose the filters and press enter to begin your search!</span>
-			</div>
-		</div><!-- Search Panel / End --><!-- Menu Panel -->
-		<div class="menu-panel">
-			<ul class="menu-panel__mobile-bar list-unstyled d-md-none">
-				<li class="mobile-bar-item"><a class="mobile-bar-item__header collapsed" data-toggle="collapse"
-						href="#mobile_collapse_1" role="button" aria-expanded="false"
-						aria-controls="mobile_collapse_1">Main Links <span class="main-nav__toggle">&nbsp;</span></a>
-					<div id="mobile_collapse_1" class="collapse mobile-bar-item__body"><!-- Mobile Navigation -->
-						<nav class="mobile-nav">
-							<ul class="mobile-nav__list">
-								<li class=""><a href="#">Main Pages</a>
-									<ul class="mobile-nav__sub">
-										<li class=""><a href="index-2.html">Landing Image</a></li>
-										<li class=""><a href="index-3.html">Landing Video</a></li>
-										<li class=""><a href="home.html">Home page</a></li>
-										<li class=""><a href="blog-post.html">Post Page</a></li>
-										<li class=""><a href="blog-1.html">News v1</a></li>
-										<li class=""><a href="blog-2.html">News v2</a></li>
-										<li class=""><a href="blog-3.html">News v3</a></li>
-										<li class=""><a href="blog-4.html">News v4</a></li>
-										<li class=""><a href="blog-classic.html">News Classic <span
-													class="badge badge-danger">New</span></a></li>
-										<li class=""><a href="shop-account-settings.html">Account Settings</a></li>
-										<li class=""><a href="shop-account-orders.html">Account Orders</a></li>
-										<li class=""><a href="login-register.html">Login & Register</a></li>
-										<li class=""><a href="features-about-us.html">About Us</a></li>
-										<li class=""><a href="features-contact-us.html">Contact Us</a></li>
-										<li class=""><a href="features-faqs.html">FAQs</a></li>
-										<li class=""><a href="management-and-staff.html">Management & Staff</a></li>
-										<li class=""><a href="streams-archive.html">Streams Page</a></li>
-										<li class=""><a href="partners.html">Our Partners</a></li>
-										<li class=""><a href="features-shortcodes.html">Shortcodes</a></li>
-										<li class=""><a href="features-typography.html">Typography</a></li>
-										<li class=""><a href="features-icons.html">Icons <span
-													class="badge badge-danger">New</span></a></li>
-										<li class=""><a href="features-bg-1.html">Backgrounds</a></li>
-									</ul>
-								</li>
-								<li class=""><a href="#">Team Pages</a>
-									<ul class="mobile-nav__sub">
-										<li class=""><a href="team-selection-1.html">Team Selection v1</a></li>
-										<li class=""><a href="team-selection-2.html">Team Selection v2</a></li>
-										<li class=""><a href="team-selection-3.html">Team Selection v3</a></li>
-										<li class=""><a href="team-selection-4.html">Team Selection v4</a></li>
-										<li class=""><a href="team-overview.html">Team Overview v1</a></li>
-										<li class=""><a href="team-overview-2.html">Team Overview v2</a></li>
-										<li><a href="team-overviewbc83.html?slide=1">Team Statistics</a></li>
-										<li><a href="team-overviewe57f.html?slide=2">Team Achievements</a></li>
-										<li><a href="team-overview0c37.html?slide=3">Team Matches</a></li>
-									</ul>
-								</li>
-								<li class=""><a href="#">Player Pages</a>
-									<ul class="mobile-nav__sub">
-										<li><a href="team-player-1.html">Player Overview</a></li>
-										<li><a href="team-player-1bc83.html?slide=1">Player Statistics</a></li>
-										<li><a href="team-player-1e57f.html?slide=2">Player Achievements</a></li>
-										<li><a href="team-player-10c37.html?slide=3">Player Hardware</a></li>
-										<li><a href="team-player-11438.html?slide=4">Player Stream</a></li>
-									</ul>
-								</li>
-								<li class=""><a href="#">Match Pages</a>
-									<ul class="mobile-nav__sub">
-										<li class=""><a href="matches-scores.html">Match Scores</a></li>
-										<li class=""><a href="matches-upcoming.html">Upcoming Matches</a></li>
-										<li class=""><a href="matches-standings.html">Standings</a></li>
-										<li class=""><a href="matches-overview-1.html">Match Overview v1</a></li>
-										<li class=""><a href="matches-overview-2.html">Match Overview v2</a></li>
-										<li class=""><a href="matches-stats-1.html">Match Stats v1</a></li>
-										<li class=""><a href="matches-stats-2.html">Match Stats v2</a></li>
-										<li class=""><a href="matches-stats-3.html">Match Stats v3</a></li>
-										<li class=""><a href="matches-lineups-1.html">Match Lineups v1</a></li>
-										<li class=""><a href="matches-lineups-2.html">Match Lineups v2</a></li>
-										<li class=""><a href="matches-lineups-3.html">Match Lineups v3</a></li>
-										<li class=""><a href="matches-replay.html">Match Replay</a></li>
-									</ul>
-								</li>
-								<li class="active"><a href="#">Shop Pages</a>
-									<ul class="mobile-nav__sub">
-										<li class="active"><a href="shop.html">Shop Page v1</a></li>
-										<li class=""><a href="shop-2.html">Shop Page v2</a></li>
-										<li class=""><a href="shop-product.html">Product Page</a></li>
-										<li class=""><a href="shop-checkout.html">Checkout Page</a></li>
-									</ul>
-								</li>
-							</ul>
-						</nav><!-- Mobile Navigation / End -->
-					</div>
-				</li>
-				<li class="mobile-bar-item"><a class="mobile-bar-item__header collapsed" data-toggle="collapse"
-						href="#mobile_collapse_2" role="button" aria-expanded="false"
-						aria-controls="mobile_collapse_2">Social Links <span class="main-nav__toggle">&nbsp;</span></a>
-					<div id="mobile_collapse_2" class="collapse mobile-bar-item__body">
-						<ul class="social-menu social-menu--mobile-bar">
-							<li><a href="https://www.facebook.com/danfisher.dev/"><span>Facebook</span></a></li>
-							<li><a href="https://twitter.com/danfisher_dev"><span>Twitter</span></a></li>
-							<li><a href="https://twitch.tv/"><span>Twitch</span></a></li>
-							<li><a href="https://discordapp.com/"><span>Discord</span></a></li>
-						</ul>
-					</div>
-				</li>
-				<li class="mobile-bar-item mobile-bar-item--info"><a class="mobile-bar-item__header collapsed"
-						data-toggle="collapse" href="#mobile_collapse_3" role="button" aria-expanded="false"
-						aria-controls="mobile_collapse_3">Get in Touch! <span class="main-nav__toggle">&nbsp;</span></a>
-					<div id="mobile_collapse_3" class="collapse mobile-bar-item__body">
-						<div class="mobile-bar-item__inner">
-							<ul class="list-unstyled">
-								<li class="info-box') }}">
-									<div class="info-box__label">Max Parker - Recruiter</div>
-									<div class="info-box__content"><a href="mailto:#">mp-recruit<span
-												class="color-primary">@</span>necromancers.com</a></div>
-								</li>
-								<li class="info-box') }}">
-									<div class="info-box__label">Be our partner!</div>
-									<div class="info-box__content"><a href="mailto:#">partners<span
-												class="color-primary">@</span>necromancers.com</a></div>
-								</li>
-								<li class="info-box') }}">
-									<div class="info-box__label">General inquiries</div>
-									<div class="info-box__content"><a href="mailto:#">inquiries<span
-												class="color-primary">@</span>necromancers.com</a></div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li class="mobile-bar-item mobile-bar-item--partners"><a id="mobile_collapse_4h"
-						class="mobile-bar-item__header collapsed" data-toggle="collapse" href="#mobile_collapse_4"
-						role="button" aria-expanded="false" aria-controls="mobile_collapse_4">Our Partners <span
-							class="main-nav__toggle">&nbsp;</span></a>
-					<div id="mobile_collapse_4" class="collapse mobile-bar-item__body">
-						<div class="mobile-bar-item__inner">
-							<ul class="widget-partners-mobile-carousel">
-								<li><img src="{{ asset('front-end/img/samples/partner-carousel-img-01.png') }}" alt=""></li>
-								<li><img src="{{ asset('front-end/img/samples/partner-carousel-img-02.png') }}" alt=""></li>
-								<li><img src="{{ asset('front-end/img/samples/partner-carousel-img-03.png') }}" alt=""></li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li class="mobile-bar-item"><a class="mobile-bar-item__header" href="shop-account-settings.html">Account
-						Settings</a></li>
-				<li class="mobile-bar-item"><a class="mobile-bar-item__header" href="login-register.html">Logout</a>
-				</li>
-			</ul>
-			<div class="menu-panel__top-bar">
-				<div class="top-bar-filter"><label class="top-bar-filter__label">Competitions</label> <select
-						class="cs-select">
-						<option value="all" selected="selected">All Competitions</option>
-						<option value="x2018">Xenowatch 2018 Tournament</option>
-						<option value="xwleague">Xenowatch West League</option>
-						<option value="xeleague">Xenowatch East League</option>
-						<option value="xusacup">Xenowatch USA Cup</option>
-					</select></div>
-				<ul class="top-bar-carousel">
-					<li class="top-bar-carousel__headline x2018"><span>Xenowatch 2018 Tournament</span></li>
-					<li class="top-bar-carousel__item x2018">
-						<div class="match-score-inline">
-							<div class="match-score-inline__body">
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
-												alt="NCR Logo"></figure>
-										<figcaption>
-											<div class="match-team__name">NCR</div>
-											<div class="match-team__country">USA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result match-result--winner-right"><span
-											class="match-result__score">2</span></div>
-									<div class="match-result match-result--live"><span
-											class="match-result__label">25:42</span></div>
-								</div>
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-2" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-rhinos-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-rhinos-30@2x.png 2x') }}" alt="RRH Logo">
-										</figure>
-										<figcaption>
-											<div class="match-team__name">RRH</div>
-											<div class="match-team__country">JPN</div>
-										</figcaption>
-									</figure>
-									<div class="match-result"><span class="match-result__score">1</span></div>
-									<div class="match-result"><span class="match-result__label">01/12</span></div>
-								</div>
-							</div>
-							<div class="match-score-inline__footer">
-								<ul class="match-stats-links">
-									<li><a href="matches-overview-1.html"><svg role="img"
-												class="df-icon df-icon--overview">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
-											</svg></a></li>
-									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
-											</svg></a></li>
-									<li><a href="matches-lineups-1.html"><svg role="img"
-												class="df-icon df-icon--lineups">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
-											</svg></a></li>
-									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
-											</svg></a></li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li class="top-bar-carousel__item x2018">
-						<div class="match-score-inline">
-							<div class="match-score-inline__body">
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-5" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-eagles-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-eagles-30@2x.png 2x') }}" alt="FEG Logo">
-										</figure>
-										<figcaption>
-											<div class="match-team__name">FEG</div>
-											<div class="match-team__country">FRA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result match-result--winner-right"><span
-											class="match-result__score">4</span></div>
-									<div class="match-result"><span class="match-result__label">Final</span></div>
-								</div>
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
-												alt="NCR Logo"></figure>
-										<figcaption>
-											<div class="match-team__name">NCR</div>
-											<div class="match-team__country">USA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result"><span class="match-result__score">3</span></div>
-									<div class="match-result"><span class="match-result__label">01/09</span></div>
-								</div>
-							</div>
-							<div class="match-score-inline__footer">
-								<ul class="match-stats-links">
-									<li><a href="matches-overview-1.html"><svg role="img"
-												class="df-icon df-icon--overview">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
-											</svg></a></li>
-									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
-											</svg></a></li>
-									<li><a href="matches-lineups-1.html"><svg role="img"
-												class="df-icon df-icon--lineups">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
-											</svg></a></li>
-									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
-											</svg></a></li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li class="top-bar-carousel__item x2018">
-						<div class="match-score-inline">
-							<div class="match-score-inline__body">
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
-												alt="NCR Logo"></figure>
-										<figcaption>
-											<div class="match-team__name">NCR</div>
-											<div class="match-team__country">USA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result"><span class="match-result__score">1</span></div>
-									<div class="match-result"><span class="match-result__label">Final</span></div>
-								</div>
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-3" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-bulls-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-bulls-30@2x.png 2x') }}" alt="AGB Logo">
-										</figure>
-										<figcaption>
-											<div class="match-team__name">AGB</div>
-											<div class="match-team__country">SPA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result match-result--winner-right"><span
-											class="match-result__score">3</span></div>
-									<div class="match-result"><span class="match-result__label">01/05</span></div>
-								</div>
-							</div>
-							<div class="match-score-inline__footer">
-								<ul class="match-stats-links">
-									<li><a href="matches-overview-1.html"><svg role="img"
-												class="df-icon df-icon--overview">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
-											</svg></a></li>
-									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
-											</svg></a></li>
-									<li><a href="matches-lineups-1.html"><svg role="img"
-												class="df-icon df-icon--lineups">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
-											</svg></a></li>
-									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
-											</svg></a></li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li class="top-bar-carousel__item x2018">
-						<div class="match-score-inline">
-							<div class="match-score-inline__body">
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-4" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-panthers-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-panthers-30@2x.png 2x') }}" alt="ICP Logo">
-										</figure>
-										<figcaption>
-											<div class="match-team__name">ICP</div>
-											<div class="match-team__country">POR</div>
-										</figcaption>
-									</figure>
-									<div class="match-result"><span class="match-result__score">0</span></div>
-									<div class="match-result"><span class="match-result__label">Final</span></div>
-								</div>
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
-												alt="NCR Logo"></figure>
-										<figcaption>
-											<div class="match-team__name">NCR</div>
-											<div class="match-team__country">USA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result match-result--winner-right"><span
-											class="match-result__score">5</span></div>
-									<div class="match-result"><span class="match-result__label">01/02</span></div>
-								</div>
-							</div>
-							<div class="match-score-inline__footer">
-								<ul class="match-stats-links">
-									<li><a href="matches-overview-1.html"><svg role="img"
-												class="df-icon df-icon--overview">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
-											</svg></a></li>
-									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
-											</svg></a></li>
-									<li><a href="matches-lineups-1.html"><svg role="img"
-												class="df-icon df-icon--lineups">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
-											</svg></a></li>
-									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
-											</svg></a></li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li class="top-bar-carousel__headline xwleague"><span>Xenowatch West League</span></li>
-					<li class="top-bar-carousel__item xwleague">
-						<div class="match-score-inline">
-							<div class="match-score-inline__body">
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
-												alt="NCR Logo"></figure>
-										<figcaption>
-											<div class="match-team__name">NCR</div>
-											<div class="match-team__country">USA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result match-result--winner-right"><span
-											class="match-result__score">1</span></div>
-									<div class="match-result match-result--live"><span
-											class="match-result__label">12:33</span></div>
-								</div>
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-2" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-rhinos-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-rhinos-30@2x.png 2x') }}" alt="RRH Logo">
-										</figure>
-										<figcaption>
-											<div class="match-team__name">RRH</div>
-											<div class="match-team__country">JPN</div>
-										</figcaption>
-									</figure>
-									<div class="match-result"><span class="match-result__score">0</span></div>
-									<div class="match-result"><span class="match-result__label">01/12</span></div>
-								</div>
-							</div>
-							<div class="match-score-inline__footer">
-								<ul class="match-stats-links">
-									<li><a href="matches-overview-1.html"><svg role="img"
-												class="df-icon df-icon--overview">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
-											</svg></a></li>
-									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
-											</svg></a></li>
-									<li><a href="matches-lineups-1.html"><svg role="img"
-												class="df-icon df-icon--lineups">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
-											</svg></a></li>
-									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
-											</svg></a></li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li class="top-bar-carousel__item xwleague">
-						<div class="match-score-inline">
-							<div class="match-score-inline__body">
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-4" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-panthers-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-panthers-30@2x.png 2x') }}" alt="ICP Logo">
-										</figure>
-										<figcaption>
-											<div class="match-team__name">ICP</div>
-											<div class="match-team__country">POR</div>
-										</figcaption>
-									</figure>
-									<div class="match-result"><span class="match-result__score">0</span></div>
-									<div class="match-result"><span class="match-result__label">Final</span></div>
-								</div>
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
-												alt="NCR Logo"></figure>
-										<figcaption>
-											<div class="match-team__name">NCR</div>
-											<div class="match-team__country">USA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result match-result--winner-right"><span
-											class="match-result__score">3</span></div>
-									<div class="match-result"><span class="match-result__label">01/07</span></div>
-								</div>
-							</div>
-							<div class="match-score-inline__footer">
-								<ul class="match-stats-links">
-									<li><a href="matches-overview-1.html"><svg role="img"
-												class="df-icon df-icon--overview">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
-											</svg></a></li>
-									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
-											</svg></a></li>
-									<li><a href="matches-lineups-1.html"><svg role="img"
-												class="df-icon df-icon--lineups">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
-											</svg></a></li>
-									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
-											</svg></a></li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li class="top-bar-carousel__item xwleague">
-						<div class="match-score-inline">
-							<div class="match-score-inline__body">
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-5" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-eagles-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-eagles-30@2x.png 2x') }}" alt="FEG Logo">
-										</figure>
-										<figcaption>
-											<div class="match-team__name">FEG</div>
-											<div class="match-team__country">FRA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result match-result--winner-right"><span
-											class="match-result__score">5</span></div>
-									<div class="match-result"><span class="match-result__label">Final</span></div>
-								</div>
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
-												alt="NCR Logo"></figure>
-										<figcaption>
-											<div class="match-team__name">NCR</div>
-											<div class="match-team__country">USA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result"><span class="match-result__score">2</span></div>
-									<div class="match-result"><span class="match-result__label">01/04</span></div>
-								</div>
-							</div>
-							<div class="match-score-inline__footer">
-								<ul class="match-stats-links">
-									<li><a href="matches-overview-1.html"><svg role="img"
-												class="df-icon df-icon--overview">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
-											</svg></a></li>
-									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
-											</svg></a></li>
-									<li><a href="matches-lineups-1.html"><svg role="img"
-												class="df-icon df-icon--lineups">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
-											</svg></a></li>
-									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
-											</svg></a></li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li class="top-bar-carousel__item xwleague">
-						<div class="match-score-inline">
-							<div class="match-score-inline__body">
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
-												alt="NCR Logo"></figure>
-										<figcaption>
-											<div class="match-team__name">NCR</div>
-											<div class="match-team__country">USA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result"><span class="match-result__score">1</span></div>
-									<div class="match-result"><span class="match-result__label">Final</span></div>
-								</div>
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-3" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-bulls-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-bulls-30@2x.png 2x') }}" alt="AGB Logo">
-										</figure>
-										<figcaption>
-											<div class="match-team__name">AGB</div>
-											<div class="match-team__country">SPA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result match-result--winner-right"><span
-											class="match-result__score">3</span></div>
-									<div class="match-result"><span class="match-result__label">01/03</span></div>
-								</div>
-							</div>
-							<div class="match-score-inline__footer">
-								<ul class="match-stats-links">
-									<li><a href="matches-overview-1.html"><svg role="img"
-												class="df-icon df-icon--overview">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
-											</svg></a></li>
-									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
-											</svg></a></li>
-									<li><a href="matches-lineups-1.html"><svg role="img"
-												class="df-icon df-icon--lineups">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
-											</svg></a></li>
-									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
-											</svg></a></li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li class="top-bar-carousel__headline xeleague"><span>Xenowatch East League</span></li>
-					<li class="top-bar-carousel__item xeleague">
-						<div class="match-score-inline">
-							<div class="match-score-inline__body">
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
-												alt="NCR Logo"></figure>
-										<figcaption>
-											<div class="match-team__name">NCR</div>
-											<div class="match-team__country">USA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result match-result--winner-right"><span
-											class="match-result__score">4</span></div>
-									<div class="match-result"><span class="match-result__label">Final</span></div>
-								</div>
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-2" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-rhinos-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-rhinos-30@2x.png 2x') }}" alt="RRH Logo">
-										</figure>
-										<figcaption>
-											<div class="match-team__name">RRH</div>
-											<div class="match-team__country">JPN</div>
-										</figcaption>
-									</figure>
-									<div class="match-result"><span class="match-result__score">1</span></div>
-									<div class="match-result"><span class="match-result__label">12/18</span></div>
-								</div>
-							</div>
-							<div class="match-score-inline__footer">
-								<ul class="match-stats-links">
-									<li><a href="matches-overview-1.html"><svg role="img"
-												class="df-icon df-icon--overview">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
-											</svg></a></li>
-									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
-											</svg></a></li>
-									<li><a href="matches-lineups-1.html"><svg role="img"
-												class="df-icon df-icon--lineups">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
-											</svg></a></li>
-									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
-											</svg></a></li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li class="top-bar-carousel__item xeleague">
-						<div class="match-score-inline">
-							<div class="match-score-inline__body">
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
-												alt="NCR Logo"></figure>
-										<figcaption>
-											<div class="match-team__name">NCR</div>
-											<div class="match-team__country">USA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result match-result--winner-right"><span
-											class="match-result__score">4</span></div>
-									<div class="match-result"><span class="match-result__label">Final</span></div>
-								</div>
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-3" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-bulls-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-bulls-30@2x.png 2x') }}" alt="AGB Logo">
-										</figure>
-										<figcaption>
-											<div class="match-team__name">AGB</div>
-											<div class="match-team__country">SPA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result"><span class="match-result__score">3</span></div>
-									<div class="match-result"><span class="match-result__label">12/11</span></div>
-								</div>
-							</div>
-							<div class="match-score-inline__footer">
-								<ul class="match-stats-links">
-									<li><a href="matches-overview-1.html"><svg role="img"
-												class="df-icon df-icon--overview">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
-											</svg></a></li>
-									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
-											</svg></a></li>
-									<li><a href="matches-lineups-1.html"><svg role="img"
-												class="df-icon df-icon--lineups">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
-											</svg></a></li>
-									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
-											</svg></a></li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li class="top-bar-carousel__item xeleague">
-						<div class="match-score-inline">
-							<div class="match-score-inline__body">
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-4" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-panthers-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-panthers-30@2x.png 2x') }}" alt="ICP Logo">
-										</figure>
-										<figcaption>
-											<div class="match-team__name">ICP</div>
-											<div class="match-team__country">POR</div>
-										</figcaption>
-									</figure>
-									<div class="match-result"><span class="match-result__score">0</span></div>
-									<div class="match-result"><span class="match-result__label">Final</span></div>
-								</div>
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
-												alt="NCR Logo"></figure>
-										<figcaption>
-											<div class="match-team__name">NCR</div>
-											<div class="match-team__country">USA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result match-result--winner-right"><span
-											class="match-result__score">2</span></div>
-									<div class="match-result"><span class="match-result__label">12/09</span></div>
-								</div>
-							</div>
-							<div class="match-score-inline__footer">
-								<ul class="match-stats-links">
-									<li><a href="matches-overview-1.html"><svg role="img"
-												class="df-icon df-icon--overview">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
-											</svg></a></li>
-									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
-											</svg></a></li>
-									<li><a href="matches-lineups-1.html"><svg role="img"
-												class="df-icon df-icon--lineups">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
-											</svg></a></li>
-									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
-											</svg></a></li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li class="top-bar-carousel__headline xusacup"><span>Xenowatch USA Cup</span></li>
-					<li class="top-bar-carousel__item xusacup">
-						<div class="match-score-inline">
-							<div class="match-score-inline__body">
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
-												alt="NCR Logo"></figure>
-										<figcaption>
-											<div class="match-team__name">NCR</div>
-											<div class="match-team__country">USA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result"><span class="match-result__score">1</span></div>
-									<div class="match-result"><span class="match-result__label">Final</span></div>
-								</div>
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-3" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-bulls-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-bulls-30@2x.png 2x') }}" alt="AGB Logo">
-										</figure>
-										<figcaption>
-											<div class="match-team__name">AGB</div>
-											<div class="match-team__country">SPA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result match-result--winner-right"><span
-											class="match-result__score">3</span></div>
-									<div class="match-result"><span class="match-result__label">11/17</span></div>
-								</div>
-							</div>
-							<div class="match-score-inline__footer">
-								<ul class="match-stats-links">
-									<li><a href="matches-overview-1.html"><svg role="img"
-												class="df-icon df-icon--overview">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
-											</svg></a></li>
-									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
-											</svg></a></li>
-									<li><a href="matches-lineups-1.html"><svg role="img"
-												class="df-icon df-icon--lineups">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
-											</svg></a></li>
-									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
-											</svg></a></li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li class="top-bar-carousel__item xusacup">
-						<div class="match-score-inline">
-							<div class="match-score-inline__body">
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-5" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-eagles-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-eagles-30@2x.png 2x') }}" alt="FEG Logo">
-										</figure>
-										<figcaption>
-											<div class="match-team__name">FEG</div>
-											<div class="match-team__country">FRA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result match-result--winner-right"><span
-											class="match-result__score">2</span></div>
-									<div class="match-result"><span class="match-result__label">Final</span></div>
-								</div>
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
-												alt="NCR Logo"></figure>
-										<figcaption>
-											<div class="match-team__name">NCR</div>
-											<div class="match-team__country">USA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result"><span class="match-result__score">1</span></div>
-									<div class="match-result"><span class="match-result__label">11/11</span></div>
-								</div>
-							</div>
-							<div class="match-score-inline__footer">
-								<ul class="match-stats-links">
-									<li><a href="matches-overview-1.html"><svg role="img"
-												class="df-icon df-icon--overview">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
-											</svg></a></li>
-									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
-											</svg></a></li>
-									<li><a href="matches-lineups-1.html"><svg role="img"
-												class="df-icon df-icon--lineups">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
-											</svg></a></li>
-									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
-											</svg></a></li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li class="top-bar-carousel__item xusacup">
-						<div class="match-score-inline">
-							<div class="match-score-inline__body">
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-4" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-panthers-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-panthers-30@2x.png 2x') }}" alt="ICP Logo">
-										</figure>
-										<figcaption>
-											<div class="match-team__name">ICP</div>
-											<div class="match-team__country">POR</div>
-										</figcaption>
-									</figure>
-									<div class="match-result match-result--winner-right"><span
-											class="match-result__score">3</span></div>
-									<div class="match-result"><span class="match-result__label">Final</span></div>
-								</div>
-								<div class="match-score-inline__body-inner">
-									<figure class="match-team" role="group">
-										<figure class="match-team-logo match-team-logo--team-1" role="group"><img
-												src="{{ asset('front-end/img/samples/logo-necromancers-30.png') }}"
-												srcset="{{ public_path('front-end/img/samples/logo-necromancers-30@2x.png 2x') }}"
-												alt="NCR Logo"></figure>
-										<figcaption>
-											<div class="match-team__name">NCR</div>
-											<div class="match-team__country">USA</div>
-										</figcaption>
-									</figure>
-									<div class="match-result"><span class="match-result__score">2</span></div>
-									<div class="match-result"><span class="match-result__label">11/06</span></div>
-								</div>
-							</div>
-							<div class="match-score-inline__footer">
-								<ul class="match-stats-links">
-									<li><a href="matches-overview-1.html"><svg role="img"
-												class="df-icon df-icon--overview">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#overview') }}" />
-											</svg></a></li>
-									<li><a href="matches-stats-1.html"><svg role="img" class="df-icon df-icon--stats">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#stats') }}" />
-											</svg></a></li>
-									<li><a href="matches-lineups-1.html"><svg role="img"
-												class="df-icon df-icon--lineups">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#lineups') }}" />
-											</svg></a></li>
-									<li><a href="matches-replay.html"><svg role="img" class="df-icon df-icon--replay">
-												<use xlink:href="{{ asset('front-end/img/necromancers.svg#replay') }}" />
-											</svg></a></li>
-								</ul>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="menu-panel__content d-none d-md-flex') }}">
-				<div class="menu-panel__navigation">
-					<div id="dl-menu" class="dl-menuwrapper"><!-- <button class="dl-trigger">Open Menu</button> -->
-						<ul class="dl-menu dl-menuopen">
-							<li class=""><a href="home.html">Home</a></li>
-							<li class=""><a href="team-selection-2.html">Teams</a>
-								<ul class="dl-submenu">
-									<li class=""><a href="#">Team Selections</a>
-										<ul class="dl-submenu">
-											<li class=""><a href="team-selection-1.html">Team Selection v1</a></li>
-											<li class=""><a href="team-selection-2.html">Team Selection v2</a></li>
-											<li class=""><a href="team-selection-3.html">Team Selection v3</a></li>
-											<li class=""><a href="team-selection-4.html">Team Selection v4</a></li>
-										</ul>
-									</li>
-									<li class=""><a href="team-overview.html">Team Overview</a>
-										<ul class="dl-submenu">
-											<li class=""><a href="team-overview.html">Team Overview v1</a></li>
-											<li class=""><a href="team-overview-2.html">Team Overview v2</a></li>
-										</ul>
-									</li>
-									<li class=""><a href="team-player-1.html">Player Page</a></li>
-								</ul>
-							</li>
-							<li class=""><a href="#">Matches</a>
-								<ul class="dl-submenu">
-									<li class=""><a href="matches-scores.html">Match Scores</a></li>
-									<li class=""><a href="matches-upcoming.html">Upcoming Matches</a></li>
-									<li class=""><a href="matches-standings.html">Standings</a></li>
-									<li class=""><a href="#">Match Stats</a>
-										<ul class="dl-submenu">
-											<li class=""><a href="matches-stats-1.html">Match Stats v1</a></li>
-											<li class=""><a href="matches-stats-2.html">Match Stats v2</a></li>
-											<li class=""><a href="matches-stats-3.html">Match Stats v3</a></li>
-										</ul>
-									</li>
-									<li class=""><a href="#">Match Lineups</a>
-										<ul class="dl-submenu">
-											<li class=""><a href="matches-lineups-1.html">Match Lineups v1</a></li>
-											<li class=""><a href="matches-lineups-2.html">Match Lineups v2</a></li>
-											<li class=""><a href="matches-lineups-3.html">Match Lineups v3</a></li>
-										</ul>
-									</li>
-									<li class=""><a href="#">Match Overviews</a>
-										<ul class="dl-submenu">
-											<li class=""><a href="matches-overview-1.html">Match Overview v1</a></li>
-											<li class=""><a href="matches-overview-2.html">Match Overview v2</a></li>
-										</ul>
-									</li>
-									<li class=""><a href="matches-replay.html">Match Replay</a></li>
-								</ul>
-							</li>
-							<li class=""><a href="blog-1.html">News</a></li>
-							<li><a href="#">Features</a>
-								<ul class="dl-submenu dl-megamenu">
-									<div class="row">
-										<ul class="col-md-6 col-lg-4">
-											<li class=""><a href="index-2.html">Landing Image</a></li>
-											<li class=""><a href="index-3.html">Landing Video</a></li>
-											<li class=""><a href="home.html">Home page</a></li>
-											<li class=""><a href="blog-1.html">News v1</a></li>
-											<li class=""><a href="blog-2.html">News v2</a></li>
-											<li class=""><a href="blog-3.html">News v3</a></li>
-											<li class=""><a href="blog-4.html">News v4</a></li>
-											<li class=""><a href="blog-classic.html">News Classic <span
-														class="badge badge-danger">New</span></a></li>
-											<li class=""><a href="blog-post.html">Post Page</a></li>
-											<li class=""><a href="shop-account-settings.html">Account Settings</a></li>
-										</ul>
-										<ul class="col-md-6 col-lg-4">
-											<li class=""><a href="shop-account-orders.html">Account Orders</a></li>
-											<li class=""><a href="login-register.html">Login & Register</a></li>
-											<li class=""><a href="features-about-us.html">About Us</a></li>
-											<li class=""><a href="features-faqs.html">FAQs</a></li>
-											<li class=""><a href="features-contact-us.html">Contact Us</a></li>
-											<li class=""><a href="management-and-staff.html">Management & Staff</a></li>
-											<li class=""><a href="streams-archive.html">Streams Page</a></li>
-											<li class=""><a href="partners.html">Our Partners</a></li>
-										</ul>
-										<ul class="col-md-12 col-lg-4">
-											<li class=""><a href="features-shortcodes.html">Shortcodes</a></li>
-											<li class=""><a href="features-typography.html">Typography</a></li>
-											<li class=""><a href="features-icons.html">Icons <span
-														class="badge badge-danger">New</span></a></li>
-											<li class=""><a href="features-bg-1.html">Backgrounds</a></li>
-										</ul>
-									</div>
-								</ul>
-							</li>
-							<li class="active"><a href="shop.html">Shop</a>
-								<ul class="dl-submenu">
-									<li class="active"><a href="shop.html">Shop Page v1</a></li>
-									<li class=""><a href="shop-2.html">Shop Page v2</a></li>
-									<li class=""><a href="shop-product.html">Product Page</a></li>
-									<li class=""><a href="shop-checkout.html">Checkout Page</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="menu-panel__widget-area">
-					<div class="row">
-						<div class="col-md-12 col-lg-6 col-xl-5"><!-- Widget: Text -->
-							<section class="widget widget-text">
-								<h5 class="widget__title">Join our team</h5>
-								<div class="widget__content">
-									<p>We’re always looking for new talent to join our teams. If you wanna join us, just
-										send us and email and we’ll get back to you!</p>
-									<div class="info-box') }}">
-										<div class="info-box__label">Max Parker - Recruiter</div>
-										<div class="info-box__content"><a href="mailto:#">mp-recruit<span
-													class="color-primary">@</span>necromancers.com</a></div>
-									</div>
-									<div class="info-box') }}">
-										<div class="info-box__label">Be our partner!</div>
-										<div class="info-box__content"><a href="mailto:#">partners<span
-													class="color-primary">@</span>necromancers.com</a></div>
-									</div>
-								</div>
-							</section><!-- Widget: Text / End -->
-						</div>
-						<div class="col-md-12 col-lg-6 col-xl-5 offset-xl-2 mt-5 mt-lg-0"><!-- Widget: Contact Info -->
-							<section class="widget widget-contact-info">
-								<h5 class="widget__title">Contact Info</h5>
-								<div class="widget__content">
-									<p>If you have any questions, just send us and email and don’t forget to follow and
-										like all our social accounts to keep updated!</p>
-									<div class="info-box') }}">
-										<div class="info-box__label">General inquiries</div>
-										<div class="info-box__content"><a href="mailto:#">inquiries<span
-													class="color-primary">@</span>necromancers.com</a></div>
-									</div>
-									<ul class="social-menu social-menu--default">
-										<li><a href="https://www.facebook.com/danfisher.dev/"></a></li>
-										<li><a href="https://twitter.com/danfisher_dev"></a></li>
-										<li><a href="https://twitch.tv/"></a></li>
-										<li><a href="https://discord.gg/xxxx') }}"></a></li>
-									</ul>
-								</div>
-							</section><!-- Widget: Contact Info / End -->
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12"><!-- Widget: Partners Carousel -->
-							<section class="widget widget-partners-carousel">
-								<h5 class="widget__title">Our Partners</h5>
-								<div class="widget__content">
-									<ul>
-										<li><img src="{{ asset('front-end/img/samples/partner-carousel-img-01.png') }}" alt=""></li>
-										<li><img src="{{ asset('front-end/img/samples/partner-carousel-img-02.png') }}" alt=""></li>
-										<li><img src="{{ asset('front-end/img/samples/partner-carousel-img-03.png') }}" alt=""></li>
-										<li><img src="{{ asset('front-end/img/samples/partner-carousel-img-01.png') }}" alt=""></li>
-										<li><img src="{{ asset('front-end/img/samples/partner-carousel-img-02.png') }}" alt=""></li>
-										<li><img src="{{ asset('front-end/img/samples/partner-carousel-img-03.png') }}" alt=""></li>
-									</ul>
-								</div>
-							</section><!-- Widget: Partners Carousel / End -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!-- Menu Panel / End -->
-	</div>
-	<div class="preloader-overlay">
-		<div id="js-preloader" class="preloader">
-			<div class="preloader-inner fadeInUp">
-				<div class="pong-loader"></div><svg role="img" class="df-icon df-icon--preloader-arcade">
-					<use xlink:href="{{ asset('front-end/img/necromancers.svg#preloader-arcade') }}" />
-				</svg>
-			</div>
-		</div>
-	</div><!-- The cursor elements -->
-	<div class="df-custom-cursor-wrap">
-		<div id="df-custom-cursor"></div>
-	</div><!-- Javascript Files
-	================================================== --><!-- Core JS -->
-	<script src="{{ asset('front-end/vendor/jquery/jquery.min.js') }}"></script>
-	<script src="{{ asset('front-end/vendor/jquery/jquery-migrate.min.js') }}"></script>
-	<script src="{{ asset('front-end/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-	<script src="{{ asset('front-end/js/core.js') }}"></script><!-- Vendor JS --><!-- Template JS -->
-	<script src="{{ asset('front-end/js/init.js') }}"></script>
-	<script src="{{ asset('front-end/js/custom.js') }}"></script><!-- Duotone SVG color filter --> <svg xmlns="http://www.w3.org/2000/svg"
-		class="svg-filters">
-		<filter id="duotone_base">
-			<feColorMatrix type="matrix') }}" result="grayscale" values="1 0 0 0 0
-								1 0 0 0 0
-								1 0 0 0 0
-								0 0 0 1 0') }}" />
-			<feComponentTransfer color-interpolation-filters="sRGB" result="duotone_base_filter">
-				<feFuncR type="table" tableValues="0.082352941176471 0.419607843137255"></feFuncR>
-				<feFuncG type="table" tableValues="0.090196078431373 0.443137254901961"></feFuncG>
-				<feFuncB type="table" tableValues="0.125490196078431 0.6"></feFuncB>
-				<feFuncA type="table" tableValues="0 1"></feFuncA>
-			</feComponentTransfer>
-		</filter>
-	</svg>
-</body>
-</html>
+@section('content')
+
+    <div class="main">
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+                        <h1 class="">Sekolah Bisnis “Muslim Bisnis Comunity”</h1>
+                        <p class="">Nikmati kemudahan akses belajar bisnis melalui paket video ecourse Sekolah Bisnis
+                            yang disampaikan langsung oleh <b>Coach Fitra Jaya Saleh</b></p>
+                        {{-- <p class="">adalah kelas ecourse bisnis yang akan membantu Anda untuk mendapatkan berbagai solusi mulai dari strategi, ilmu dan BEST PRACTICE untuk membangun bisnis Anda</p> --}}
+                        <div class="d-flex">
+                            <a href="#about" class="btn-get-started">Daftar Sekarang</a>
+                            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+                                class="glightbox btn-watch-video d-flex align-items-center"><i
+                                    class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+                        <img src="{{ asset('arsha-assets/img/fjs-no-background.png') }}" class="img-fluid animated" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section><!-- /Hero Section -->
+
+        <!-- Clients Section -->
+        {{-- <section id="clients" class="clients section">
+
+            <div class="container" data-aos="zoom-in">
+
+                <div class="swiper">
+                    <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 120
+                },
+                "1200": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide"><img src="{{ asset('arsha-assets/img/clients/client-1.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('arsha-assets/img/clients/client-2.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('arsha-assets/img/clients/client-3.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('arsha-assets/img/clients/client-4.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('arsha-assets/img/clients/client-5.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('arsha-assets/img/clients/client-6.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('arsha-assets/img/clients/client-7.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('arsha-assets/img/clients/client-8.png') }}"
+                                class="img-fluid" alt=""></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section> --}}
+        <!-- /Clients Section -->
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2 class="">Tentang MBC</h2>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-12 content text-center" data-aos="fade-up" data-aos-delay="100">
+                        <h4 class="text-black">
+                            Sekolah Bisnis “Muslim Bisnis Comunity” adalah kelas ecourse bisnis yang akan membantu Anda
+                            untuk mendapatkan berbagai solusi mulai dari strategi, ilmu dan BEST PRACTICE untuk membangun
+                            bisnis Anda.
+                            <br>
+                            Setiap series berisi ratusan video panduan .....
+                        </h4>
+                        {{-- <ul>
+                            <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat.</span></li>
+                            <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in
+                                    voluptate velit.</span></li>
+                            <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea
+                                    commodo</span></li>
+                        </ul> --}}
+                    </div>
+
+                    {{-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum. </p>
+                        <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                    </div> --}}
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /About Section -->
+
+        <!-- Services Section -->
+        <section id="services" class="services section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Services</h2>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item position-relative">
+                            <div class="icon"><i class="bi bi-chat icon"></i></div>
+                            <h4><a href="service-details.html" class="stretched-link">Tanya-jawab dengan coach Fitra</a></h4>
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-item position-relative">
+                            <div class="icon"><i class="bi bi-camera-video icon"></i></div>
+                            <h4><a href="service-details.html" class="stretched-link">⁠Akses ecourse 1 tahun</a></h4>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-item position-relative">
+                            <div class="icon"><i class="bi bi-book icon"></i></div>
+                            <h4><a href="service-details.html" class="stretched-link">Penjelalsan materi yang sederhana dan mudah dipahami
+                            </a></h4>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-item position-relative">
+                            <div class="icon"><i class="bi bi-box2-heart icon"></i></div>
+                            <h4><a href="service-details.html" class="stretched-link">Promo khusus 30 orang pertama</a></h4>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                        </div>
+                    </div><!-- End Service Item -->
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Services Section -->
+
+        <!-- Why Us Section -->
+        <section id="join" class="section why-us" data-builder="section">
+
+            <!-- Section Title -->
+            {{-- <div class="container section-title" data-aos="fade-up">
+                <h2 class="">How To Join</h2>
+            </div><!-- End Section Title --> --}}
+
+            <div class="container-fluid">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-12 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+                        <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+                            <h3 class=""><span class=""></span><strong>Cara mengakses E-Course : </strong></h3>
+                            {{-- <p class="">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                            </p> --}}
+
+                            {{-- <h3 class=""><span class="">Eum ipsam laborum deleniti </span><strong>velit
+                                    pariatur architecto aut nihil</strong></h3>
+                            <p class="">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                            </p> --}}
+                        </div>
+
+                        <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+                            <div class="faq-item faq-active">
+
+                                <h3><span>01</span> Registrasi Akun (WAJIB)</h3>
+                                <div class="faq-content">
+                                    <p>Silahkan buat akun terlebih dahulu. Sebelum membeli akses E-Course kamu WAJIB membuat akun terlebih dahulu. Klik <a href="{{ route('register') }}">disini</a> untuk membuat akun.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3><span>02</span> Pilih E-Course
+                                </h3>
+                                <div class="faq-content">
+                                    <p>Setelah membuat akun, silahkan pilih E-Course yang akan kamu ikuti. Silahkan pilih e-coursenya <a>disini</a>.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3><span>03</span> Checkout & Payment</h3>
+                                <div class="faq-content">
+                                    <p>Lakukan Pembayaran sesuai dengan nominal harga yang tertera. Pastikan pembayaran hanya ke Rekening Resmi MBC.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3><span>04</span> Konfirmasi Pembayaran</h3>
+                                <div class="faq-content">
+                                    <p>Setelah melakukan pembayaran silahkan konfirmasi kepada Admin MBC dan lampirkan Bukti Transfernya. Klik <a>disini</a> untuk konfirmasi pembayaran.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item">
+                                <h3><span>05</span> Akses E-Course di Dashboard</h3>
+                                <div class="faq-content">
+                                    <p>Silahkan Akses E-Course yang telah kamu beli di bagian menu Dashboard atau klik <a>disini</a> untuk menuju ke E-Course.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                        </div>
+
+                    </div>
+
+                    {{-- <div class="col-lg-5 order-1 order-lg-2 why-us-img">
+                        <img src="{{ asset('arsha-assets/img/why-us.png') }}" class="img-fluid" alt=""
+                            data-aos="zoom-in" data-aos-delay="100">
+                    </div> --}}
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Why Us Section -->
+
+        <!-- Skills Section -->
+        {{-- <section id="skills" class="skills section">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row">
+
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <img src="{{ asset('arsha-assets/img/skills.png') }}" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-6 pt-4 pt-lg-0 content">
+
+                        <h3>Voluptatem dignissimos provident quasi corporis voluptas</h3>
+                        <p class="fst-italic">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+
+                        <div class="skills-content skills-animation">
+
+                            <div class="progress">
+                                <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div><!-- End Skills Item -->
+
+                            <div class="progress">
+                                <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div><!-- End Skills Item -->
+
+                            <div class="progress">
+                                <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div><!-- End Skills Item -->
+
+                            <div class="progress">
+                                <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div><!-- End Skills Item -->
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section> --}}
+        <!-- /Skills Section -->
+
+
+        <!-- Call To Action Section -->
+        <section id="call-to-action" class="call-to-action section">
+
+            <img src="{{ asset('arsha-assets/img/cta-bg.jpg') }}" alt="">
+
+            <div class="container">
+
+                <div class="row" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="col-xl-9 text-center text-xl-start">
+                        <h3>Call To Action</h3>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.</p>
+                    </div>
+                    <div class="col-xl-3 cta-btn-container text-center">
+                        <a class="cta-btn align-middle" href="{{ route('register') }}">Daftar Sekarang</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section><!-- /Call To Action Section -->
+
+        <!-- Portfolio Section -->
+        {{-- <section id="portfolio" class="portfolio section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Portfolio</h2>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+                    <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-app">App</li>
+                        <li data-filter=".filter-product">Card</li>
+                        <li data-filter=".filter-branding">Web</li>
+                    </ul><!-- End Portfolio Filters -->
+
+                    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                            <img src="{{ asset('arsha-assets/img/masonry-portfolio/masonry-portfolio-1.jpg') }}"
+                                class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                                <a href="{{ asset('arsha-assets/img/masonry-portfolio/masonry-portfolio-1.jpg') }}"
+                                    title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                            <img src="{{ asset('arsha-assets/img/masonry-portfolio/masonry-portfolio-2.jpg') }}"
+                                class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Product 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                                <a href="{{ asset('arsha-assets/img/masonry-portfolio/masonry-portfolio-2.jpg') }}"
+                                    title="Product 1" data-gallery="portfolio-gallery-product"
+                                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                            <img src="{{ asset('arsha-assets/img/masonry-portfolio/masonry-portfolio-3.jpg') }}"
+                                class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Branding 1</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                                <a href="{{ asset('arsha-assets/img/masonry-portfolio/masonry-portfolio-3.jpg') }}"
+                                    title="Branding 1" data-gallery="portfolio-gallery-branding"
+                                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                            <img src="{{ asset('arsha-assets/img/masonry-portfolio/masonry-portfolio-4.jpg') }}"
+                                class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 2</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                                <a href="{{ asset('arsha-assets/img/masonry-portfolio/masonry-portfolio-4.jpg') }}"
+                                    title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                            <img src="{{ asset('arsha-assets/img/masonry-portfolio/masonry-portfolio-5.jpg') }}"
+                                class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Product 2</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                                <a href="{{ asset('arsha-assets/img/masonry-portfolio/masonry-portfolio-5.jpg') }}"
+                                    title="Product 2" data-gallery="portfolio-gallery-product"
+                                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                            <img src="{{ asset('arsha-assets/img/masonry-portfolio/masonry-portfolio-6.jpg') }}"
+                                class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Branding 2</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                                <a href="{{ asset('arsha-assets/img/masonry-portfolio/masonry-portfolio-6.jpg') }}"
+                                    title="Branding 2" data-gallery="portfolio-gallery-branding"
+                                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                            <img src="{{ asset('arsha-assets/img/masonry-portfolio/masonry-portfolio-7.jpg') }}"
+                                class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App 3</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                                <a href="{{ asset('arsha-assets/img/masonry-portfolio/masonry-portfolio-7.jpg') }}"
+                                    title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                                        class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                            <img src="{{ asset('arsha-assets/img/masonry-portfolio/masonry-portfolio-8.jpg') }}"
+                                class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Product 3</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                                <a href="{{ asset('arsha-assets/img/masonry-portfolio/masonry-portfolio-8.jpg') }}"
+                                    title="Product 3" data-gallery="portfolio-gallery-product"
+                                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                            <img src="{{ asset('arsha-assets/img/masonry-portfolio/masonry-portfolio-9.jpg') }}"
+                                class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Branding 3</h4>
+                                <p>Lorem ipsum, dolor sit</p>
+                                <a href="{{ asset('arsha-assets/img/masonry-portfolio/masonry-portfolio-9.jpg') }}"
+                                    title="Branding 2" data-gallery="portfolio-gallery-branding"
+                                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                                        class="bi bi-link-45deg"></i></a>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+
+                    </div><!-- End Portfolio Container -->
+
+                </div>
+
+            </div>
+
+        </section> --}}
+        <!-- /Portfolio Section -->
+
+        <!-- Team Section -->
+        {{-- <section id="team" class="team section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Team</h2>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="team-member d-flex align-items-start">
+                            <div class="pic"><img src="{{ asset('arsha-assets/img/team/team-1.jpg') }}"
+                                    class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Walter White</h4>
+                                <span>Chief Executive Officer</span>
+                                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Team Member -->
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="team-member d-flex align-items-start">
+                            <div class="pic"><img src="{{ asset('arsha-assets/img/team/team-2.jpg') }}"
+                                    class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Sarah Jhonson</h4>
+                                <span>Product Manager</span>
+                                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Team Member -->
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="team-member d-flex align-items-start">
+                            <div class="pic"><img src="{{ asset('arsha-assets/img/team/team-3.jpg') }}"
+                                    class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>William Anderson</h4>
+                                <span>CTO</span>
+                                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Team Member -->
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="team-member d-flex align-items-start">
+                            <div class="pic"><img src="{{ asset('arsha-assets/img/team/team-4.jpg') }}"
+                                    class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Amanda Jepson</h4>
+                                <span>Accountant</span>
+                                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Team Member -->
+
+                </div>
+
+            </div>
+
+        </section> --}}
+        <!-- /Team Section -->
+
+        <!-- Pricing Section -->
+        <section id="series" class="pricing section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Series</h2>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    @foreach ($series as $data)
+                        <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="pricing-item featured">
+                                <h3 class="text-center">{{ $data->name }}</h3>
+                                <div class="mb-3">
+
+                                    <img src="{{ $data->cover }}" class="img-fluid" alt="">
+                                </div>
+                                <h4>
+                                    <sup>Rp</sup>{{ number_format($data->price) }}
+                                    <span>({{ $data->videos->count() }} Episode)</span>
+                                </h4>
+                                <p>
+                                    {!! $data->description !!}
+                                </p>
+                                {{-- <ul>
+                                    <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                                    <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                                    <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                                    <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                                    <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                                </ul> --}}
+                                <div class="text-center">
+                                    <a href="{{ route('series.show', $data->slug) }}" class="buy-btn">Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+
+                </div>
+
+            </div>
+
+        </section><!-- /Pricing Section -->
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Testimonials</h2>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div><!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="swiper">
+                    <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <img src="{{ asset('arsha-assets/img/testimonials/testimonials-1.jpg') }}"
+                                    class="testimonial-img" alt="">
+                                <h3>Saul Goodman</h3>
+                                <h4>Ceo &amp; Founder</h4>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
+                                        suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.
+                                        Maecen aliquam, risus at semper.</span>
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <img src="{{ asset('arsha-assets/img/testimonials/testimonials-2.jpg') }}"
+                                    class="testimonial-img" alt="">
+                                <h3>Sara Wilsson</h3>
+                                <h4>Designer</h4>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum
+                                        quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat
+                                        irure amet legam anim culpa.</span>
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <img src="{{ asset('arsha-assets/img/testimonials/testimonials-3.jpg') }}"
+                                    class="testimonial-img" alt="">
+                                <h3>Jena Karlis</h3>
+                                <h4>Store Owner</h4>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla
+                                        quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore
+                                        quis sint minim.</span>
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <img src="{{ asset('arsha-assets/img/testimonials/testimonials-4.jpg') }}"
+                                    class="testimonial-img" alt="">
+                                <h3>Matt Brandon</h3>
+                                <h4>Freelancer</h4>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
+                                        fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore
+                                        quem dolore labore illum veniam.</span>
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <img src="{{ asset('arsha-assets/img/testimonials/testimonials-5.jpg') }}"
+                                    class="testimonial-img" alt="">
+                                <h3>John Larson</h3>
+                                <h4>Entrepreneur</h4>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor
+                                        noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam
+                                        esse veniam culpa fore nisi cillum quid.</span>
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
+        </section><!-- /Testimonials Section -->
+
+        <!-- Faq 2 Section -->
+        <section id="faq-2" class="faq-2 section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-10">
+
+                        <div class="faq-container">
+
+                            <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
+                                <i class="faq-icon bi bi-question-circle"></i>
+                                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                                <div class="faq-content">
+                                    <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
+                                        laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
+                                        rhoncus dolor purus non.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                                <i class="faq-icon bi bi-question-circle"></i>
+                                <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
+                                <div class="faq-content">
+                                    <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
+                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+                                        Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                                <i class="faq-icon bi bi-question-circle"></i>
+                                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                                <div class="faq-content">
+                                    <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
+                                        Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl
+                                        suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
+                                        convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                                <i class="faq-icon bi bi-question-circle"></i>
+                                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+                                <div class="faq-content">
+                                    <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
+                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+                                        Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                            <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                                <i class="faq-icon bi bi-question-circle"></i>
+                                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h3>
+                                <div class="faq-content">
+                                    <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse
+                                        in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl
+                                        suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                                    </p>
+                                </div>
+                                <i class="faq-toggle bi bi-chevron-right"></i>
+                            </div><!-- End Faq item-->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section><!-- /Faq 2 Section -->
+
+        <!-- Contact Section -->
+        {{-- <section id="contact" class="contact section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Contact</h2>
+                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div>
+            <!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-5">
+
+                        <div class="info-wrap">
+                            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                                <div>
+                                    <h3>Address</h3>
+                                    <p>A108 Adam Street, New York, NY 535022</p>
+                                </div>
+                            </div><!-- End Info Item -->
+
+                            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                                <i class="bi bi-telephone flex-shrink-0"></i>
+                                <div>
+                                    <h3>Call Us</h3>
+                                    <p>+1 5589 55488 55</p>
+                                </div>
+                            </div><!-- End Info Item -->
+
+                            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                                <i class="bi bi-envelope flex-shrink-0"></i>
+                                <div>
+                                    <h3>Email Us</h3>
+                                    <p>info@example.com</p>
+                                </div>
+                            </div><!-- End Info Item -->
+
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+                                frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <div class="row gy-4">
+
+                                <div class="col-md-6">
+                                    <label for="name-field" class="pb-2">Your Name</label>
+                                    <input type="text" name="name" id="name-field" class="form-control"
+                                        required="">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email-field" class="pb-2">Your Email</label>
+                                    <input type="email" class="form-control" name="email" id="email-field"
+                                        required="">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label for="subject-field" class="pb-2">Subject</label>
+                                    <input type="text" class="form-control" name="subject" id="subject-field"
+                                        required="">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label for="message-field" class="pb-2">Message</label>
+                                    <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                                    <button type="submit">Send Message</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div><!-- End Contact Form -->
+
+                </div>
+
+            </div>
+
+        </section> --}}
+        <!-- /Contact Section -->
+
+    </div>
+
+@endsection

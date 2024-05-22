@@ -18,8 +18,8 @@ class Series extends Model
         'name',
         'slug',
         'cover',
-        'level',
-        'status',
+        // 'level',
+        // 'status',
         'description',
         'price',
     ];

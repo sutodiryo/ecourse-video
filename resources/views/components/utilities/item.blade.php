@@ -16,7 +16,7 @@
         {{ $date }}
     </p>
     <!--- Level -->
-    <p class="mr-4">
+    {{-- <p class="mr-4">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop-analytics" width="24"
             height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
             stroke-linejoin="round">
@@ -31,9 +31,9 @@
             <path d="M12 12v-1"></path>
         </svg>
         {{ $level }}
-    </p>
+    </p> --}}
     <!--- Status -->
-    <p class="mr-4">
+    {{-- <p class="mr-4">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check" width="24" height="24"
             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
             stroke-linejoin="round">
@@ -42,7 +42,7 @@
             <path d="M9 12l2 2l4 -4"></path>
         </svg>
         {{ $status }}
-    </p>
+    </p> --}}
     <!-- Episode -->
     <p class="mr-4">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-movie" width="24" height="24"

@@ -13,10 +13,8 @@
                         <div class="col-7">
                             <div class="ribbon bg-red">Rp. {{ number_format($series->price) }}</div>
                             <h3 class="card-title">{{ $series->name }}</h3>
-                            <p class="card-text">{{ $series->description }}</p>
+                            <p class="card-text">{!! $series->description !!}</p>
                             <x-utilities.item date="{{ $series->created_at->format('d F Y') }}"
-                                level="{{ $series->level }}"
-                                status="{{ $series->status == 1 ? 'Compeleted' : 'Developed' }}"
                                 episode="{{ $series->videos->count() }} Episode" members="{{ $members }} Members" />
                             <div class="mt-2">
                                 @if ($purchased)

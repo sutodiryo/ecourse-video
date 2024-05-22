@@ -28,8 +28,8 @@ class SeriesStoreRequest extends FormRequest
             'price' => 'required',
             'description' => 'required',
             'cover' =>'required|mimes:jpg,png,jpeg',
-            'level' => 'required',
-            'status' => 'required'
+            // 'level' => 'required',
+            // 'status' => 'required'
         ];
     }
 }
