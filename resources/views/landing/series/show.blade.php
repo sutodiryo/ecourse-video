@@ -10,7 +10,10 @@
             <div class="col-12 col-lg-12">
                 <x-card.card-description>
                     <div class="row">
-                        <div class="col-7">
+                        <div class="col-md-5 mb-4">
+                            <img src="{{ $series->cover }}" class="img-fluid" />
+                        </div>
+                        <div class="col-md-7">
                             <div class="ribbon bg-red">Rp. {{ number_format($series->price) }}</div>
                             <h3 class="card-title">{{ $series->name }}</h3>
                             <p class="card-text">{!! $series->description !!}</p>
@@ -31,9 +34,6 @@
                                     </form>
                                 @endif
                             </div>
-                        </div>
-                        <div class="col-5">
-                            <img src="{{ $series->cover }}" class="img-fluid" />
                         </div>
                     </div>
                 </x-card.card-description>

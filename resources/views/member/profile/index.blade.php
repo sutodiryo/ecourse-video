@@ -5,7 +5,7 @@
 @section('content')
     <div class="container-xl">
         <div class="row">
-            <div class="col-6">
+            <div class="col-md-6">
                 <x-card.card title="Account Details">
                     <form action="{{ route('member.profile.update', $user->id) }}" method="POST"
                         enctype="multipart/form-data">
@@ -27,7 +27,7 @@
                     </form>
                 </x-card.card>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <x-card.card title="Update Password">
                     <form action="{{ route('member.profile.updatePassword', $user->id) }}" method="POST">
                         @csrf
