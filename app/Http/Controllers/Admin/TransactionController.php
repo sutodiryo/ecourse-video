@@ -57,6 +57,6 @@ class TransactionController extends Controller
         $grandTotal = $transactionDetails->sum('grand_total');
 
         // return to view
-        return view('member.transaction.show', compact('transaction', 'transactionDetails', 'grandTotal'));
+        return view('admin.transaction.show', compact('transaction', 'transactionDetails', 'grandTotal'));
     }
 }
