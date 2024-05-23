@@ -5,7 +5,8 @@
         </button>
         <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
             <a href=".">
-                <img src="{{ asset('static/mbc-asal.png') }}" width="110" height="32" alt="" class="navbar-brand-image">
+                <img src="{{ asset('static/mbc-asal.png') }}" width="110" height="32" alt=""
+                    class="navbar-brand-image">
                 {{-- <img src="./static/logo.svg" width="110" height="32" alt="Tabler" class="navbar-brand-image"> --}}
             </a>
         </h1>
@@ -15,10 +16,77 @@
         {{-- <a href="/" class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pr-0 pr-md-3 mt-2">
             <h2 class="font-weight-bold text-azure">MBC<span class="text-red"> Course</span></h2>
         </a> --}}
-        <div class="navbar-nav flex-row order-md-last">
-            @guest
+        <div class="navbar-nav flex-row order-md-last mt-2 mb-2">
+
+            <div class="nav-item d-md-flex me-3">
                 <div class="btn-list">
-                    <a href="{{ route('login') }}" class="btn btn-pill btn-outline-success" rel="noreferrer">
+                    <div class="d-none d-md-flex">
+                        <a href="{{ route('register') }}" class="btn" rel="noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                                <path d="M16 19h6" />
+                                <path d="M19 16v6" />
+                                <path d="M6 21v-2a4 4 0 0 1 4 -4h4" />
+                            </svg>
+                            Daftar
+                        </a>
+                    </div>
+                    <div class="d-md-flex">
+                        <a href="{{ route('login') }}" class="btn btn-outline-warning" rel="noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-login-2">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M9 8v-2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2" />
+                                <path d="M3 12h13l-3 -3" />
+                                <path d="M13 15l3 -3" />
+                            </svg>
+                            Masuk
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-md-flex">
+                {{-- <a href="{{ route('login') }}" class="btn" target="_blank" rel="noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-login-2">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M9 8v-2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2" />
+                        <path d="M3 12h13l-3 -3" />
+                        <path d="M13 15l3 -3" />
+                    </svg>
+                    Log In
+                </a> --}}
+            </div>
+            {{-- <div class="nav-item dropdown">
+                <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown"
+                    aria-label="Open user menu" aria-expanded="false">
+                    <span class="avatar avatar-sm" style="background-image: url(./static/avatars/000m.jpg)"></span>
+                    <div class="d-none d-xl-block ps-2">
+                        <div>Paweł Kuna</div>
+                        <div class="mt-1 small text-secondary">UI Designer</div>
+                    </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <a href="#" class="dropdown-item">Status</a>
+                    <a href="./profile.html" class="dropdown-item">Profile</a>
+                    <a href="#" class="dropdown-item">Feedback</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="./settings.html" class="dropdown-item">Settings</a>
+                    <a href="./sign-in.html" class="dropdown-item">Logout</a>
+                </div>
+            </div> --}}
+
+            @guest
+                <div>
+                    {{-- <a href="{{ route('login') }}" class="btn btn-pill btn-outline-success" rel="noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-login-2">
@@ -28,8 +96,8 @@
                             <path d="M13 15l3 -3" />
                         </svg>
                         Masuk
-                    </a>
-                    <a href="{{ route('register') }}" class="btn btn-pill btn-outline-primary" rel="noreferrer">
+                    </a> --}}
+                    {{-- <a href="{{ route('register') }}" class="btn  btn-ghost-primary" rel="noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus">
@@ -40,7 +108,19 @@
                             <path d="M6 21v-2a4 4 0 0 1 4 -4h4" />
                         </svg>
                         Daftar
-                    </a>
+                    </a> --}}
+
+                    {{-- <a href="{{ route('login') }}" class="btn btn-sm btn-pill btn-warning">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-login-2">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M9 8v-2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2" />
+                            <path d="M3 12h13l-3 -3" />
+                            <path d="M13 15l3 -3" />
+                        </svg>
+                        Masuk
+                    </a> --}}
                 </div>
                 {{-- <a href="{{ route('login') }}" class="nav-item mr-2">Login</a>
                 <a href="{{ route('register') }}" class="nav-item">Register</a> --}}

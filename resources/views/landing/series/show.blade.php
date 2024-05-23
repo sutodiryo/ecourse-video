@@ -30,7 +30,7 @@
                                     <form action="{{ route('carts.store', $series->slug) }}" method="POST">
                                         @csrf
                                         <x-button.button-save icon="shopping-cart" title="Buy Now"
-                                            class="btn btn-outline-primary" />
+                                            class="btn btn-lg btn-block btn-outline-primary" />
                                     </form>
                                 @endif
                             </div>
