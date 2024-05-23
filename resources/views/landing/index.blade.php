@@ -24,7 +24,8 @@
                         </div>
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-                        <img src="{{ asset('arsha-assets/img/fjs-no-background.png') }}" class="img-fluid animated" alt="">
+                        <img src="{{ asset('arsha-assets/img/fjs-no-background.png') }}" class="img-fluid animated"
+                            alt="">
                     </div>
                 </div>
             </div>
@@ -117,7 +118,9 @@
                             untuk mendapatkan berbagai solusi mulai dari strategi, ilmu dan BEST PRACTICE untuk membangun
                             bisnis Anda.
                             <br>
-                            Setiap series berisi ratusan video panduan .....
+                            <br>
+                            Setiap series berisi ratusan video panduan yang menjelaskan secara detil untuk memudahkan
+                            peserta memahami setiap materi yg disampikan.
                         </h4>
                         {{-- <ul>
                             <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
@@ -160,7 +163,8 @@
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-chat icon"></i></div>
-                            <h4><a href="service-details.html" class="stretched-link">Tanya-jawab dengan coach Fitra</a></h4>
+                            <h4><a href="#" class="stretched-link">Tanya-jawab dengan coach Fitra</a>
+                            </h4>
                             <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
                         </div>
                     </div><!-- End Service Item -->
@@ -168,7 +172,7 @@
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-camera-video icon"></i></div>
-                            <h4><a href="service-details.html" class="stretched-link">⁠Akses ecourse 1 tahun</a></h4>
+                            <h4><a href="#" class="stretched-link">⁠Akses ecourse 1 tahun</a></h4>
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
                         </div>
                     </div><!-- End Service Item -->
@@ -176,8 +180,9 @@
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-book icon"></i></div>
-                            <h4><a href="service-details.html" class="stretched-link">Penjelalsan materi yang sederhana dan mudah dipahami
-                            </a></h4>
+                            <h4><a href="#" class="stretched-link">Penjelalsan materi yang sederhana dan
+                                    mudah dipahami
+                                </a></h4>
                             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
                         </div>
                     </div><!-- End Service Item -->
@@ -185,7 +190,7 @@
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-box2-heart icon"></i></div>
-                            <h4><a href="service-details.html" class="stretched-link">Promo khusus 30 orang pertama</a></h4>
+                            <h4><a href="#" class="stretched-link">Promo khusus 30 orang pertama</a></h4>
                             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
                         </div>
                     </div><!-- End Service Item -->
@@ -232,7 +237,9 @@
 
                                 <h3><span>01</span> Registrasi Akun (WAJIB)</h3>
                                 <div class="faq-content">
-                                    <p>Silahkan buat akun terlebih dahulu. Sebelum membeli akses E-Course kamu WAJIB membuat akun terlebih dahulu. Klik <a href="{{ route('register') }}">disini</a> untuk membuat akun.</p>
+                                    <p>Silahkan buat akun terlebih dahulu. Sebelum membeli akses E-Course kamu WAJIB membuat
+                                        akun terlebih dahulu. Klik <a href="{{ route('register') }}">disini</a> untuk
+                                        membuat akun.</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
@@ -241,7 +248,8 @@
                                 <h3><span>02</span> Pilih E-Course
                                 </h3>
                                 <div class="faq-content">
-                                    <p>Setelah membuat akun, silahkan pilih E-Course yang akan kamu ikuti. Silahkan pilih e-coursenya <a>disini</a>.</p>
+                                    <p>Setelah membuat akun, silahkan pilih E-Course yang akan kamu ikuti. Silahkan pilih
+                                        e-coursenya <a href="{{ route('series.index') }}">disini</a>.</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
@@ -249,7 +257,8 @@
                             <div class="faq-item">
                                 <h3><span>03</span> Checkout & Payment</h3>
                                 <div class="faq-content">
-                                    <p>Lakukan Pembayaran sesuai dengan nominal harga yang tertera. Pastikan pembayaran hanya ke Rekening Resmi MBC.</p>
+                                    <p>Lakukan Pembayaran sesuai dengan nominal harga yang tertera. Pastikan pembayaran
+                                        hanya ke Rekening Resmi MBC.</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
@@ -257,7 +266,8 @@
                             <div class="faq-item">
                                 <h3><span>04</span> Konfirmasi Pembayaran</h3>
                                 <div class="faq-content">
-                                    <p>Setelah melakukan pembayaran silahkan konfirmasi kepada Admin MBC dan lampirkan Bukti Transfernya. Klik <a>disini</a> untuk konfirmasi pembayaran.</p>
+                                    <p>Setelah melakukan pembayaran silahkan konfirmasi kepada Admin MBC dan lampirkan Bukti
+                                        Transfernya. Klik <a href="https://api.whatsapp.com/send/?phone=6285865580653&text">disini</a> untuk konfirmasi pembayaran.</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
@@ -265,7 +275,9 @@
                             <div class="faq-item">
                                 <h3><span>05</span> Akses E-Course di Dashboard</h3>
                                 <div class="faq-content">
-                                    <p>Silahkan Akses E-Course yang telah kamu beli di bagian menu Dashboard atau klik <a>disini</a> untuk menuju ke E-Course.</p>
+                                    <p>Silahkan Akses E-Course yang telah kamu beli di bagian menu Dashboard atau klik
+                                        <a href="{{ route('series.index') }}">disini</a> untuk menuju ke E-Course.
+                                    </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
@@ -358,10 +370,9 @@
 
                 <div class="row" data-aos="zoom-in" data-aos-delay="100">
                     <div class="col-xl-9 text-center text-xl-start">
-                        <h3>Call To Action</h3>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit anim id est laborum.</p>
+                        <h3>Mengapa Harus Bergabung Sekarang?</h3>
+                        <p>Semakin cepat anda mendaftar semakin cepat mengikuti semakin cepat mendapatkan ilmu dan perubahan
+                            dalam bisnisnya akan semakin besar ...</p>
                     </div>
                     <div class="col-xl-3 cta-btn-container text-center">
                         <a class="cta-btn align-middle" href="{{ route('register') }}">Daftar Sekarang</a>
@@ -627,7 +638,7 @@
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Series</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                {{-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> --}}
             </div><!-- End Section Title -->
 
             <div class="container">
@@ -657,7 +668,18 @@
                                     <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
                                 </ul> --}}
                                 <div class="text-center">
-                                    <a href="{{ route('series.show', $data->slug) }}" class="buy-btn">Detail</a>
+                                    <a href="{{ route('series.show', $data->slug) }}" class="buy-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                            <path
+                                                d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                                        </svg>
+                                        Detail
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -674,8 +696,8 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Testimonials</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                <h2>Testimoni</h2>
+                {{-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> --}}
             </div><!-- End Section Title -->
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -700,25 +722,26 @@
 
                         <div class="swiper-slide">
                             <div class="testimonial-item">
-                                <img src="{{ asset('arsha-assets/img/testimonials/testimonials-1.jpg') }}"
-                                    class="testimonial-img" alt="">
-                                <h3>Saul Goodman</h3>
-                                <h4>Ceo &amp; Founder</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
-                                        suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.
-                                        Maecen aliquam, risus at semper.</span>
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
+                                <img src="{{ asset('arsha-assets/img/testimonials/testi-1.jpeg') }}" class=""
+                                    alt="" height="500">
                             </div>
                         </div><!-- End testimonial item -->
 
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <img src="{{ asset('arsha-assets/img/testimonials/testi-2.jpeg') }}" class=""
+                                    alt="" height="500">
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <img src="{{ asset('arsha-assets/img/testimonials/testi-3.jpeg') }}" class=""
+                                    alt="" height="500">
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        {{--
                         <div class="swiper-slide">
                             <div class="testimonial-item">
                                 <img src="{{ asset('arsha-assets/img/testimonials/testimonials-2.jpg') }}"
@@ -801,7 +824,7 @@
                                     <i class="bi bi-quote quote-icon-right"></i>
                                 </p>
                             </div>
-                        </div><!-- End testimonial item -->
+                        </div><!-- End testimonial item --> --}}
 
                     </div>
                     <div class="swiper-pagination"></div>
@@ -817,9 +840,9 @@
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Frequently Asked Questions</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
                     consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
             </div><!-- End Section Title -->
 
             <div class="container">
@@ -832,60 +855,37 @@
 
                             <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
                                 <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                                <h3>Bagaiamana sistem ecourse Sekolah Bisnis MBC?</h3>
                                 <div class="faq-content">
-                                    <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
-                                        laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
-                                        rhoncus dolor purus non.</p>
+                                    <p>Kelas ecourse Sekolah Bisnis MBC berisi ratusan video panduan bisnis untuk setiap
+                                        seriesnya</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                                 <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
+                                <h3>Apa saja fasilitas yang di dapat jika bergabung Ecourse Sekolah Bisnis?</h3>
                                 <div class="faq-content">
-                                    <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
-                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
-                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-                                        Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                                    <p>Tanya jawab yang dijawab langsung oleh coach Fitra dan materi yg mudah dipahami</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
                                 <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                                <h3>Berapa lama akses yg di dapat jika beli ecourse ini?</h3>
                                 <div class="faq-content">
-                                    <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
-                                        Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl
-                                        suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
-                                        convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                                    </p>
+                                    <p>Ecourse Sekolah Bisnis bisa diakses selama 1 tahun sejak bergabung</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
                                 <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+                                <h3>Ecourse Sekolah Bisnis cocok untuk pengusaha seperti apa?</h3>
                                 <div class="faq-content">
-                                    <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
-                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
-                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-                                        Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
-                            <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
-                                <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h3>
-                                <div class="faq-content">
-                                    <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse
-                                        in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl
-                                        suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-                                    </p>
+                                    <p>Ecourse ini cocok untuk srmua pengusaha dari semua kalangan</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->

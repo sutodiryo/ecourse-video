@@ -16,7 +16,8 @@ class SeriesController extends Controller
     public function index()
     {
         // get all series
-        $series = Series::with('videos')->latest()->get();
+        $series = Series::with('videos')->orderBy('created_at', 'asc')->get();
+        // $series = Series::with('videos')->latest()->get();
 
         // return to landing page
         return view('landing.series.index', compact('series'));
