@@ -14,7 +14,6 @@ class FrontendSeeder extends Seeder
      * @return void
      */
     public function run()
-
     {
         Frontend::create([
             'hero_text' => 'Sekolah Bisnis “Muslim Bisnis Comunity” <br> Nikmati kemudahan akses belajar bisnis melalui paket video ecourse Sekolah Bisnis yang disampaikan langsung oleh Coach Fitra Jaya Saleh',

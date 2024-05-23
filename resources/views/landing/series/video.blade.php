@@ -34,17 +34,24 @@
                                     </span>
                                 </a>
 
-                                <div class="accordion mt-3" id="accordion-{{ $data->video_code }}">
-                                    {{-- <div class="row">
+                                {{-- <div class="accordion mt-3" id="accordion-{{ $data->video_code }}"> --}}
+
+                                {{-- <div class="row">
                                         <div class="col-sm-9"> --}}
-                                            <x-form.input type="text" title="" name="comment" value=""
-                                                placeholder="Add a comment..." />
-                                        {{-- </div>
+
+
+                                {{-- <x-form.input type="text" title="" name="comment" value=""
+                                                placeholder="Add a comment..." /> --}}
+
+
+                                {{-- </div>
                                         <div class="col-sm-3">
                                             <x-button.button-save title="Comment" icon="comment" class="btn btn-primary" />
                                         </div>
                                     </div> --}}
-                                    <div class="card">
+
+
+                                {{-- <div class="card">
                                         <div class="card-header" id="headingOne">
                                             <h2 class="mb-0">
                                                 <button class="btn btn-link btn-block text-left" type="button"
@@ -64,8 +71,10 @@
                                                 Contoh reply comment{{ $data->video_code }} 2
                                             </div>
                                         </div>
-                                    </div>
-                                    {{-- <div class="card">
+                                    </div> --}}
+
+
+                                {{-- <div class="card">
                                         <div class="card-header" id="headingTwo">
                                             <h2 class="mb-0">
                                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
@@ -85,7 +94,7 @@
                                             </div>
                                         </div>
                                     </div> --}}
-                                    {{-- <div class="card">
+                                {{-- <div class="card">
                                         <div class="card-header" id="headingThree">
                                             <h2 class="mb-0">
                                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
@@ -106,8 +115,9 @@
                                             </div>
                                         </div>
                                     </div> --}}
-                                </div>
-                                <hr>
+
+                                {{-- </div>
+                                <hr> --}}
                             @endforeach
                         </div>
                     </x-card.card>
