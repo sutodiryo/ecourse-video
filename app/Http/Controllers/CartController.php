@@ -58,7 +58,8 @@ class CartController extends Controller
         // check if cart is not empty
         if($cart->count() >= 1){
             // return to cart page
-            return back()->with('toast_success', 'Series removed from cart!');
+            // return back()->with('toast_success', 'Series removed from cart!');
+            return redirect(route('series.index'))->with('toast_success', 'Your Cart is now empty!');
         }else{
             // return to landing page
             return redirect(route('landing'))->with('toast_success', 'Your Cart is empty!');
