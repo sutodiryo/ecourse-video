@@ -36,8 +36,11 @@
                     </ul>
                 </li>
                 <li><a href="#contact">Contact</a></li> --}}
-                <li><a href="{{ route('register') }}">Daftar</a></li>
+                @guest
+                    <li><a href="{{ route('register') }}">Daftar</a></li>
+                @endguest
             </ul>
+
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
