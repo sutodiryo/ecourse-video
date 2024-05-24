@@ -4,8 +4,11 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <a href="/" class="navbar-brand navbar-brand-autodark">
-            <h2 class="font-weight-bold text-azure"><span class="text-red">MBC</span></h2>
+            {{-- <h2 class="font-weight-bold text-azure"><span class="text-red">MBC</span></h2> --}}
             {{-- <h2 class="font-weight-bold text-azure">We<span class="text-red">Learn</span></h2> --}}
+
+            <img src="{{ asset('arsha-assets/img/mbc-logo.png') }}" height="32" alt=""
+            class="navbar-brand-image">
         </a>
         <div class="navbar-nav flex-row d-lg-none">
             <div class="nav-item dropdown">

@@ -27,9 +27,13 @@
             <form class="card card-md" action="{{ route('register') }}" method="POST">
                 @csrf
                 <div class="card-body">
-                    <h1 class="text-center mb-3 font-weight-bold text-azure">
+                    {{-- <h1 class="text-center mb-3 font-weight-bold text-azure">
                         MBC<span class="text-red"> Course</span>
-                    </h1>
+                    </h1> --}}
+
+                    <div class="text-center mb-5">
+                        <img src="{{ asset('static/rsz_mbc-logo-red.png') }}" height="50">
+                    </div>
                     <div class="mb-3">
                         <label class="form-label">Full Name</label>
                         <input type="text" class="form-control @error('name') is-invalid @enderror"

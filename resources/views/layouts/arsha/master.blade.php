@@ -9,8 +9,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{ asset('arsha-assets/img/favicon.png') }}" rel="icon">
-    <link href="{{ asset('arsha-assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <link href="{{ asset('static/mbc-favicon.ico') }}" rel="icon">
+    <link href="{{ asset('static/mbc-favicon.ico') }}" rel="apple-touch-icon">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">

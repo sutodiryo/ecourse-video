@@ -22,7 +22,7 @@
         <div class="row gy-4">
             <div class="col-lg-4 col-md-6 footer-about">
                 <a href="index.html" class="d-flex align-items-center">
-                    <span class="sitename">MBC</span>
+                    <span class="sitename">Sekolah Bisnis “Muslim Bisnis Comunity”</span>
                 </a>
                 <div class="footer-contact pt-3">
                     <p>Gg Guruh 3, Ngasinan</p>
@@ -54,8 +54,8 @@
                 {{-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> --}}
                 <div class="social-links d-flex">
                     {{-- <a href=""><i class="bi bi-twitter-x"></i></a> --}}
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/m1t.fjs/"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/m1t.fjs"><i class="bi bi-instagram"></i></a>
                     {{-- <a href=""><i class="bi bi-linkedin"></i></a> --}}
                 </div>
             </div>
@@ -64,14 +64,14 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">MBC</strong> <span>All Rights Reserved</span>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sekolah Bisnis “Muslim Bisnis Comunity”</strong> <span>All Rights Reserved</span>
         </p>
         <div class="credits">
             <!-- All the links in the footer should remain intact. -->
             <!-- You can delete the links only if you've purchased the pro version. -->
             <!-- Licensing information: https://bootstrapmade.com/license/ -->
             <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-            Designed by <a href="https://bootstrapmade.com/">MBC</a>
+            Designed by <a href="{{ route('landing') }}">Sekolah Bisnis “Muslim Bisnis Comunity”</a>
         </div>
     </div>
 

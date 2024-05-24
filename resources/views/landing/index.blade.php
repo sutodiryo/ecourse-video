@@ -18,7 +18,7 @@
                         {{-- <p class="">adalah kelas ecourse bisnis yang akan membantu Anda untuk mendapatkan berbagai solusi mulai dari strategi, ilmu dan BEST PRACTICE untuk membangun bisnis Anda</p> --}}
                         <div class="d-flex">
                             <a href="#about" class="btn-get-started">Daftar Sekarang</a>
-                            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+                            <a href="https://www.youtube.com/watch?v=H2dklT4M8VA"
                                 class="glightbox btn-watch-video d-flex align-items-center"><i
                                     class="bi bi-play-circle"></i><span>Watch Video</span></a>
                         </div>
@@ -105,7 +105,7 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2 class="">Tentang MBC</h2>
+                <h2 class="">Tentang Sekolah Bisnis “Muslim Bisnis Comunity”</h2>
             </div><!-- End Section Title -->
 
             <div class="container">
@@ -114,7 +114,7 @@
 
                     <div class="col-lg-12 content text-center" data-aos="fade-up" data-aos-delay="100">
                         <h4 class="text-black">
-                            Sekolah Bisnis “Muslim Bisnis Comunity” adalah kelas ecourse bisnis yang akan membantu Anda
+                            Sekolah Bisnis “Muslim Bisnis Comunity” adalah ecourse bisnis yang akan membantu Anda
                             untuk mendapatkan berbagai solusi mulai dari strategi, ilmu dan BEST PRACTICE untuk membangun
                             bisnis Anda.
                             <br>
@@ -153,7 +153,7 @@
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Services</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                {{-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> --}}
             </div><!-- End Section Title -->
 
             <div class="container">
@@ -165,7 +165,7 @@
                             <div class="icon"><i class="bi bi-chat icon"></i></div>
                             <h4><a href="#" class="stretched-link">Tanya-jawab dengan coach Fitra</a>
                             </h4>
-                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                            <p>Setiap pelanggan bisa melakukan tanya jawab dengan coach Fitra di setiap video yang di tonton. </p>
                         </div>
                     </div><!-- End Service Item -->
 
@@ -173,7 +173,7 @@
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-camera-video icon"></i></div>
                             <h4><a href="#" class="stretched-link">⁠Akses ecourse 1 tahun</a></h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            <p>E-course sekolah bisnis dapat diakses selama 1 tahun setelah membeli paket</p>
                         </div>
                     </div><!-- End Service Item -->
 
@@ -183,7 +183,7 @@
                             <h4><a href="#" class="stretched-link">Penjelalsan materi yang sederhana dan
                                     mudah dipahami
                                 </a></h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                            {{-- <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p> --}}
                         </div>
                     </div><!-- End Service Item -->
 
@@ -191,7 +191,7 @@
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-box2-heart icon"></i></div>
                             <h4><a href="#" class="stretched-link">Promo khusus 30 orang pertama</a></h4>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                            <p>Free modul untuk 30 pendaftaran pertama disetiap series</p>
                         </div>
                     </div><!-- End Service Item -->
 
@@ -258,7 +258,7 @@
                                 <h3><span>03</span> Checkout & Payment</h3>
                                 <div class="faq-content">
                                     <p>Lakukan Pembayaran sesuai dengan nominal harga yang tertera. Pastikan pembayaran
-                                        hanya ke Rekening Resmi MBC.</p>
+                                        hanya ke Rekening Resmi Sekolah Bisnis “Muslim Bisnis Comunity”.</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
@@ -266,7 +266,7 @@
                             <div class="faq-item">
                                 <h3><span>04</span> Konfirmasi Pembayaran</h3>
                                 <div class="faq-content">
-                                    <p>Setelah melakukan pembayaran silahkan konfirmasi kepada Admin MBC dan lampirkan Bukti
+                                    <p>Setelah melakukan pembayaran silahkan konfirmasi kepada Admin Sekolah Bisnis “Muslim Bisnis Comunity” dan lampirkan Bukti
                                         Transfernya. Klik <a href="https://api.whatsapp.com/send/?phone=6285865580653&text">disini</a> untuk konfirmasi pembayaran.</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -855,9 +855,9 @@
 
                             <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
                                 <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>Bagaiamana sistem ecourse Sekolah Bisnis MBC?</h3>
+                                <h3>Bagaiamana sistem ecourse Sekolah Bisnis “Muslim Bisnis Comunity”?</h3>
                                 <div class="faq-content">
-                                    <p>Kelas ecourse Sekolah Bisnis MBC berisi ratusan video panduan bisnis untuk setiap
+                                    <p>Kelas ecourse Sekolah Bisnis Sekolah Bisnis “Muslim Bisnis Comunity” berisi ratusan video panduan bisnis untuk setiap
                                         seriesnya</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
