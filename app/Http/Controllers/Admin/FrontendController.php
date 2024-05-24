@@ -72,15 +72,22 @@ class FrontendController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $data = Frontend::find($id);
-        // dd($data);
-        $data->update([
-            'hero_text' => $request->hero_text,
-            'hero_img' => $request->hero_img,
-            // 'episode' => $request->episode,
-            // 'duration' => $request->duration,
-            // 'intro' => $request->intro ? 1 : 0
-        ]);
+        $frontend = Frontend::find($id);
+
+        $data = $request->except('hero_img');
+
+        $frontend->update($data);
+
+        // update series
+        // $series->update($data);
+        // // dd($data);
+        // $data->update([
+        //     'hero_text' => $request->hero_text,
+        //     'hero_img' => $request->hero_img,
+        //     // 'episode' => $request->episode,
+        //     // 'duration' => $request->duration,
+        //     // 'intro' => $request->intro ? 1 : 0
+        // ]);
 
         // return view with series and video
         return redirect(route('admin.frontend.index'))->with('toast_success', 'Homepage updated successfully ');

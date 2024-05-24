@@ -1,4 +1,4 @@
-<a href="#" onclick="deleteData({{ $id }})" {{ $attributes->merge(['class' => '']) }}>
+<a href="#" onclick="deleteData('{{ $id }}')" {{ $attributes->merge(['class' => '']) }}>
     <i class="fas fa-eraser mr-2"></i>
     {{ $title }}
 </a>

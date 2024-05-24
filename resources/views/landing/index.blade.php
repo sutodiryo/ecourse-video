@@ -12,9 +12,10 @@
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-                        <h1 class="">Sekolah Bisnis “Muslim Bisnis Comunity”</h1>
-                        <p class="">Nikmati kemudahan akses belajar bisnis melalui paket video ecourse Sekolah Bisnis
-                            yang disampaikan langsung oleh <b>Coach Fitra Jaya Saleh</b></p>
+                        <h1>{!! $data->hero_text !!}</h1>
+                        {{-- <h1>Sekolah Bisnis “Muslim Bisnis Comunity”</h1>
+                        <p>Nikmati kemudahan akses belajar bisnis melalui paket video ecourse Sekolah Bisnis
+                            yang disampaikan langsung oleh <b>Coach Fitra Jaya Saleh</b></p> --}}
                         {{-- <p class="">adalah kelas ecourse bisnis yang akan membantu Anda untuk mendapatkan berbagai solusi mulai dari strategi, ilmu dan BEST PRACTICE untuk membangun bisnis Anda</p> --}}
                         <div class="d-flex">
                             <a href="#about" class="btn-get-started">Daftar Sekarang</a>
@@ -105,7 +106,8 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2 class="">Tentang Sekolah Bisnis “Muslim Bisnis Comunity”</h2>
+                <h2>{!! $data->section_2_title !!}</h2>
+                {{-- <h2>Tentang Sekolah Bisnis “Muslim Bisnis Comunity”</h2> --}}
             </div><!-- End Section Title -->
 
             <div class="container">
@@ -114,13 +116,14 @@
 
                     <div class="col-lg-12 content text-center" data-aos="fade-up" data-aos-delay="100">
                         <h4 class="text-black">
-                            Sekolah Bisnis “Muslim Bisnis Comunity” adalah ecourse bisnis yang akan membantu Anda
+                            {!! $data->section_2_text !!}
+                            {{-- Sekolah Bisnis “Muslim Bisnis Comunity” adalah ecourse bisnis yang akan membantu Anda
                             untuk mendapatkan berbagai solusi mulai dari strategi, ilmu dan BEST PRACTICE untuk membangun
                             bisnis Anda.
                             <br>
                             <br>
                             Setiap series berisi ratusan video panduan yang menjelaskan secara detil untuk memudahkan
-                            peserta memahami setiap materi yg disampikan.
+                            peserta memahami setiap materi yg disampikan. --}}
                         </h4>
                         {{-- <ul>
                             <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
@@ -152,7 +155,8 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Services</h2>
+                <h2>{!! $data->section_3_title !!}</h2>
+                {{-- <h2>Services</h2> --}}
                 {{-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> --}}
             </div><!-- End Section Title -->
 
@@ -163,26 +167,34 @@
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-chat icon"></i></div>
-                            <h4><a href="#" class="stretched-link">Tanya-jawab dengan coach Fitra</a>
+                            <h4><a class="stretched-link">{!! $data->section_3_1_title !!}</a>
+                                {{-- <h4><a class="stretched-link">Tanya-jawab dengan coach Fitra</a> --}}
                             </h4>
-                            <p>Setiap pelanggan bisa melakukan tanya jawab dengan coach Fitra di setiap video yang di tonton. </p>
+                            <p>{!! $data->section_3_1_text !!}</p>
+                            {{-- <p>Setiap pelanggan bisa melakukan tanya jawab dengan coach Fitra di setiap video yang di
+                                tonton. </p> --}}
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-camera-video icon"></i></div>
-                            <h4><a href="#" class="stretched-link">⁠Akses ecourse 1 tahun</a></h4>
-                            <p>E-course sekolah bisnis dapat diakses selama 1 tahun setelah membeli paket</p>
+                            <h4><a class="stretched-link">⁠{!! $data->section_3_2_title !!}</a></h4>
+                            {{-- <h4><a class="stretched-link">⁠Akses ecourse 1 tahun</a></h4> --}}
+                            <p>{!! $data->section_3_2_text !!}</p>
+                            {{-- <p>E-course sekolah bisnis dapat diakses selama 1 tahun setelah membeli paket</p> --}}
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-book icon"></i></div>
-                            <h4><a href="#" class="stretched-link">Penjelalsan materi yang sederhana dan
-                                    mudah dipahami
-                                </a></h4>
+                            <h4><a class="stretched-link">
+                                {!! $data->section_3_3_title !!}
+                                {{-- Penjelalsan materi yang sederhana dan mudah dipahami --}}
+                                </a>
+                            </h4>
+                            <p>{!! $data->section_3_3_text !!}</p>
                             {{-- <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p> --}}
                         </div>
                     </div><!-- End Service Item -->
@@ -190,8 +202,10 @@
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-box2-heart icon"></i></div>
-                            <h4><a href="#" class="stretched-link">Promo khusus 30 orang pertama</a></h4>
-                            <p>Free modul untuk 30 pendaftaran pertama disetiap series</p>
+                            <h4><a class="stretched-link">{!! $data->section_3_4_title !!}</a></h4>
+                            {{-- <h4><a class="stretched-link">Promo khusus 30 orang pertama</a></h4> --}}
+                            <p>{!! $data->section_3_4_text !!}</p>
+                            {{-- <p>Free modul untuk 30 pendaftaran pertama disetiap series</p> --}}
                         </div>
                     </div><!-- End Service Item -->
 
@@ -266,8 +280,11 @@
                             <div class="faq-item">
                                 <h3><span>04</span> Konfirmasi Pembayaran</h3>
                                 <div class="faq-content">
-                                    <p>Setelah melakukan pembayaran silahkan konfirmasi kepada Admin Sekolah Bisnis “Muslim Bisnis Comunity” dan lampirkan Bukti
-                                        Transfernya. Klik <a href="https://api.whatsapp.com/send/?phone=6285865580653&text">disini</a> untuk konfirmasi pembayaran.</p>
+                                    <p>Setelah melakukan pembayaran silahkan konfirmasi kepada Admin Sekolah Bisnis “Muslim
+                                        Bisnis Comunity” dan lampirkan Bukti
+                                        Transfernya. Klik <a
+                                            href="https://api.whatsapp.com/send/?phone=6285865580653&text">disini</a> untuk
+                                        konfirmasi pembayaran.</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
@@ -858,7 +875,8 @@
                                 <i class="faq-icon bi bi-question-circle"></i>
                                 <h3>Bagaiamana sistem ecourse Sekolah Bisnis “Muslim Bisnis Comunity”?</h3>
                                 <div class="faq-content">
-                                    <p>Kelas ecourse Sekolah Bisnis Sekolah Bisnis “Muslim Bisnis Comunity” berisi ratusan video panduan bisnis untuk setiap
+                                    <p>Kelas ecourse Sekolah Bisnis Sekolah Bisnis “Muslim Bisnis Comunity” berisi ratusan
+                                        video panduan bisnis untuk setiap
                                         seriesnya</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>

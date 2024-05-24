@@ -50,12 +50,14 @@
             </div>
 
             <div class="col-lg-4 col-md-12">
-                <h4>Follow Us</h4>
+                <h4>Find Us</h4>
                 {{-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> --}}
                 <div class="social-links d-flex">
                     {{-- <a href=""><i class="bi bi-twitter-x"></i></a> --}}
                     <a href="https://www.facebook.com/m1t.fjs/"><i class="bi bi-facebook"></i></a>
                     <a href="https://www.instagram.com/m1t.fjs"><i class="bi bi-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=6285865580653&text"><i class="bi bi-whatsapp"></i></a>
+                    <a href="mailto:mentoringinsentif@gmail.com"><i class="bi bi-envelope"></i></a>
                     {{-- <a href=""><i class="bi bi-linkedin"></i></a> --}}
                 </div>
             </div>

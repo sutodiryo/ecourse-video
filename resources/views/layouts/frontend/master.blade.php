@@ -61,7 +61,7 @@
 
 
     <!-- Tabler Core -->
-    <script src="{{ asset('backend/dist/js/tabler.min.js') }}"></script>
+    <script src="{{ asset('dist/js/tabler.min.js') }}"></script>
 
     <!-- SweetAlert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

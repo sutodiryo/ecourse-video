@@ -14,9 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::table('frontend_homepage', function (Blueprint $table) {
-            $table->after('section_1_text', function ($table) {
-                $table->integer('status')->nullable();
-            });
+            $table->longText('section_2_text')->nullable()->change();
+            $table->longText('section_3_1_text')->nullable()->change();
+            $table->longText('section_3_2_text')->nullable()->change();
+            $table->longText('section_3_3_text')->nullable()->change();
+            $table->longText('section_3_4_text')->nullable()->change();
         });
     }
 

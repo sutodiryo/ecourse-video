@@ -27,6 +27,7 @@
                                     <td>
                                         <x-button.button-delete id="{{ $cart->id }}"
                                             url="{{ route('carts.destroy', $cart->id) }}" title="" />
+                                            {{-- <a href="{{ route('carts.destroy', $cart->id) }}"><i class="fas fa-eraser mr-2"></i></a> --}}
                                     <td>
                                         <p class="strong mb-1">{{ $cart->series->name }}</p>
                                     </td>
