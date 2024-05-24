@@ -31,8 +31,7 @@
                                             class="avatar rounded me-2" style="background-image: url({{ $data->cover }})">
                                         </a>
                                         <x-modal.modal id="{{ $data->id }}" title="Cover : {{ $data->name }}">
-                                            <img src="{{ $data->cover }}" alt="{{ $data->name }}"
-                                                class="img-fluid" />
+                                            <img src="{{ $data->cover }}" alt="{{ $data->name }}" class="img-fluid" />
                                         </x-modal.modal>
                                     </td>
                                     <td>
@@ -49,15 +48,18 @@
                                             </li>
                                         @endforeach
                                     </td>
-                                    <td>Rp. {{ number_format($data->price) }}</td>
+                                    <td>
+                                        Rp. {{ number_format($data->price) }}
+                                        <br>
+                                        <s>Rp. {{ number_format($data->price_x) }}</s>
+                                    </td>
                                     <td class="text-muted">
                                         {{ $data->status == '1' ? 'Completed' : 'Developed' }}
                                     </td>
                                     <td>
                                         <x-button.button-dropdown title="Actions" class="btn btn-primary" icon="list">
                                             <x-button.button-link class="dropdown-item" title="Add Video"
-                                                url="{{ route('admin.videos.create', $data->slug) }}"
-                                                icon="play-circle" />
+                                                url="{{ route('admin.videos.create', $data->slug) }}" icon="play-circle" />
                                             <x-button.button-link class="dropdown-item" title="Edit "
                                                 url="{{ route('admin.series.edit', $data->slug) }}" icon="edit" />
                                             <x-button.button-delete id="{{ $data->id }}"

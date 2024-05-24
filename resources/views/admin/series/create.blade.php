@@ -22,6 +22,8 @@
                             <div class="col-6">
                                 <x-form.input type="number" title="Series Price" name="price" value=""
                                     placeholder="Input series price" />
+                                <x-form.input type="number" title="X Price" name="price_x" value=""
+                                    placeholder="Input series price x" />
                             </div>
                         </div>
                         <x-form.input type="file" title="Series cover" name="cover" value="" placeholder="" />

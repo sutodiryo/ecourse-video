@@ -25,8 +25,10 @@
                                 </x-form.select-advanced>
                             </div>
                             <div class="col-6">
-                                <x-form.input type="number" title="Series Price" name="price" value="{{ $series->price }}"
-                                    placeholder="Input series price" />
+                                <x-form.input type="number" title="Series Price" name="price"
+                                    value="{{ $series->price }}" placeholder="Input series price" />
+                                <x-form.input type="number" title="X Price" name="price_x" value=""
+                                    value="{{ $series->price_x }}" placeholder="Input series price x" />
                             </div>
                         </div>
                         <img src="{{ $series->cover }}" alt="{{ $series->name }}" class="img-fluid mb-3 " width="20%" />

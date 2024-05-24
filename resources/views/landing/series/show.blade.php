@@ -14,7 +14,11 @@
                             <img src="{{ $series->cover }}" class="img-fluid" />
                         </div>
                         <div class="col-md-7">
-                            <div class="ribbon bg-red">Rp. {{ number_format($series->price) }}</div>
+                            <div class="ribbon bg-red">
+                                <s>Rp. {{ number_format($series->price_x) }}</s>
+                                <br>
+                                Rp. {{ number_format($series->price) }}
+                            </div>
                             <h3 class="card-title">{{ $series->name }}</h3>
                             <p class="card-text">{!! $series->description !!}</p>
                             <x-utilities.item date="{{ $series->created_at->format('d F Y') }}"

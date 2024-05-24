@@ -37,6 +37,8 @@
                                         {{ $data->videos->count() }} Episode
                                     </div>
                                     <div>
+                                        <s>Rp. {{ number_format($data->price_x) }}</s>
+                                        <br>
                                         Rp. {{ number_format($data->price) }}
                                     </div>
                                 </div>

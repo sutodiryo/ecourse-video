@@ -653,6 +653,7 @@
 
                                     <img src="{{ $data->cover }}" class="img-fluid" alt="">
                                 </div>
+                                <h5><s>Rp{{ number_format($data->price_x) }}</s></h5>
                                 <h4>
                                     <sup>Rp</sup>{{ number_format($data->price) }}
                                     <span>({{ $data->videos->count() }} Episode)</span>

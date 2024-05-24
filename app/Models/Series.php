@@ -22,6 +22,7 @@ class Series extends Model
         // 'status',
         'description',
         'price',
+        'price_x',
     ];
 
     // generate cover
