@@ -27,6 +27,10 @@
                         @endforelse
                     </x-card.card-list>
                 </x-card.card>
+
+                <div class="card-footer d-flex align-items-center text-center">
+                    {{ $videos->links() }}
+                </div>
             </div>
         </div>
     </div>

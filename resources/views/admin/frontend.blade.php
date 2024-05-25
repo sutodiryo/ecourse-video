@@ -66,13 +66,108 @@
                             </div>
                         </div>
 
+                        <hr>
+
+                        <x-form.input type="text" title="How to join Title" name="section_4_title"
+                            value="{{ $data->section_4_title }}" placeholder="" />
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <x-form.input type="text" title="How to join 1 Title" name="section_4_1_title"
+                                    value="{{ $data->section_4_1_title }}" placeholder="" />
+
+                                <x-form.tinymce title="How to join 1 Text" placeholder="How to join 1 text"
+                                    name="section_4_1_text">{!! $data->section_4_1_text !!}</x-form.tinymce>
+                            </div>
+                            <div class="col-md-6">
+                                <x-form.input type="text" title="How to join 2 Title" name="section_4_2_title"
+                                    value="{{ $data->section_4_2_title }}" placeholder="" />
+
+                                <x-form.tinymce title="How to join 2 Text" placeholder="How to join 2 text"
+                                    name="section_4_2_text">{!! $data->section_4_2_text !!}</x-form.tinymce>
+                            </div>
+                            <div class="col-md-6">
+                                <x-form.input type="text" title="How to join 3 Title" name="section_4_3_title"
+                                    value="{{ $data->section_4_3_title }}" placeholder="" />
+
+                                <x-form.tinymce title="How to join 3 Text" placeholder="How to join 3 text"
+                                    name="section_4_3_text">{!! $data->section_4_3_text !!}</x-form.tinymce>
+                            </div>
+                            <div class="col-md-6">
+                                <x-form.input type="text" title="How to join 4 Title" name="section_4_4_title"
+                                    value="{{ $data->section_4_4_title }}" placeholder="" />
+
+                                <x-form.tinymce title="How to join 4 Text" placeholder="How to join 4 text"
+                                    name="section_4_4_text">{!! $data->section_4_4_text !!}</x-form.tinymce>
+                            </div>
+                            <div class="col-md-6">
+                                <x-form.input type="text" title="How to join 5 Title" name="section_4_5_title"
+                                    value="{{ $data->section_4_5_title }}" placeholder="" />
+
+                                <x-form.tinymce title="How to join 5 Text" placeholder="How to join 5 text"
+                                    name="section_4_5_text">{!! $data->section_4_5_text !!}</x-form.tinymce>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <x-form.input type="text" title="CTA Title" name="section_5_title"
+                            value="{{ $data->section_5_title }}" placeholder="" />
+
+                        <x-form.tinymce title="CTA Text" placeholder="Input CTA text"
+                            name="section_5_text">{!! $data->section_5_text !!}</x-form.tinymce>
+
+                        <hr>
+
+                        <x-form.input type="text" title="Series Title" name="section_6_title"
+                            value="{{ $data->section_6_title }}" placeholder="" />
+
+                        <hr>
+
+                        <x-form.input type="text" title="Testimoni Title" name="section_7_title"
+                            value="{{ $data->section_7_title }}" placeholder="" />
+
+                        <hr>
+
+                        <x-form.input type="text" title="FAQ Title" name="section_8_title"
+                            value="{{ $data->section_8_title }}" placeholder="" />
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <x-form.input type="text" title="FAQ 1 Title" name="section_8_1_title"
+                                    value="{{ $data->section_8_1_title }}" placeholder="" />
+
+                                <x-form.tinymce title="FAQ 1 Text" placeholder="FAQ 1 text"
+                                    name="section_8_1_text">{!! $data->section_8_1_text !!}</x-form.tinymce>
+                            </div>
+                            <div class="col-md-6">
+                                <x-form.input type="text" title="FAQ 2 Title" name="section_8_2_title"
+                                    value="{{ $data->section_8_2_title }}" placeholder="" />
+
+                                <x-form.tinymce title="FAQ 2 Text" placeholder="FAQ 2 text"
+                                    name="section_8_2_text">{!! $data->section_8_2_text !!}</x-form.tinymce>
+                            </div>
+                            <div class="col-md-6">
+                                <x-form.input type="text" title="FAQ 3 Title" name="section_8_3_title"
+                                    value="{{ $data->section_8_3_title }}" placeholder="" />
+
+                                <x-form.tinymce title="FAQ 3 Text" placeholder="FAQ 3 text"
+                                    name="section_8_3_text">{!! $data->section_8_3_text !!}</x-form.tinymce>
+                            </div>
+                            <div class="col-md-6">
+                                <x-form.input type="text" title="FAQ 4 Title" name="section_8_4_title"
+                                    value="{{ $data->section_8_4_title }}" placeholder="" />
+
+                                <x-form.tinymce title="FAQ 4 Text" placeholder="FAQ 4 text"
+                                    name="section_8_4_text">{!! $data->section_8_4_text !!}</x-form.tinymce>
+                            </div>
+                        </div>
+
                         <x-button.button-save title="Save" icon="save" class="btn btn-primary" />
                     </form>
                 </x-card.card>
             </div>
         </div>
     </div>
-
-
 
 @endsection

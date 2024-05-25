@@ -69,9 +69,17 @@
                                     </td>
                                 </tr>
                             @endforeach
+
                         </tbody>
                     </x-table.table-responsive>
                 </x-card.card-action>
+
+                <div class="card-footer d-flex align-items-center text-center">
+                    {{-- <p class="m-0 text-secondary">Showing <span>1</span> to <span>8</span> of <span>16</span> entries
+                    </p> --}}
+
+                    {{ $series->links() }}
+                </div>
             </div>
         </div>
     </div>
