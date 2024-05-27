@@ -276,7 +276,7 @@
                                 <h3><span>03</span> {!! $data->section_4_3_title !!}</h3>
                                 {{-- <h3><span>03</span> Checkout & Payment</h3> --}}
                                 <div class="faq-content">
-                                    <p>{!! $data->section_4_3_text !!}/p>
+                                    <p>{!! $data->section_4_3_text !!}</p>
                                         {{-- <p>Lakukan Pembayaran sesuai dengan nominal harga yang tertera. Pastikan pembayaran
                                         hanya ke Rekening Resmi Sekolah Bisnis “Muslim Bisnis Comunity”.</p> --}}
                                 </div>

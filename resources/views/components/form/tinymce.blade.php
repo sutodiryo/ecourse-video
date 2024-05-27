@@ -24,12 +24,13 @@
                 'searchreplace visualblocks code fullscreen',
                 'insertdatetime media table paste code help wordcount',
                 'lists',
-                'image'
+                'image',
+                'link'
             ],
             toolbar: 'undo redo | formatselect | ' +
                 'bold italic backcolor | alignleft aligncenter ' +
                 'alignright alignjustify | bullist numlist outdent indent | ' +
-                'removeformat' + ' | image',
+                'removeformat' + ' | image' + '| link',
             images_file_types: 'jpg,svg,webp',
 
             content_style: 'body { font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif; font-size: 14px; -webkit-font-smoothing: antialiased; }'

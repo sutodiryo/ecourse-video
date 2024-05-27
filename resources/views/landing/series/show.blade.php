@@ -1,7 +1,7 @@
 @extends('layouts.frontend.master')
 
 @section('title')
-    {{ $series->name }}
+    {{ $series->status }}
 @endsection
 
 @section('content')
@@ -31,11 +31,17 @@
                                         {{ Carbon\Carbon::parse($transaction[0]->date_transfer)->format('d F Y') }}
                                     </div>
                                 @else
-                                    <form action="{{ route('carts.store', $series->slug) }}" method="POST">
-                                        @csrf
-                                        <x-button.button-save icon="shopping-cart" title="Buy Now"
-                                            class="btn btn-lg btn-block btn-outline-primary" />
-                                    </form>
+                                    @if ($series->status == 1)
+                                        <form action="{{ route('carts.store', $series->slug) }}" method="POST">
+                                            @csrf
+                                            <x-button.button-save icon="shopping-cart" title="Buy Now"
+                                                class="btn btn-lg btn-block btn-outline-primary" />
+                                        </form>
+                                        @else
+
+                                        <x-button.button-save icon="shopping-cart" title="Coming Soon"
+                                        class="btn btn-lg btn-block btn-outline-primary" disabled />
+                                    @endif
                                 @endif
                             </div>
                         </div>
