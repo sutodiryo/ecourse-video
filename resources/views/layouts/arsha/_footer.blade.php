@@ -21,7 +21,7 @@
     <div class="container footer-top">
         <div class="row gy-4">
             <div class="col-lg-4 col-md-6 footer-about">
-                <h4>{!! $data->footer_1_title !!}</h4>
+                <h3>{!! $data->footer_1_title !!}</h3>
                 {{-- <h4>Sekolah Bisnis<br>“Muslim Bisnis Comunity”</h4> --}}
                 <div class="footer-contact mt-3">
                     <p>{!! $data->footer_1_text !!}</p>
@@ -57,9 +57,9 @@
                 <div class="social-links d-flex">
                     {{-- <a href=""><i class="bi bi-twitter-x"></i></a> --}}
                     <a href="https://www.facebook.com/{{ $data->footer_3_1_text }}"><i class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/{{ $data->footer_3_1_text }}"><i class="bi bi-instagram"></i></a>
-                    <a href="https://api.whatsapp.com/send/?phone={{ $data->footer_3_1_text }}&text"><i class="bi bi-whatsapp"></i></a>
-                    <a href="mailto:{{ $data->footer_3_1_text }}"><i class="bi bi-envelope"></i></a>
+                    <a href="https://www.instagram.com/{{ $data->footer_3_2_text }}"><i class="bi bi-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone={{ $data->footer_3_3_text }}&text"><i class="bi bi-whatsapp"></i></a>
+                    <a href="mailto:{{ $data->footer_3_4_text }}"><i class="bi bi-envelope"></i></a>
 
                     {{-- <a href="https://www.facebook.com/m1t.fjs/"><i class="bi bi-facebook"></i></a>
                     <a href="https://www.instagram.com/m1t.fjs"><i class="bi bi-instagram"></i></a>

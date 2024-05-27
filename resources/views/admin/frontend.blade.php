@@ -163,6 +163,47 @@
                             </div>
                         </div>
 
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <x-form.input type="text" title="Footer 1 Title" name="footer_1_title"
+                                    value="{{ $data->footer_1_title }}" placeholder="" />
+
+                                <x-form.tinymce title="Footer 1 Text" placeholder="Footer 1 text"
+                                    name="footer_1_text">{!! $data->footer_1_text !!}</x-form.tinymce>
+                            </div>
+
+                            <div class="col-md-6">
+                                <x-form.input type="text" title="Footer 2 Title" name="footer_2_title"
+                                    value="{{ $data->footer_2_title }}" placeholder="" />
+
+                                <x-form.tinymce title="Footer 2.1 Text" placeholder="Footer 2.1 text"
+                                    name="footer_2_1_text">{!! $data->footer_2_1_text !!}</x-form.tinymce>
+
+                                <x-form.tinymce title="Footer 2.2 Text" placeholder="Footer 2.2 text"
+                                    name="footer_2_2_text">{!! $data->footer_2_2_text !!}</x-form.tinymce>
+                            </div>
+
+                            <div class="col-md-6">
+                                <x-form.input type="text" title="Footer 3 Title" name="footer_3_title"
+                                    value="{{ $data->footer_3_title }}" placeholder="" />
+                                <x-form.input type="text" title="Akun Facebook" name="footer_3_1_text"
+                                    value="{{ $data->footer_3_1_text }}" placeholder="facebook.com/..." />
+                                <x-form.input type="text" title="Akun Instagram" name="footer_3_2_text"
+                                    value="{{ $data->footer_3_2_text }}" placeholder="instagram.com/..." />
+                                <x-form.input type="text" title="Nomor wa (pake 62)" name="footer_3_3_text"
+                                    value="{{ $data->footer_3_3_text }}" placeholder="wa.me/..." />
+                                <x-form.input type="text" title="Email" name="footer_3_4_text"
+                                    value="{{ $data->footer_3_4_text }}" placeholder="email" />
+                            </div>
+
+                            <div class="col-md-6">
+                                <x-form.tinymce title="Copyright" placeholder="Copyright text"
+                                    name="footer_copyright">{!! $data->footer_copyright !!}</x-form.tinymce>
+                            </div>
+                        </div>
+
                         <x-button.button-save title="Save" icon="save" class="btn btn-primary" />
                     </form>
                 </x-card.card>
