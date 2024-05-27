@@ -19,7 +19,7 @@ class Series extends Model
         'slug',
         'cover',
         // 'level',
-        // 'status',
+        'status',
         'description',
         'price',
         'price_x',

@@ -29,8 +29,8 @@
                         <x-form.input type="file" title="Series cover" name="cover" value="" placeholder="" />
                         <x-form.textarea title="Series Description" name="description" value=""
                             placeholder="Input series description" />
-                        {{-- <div class="row">
-                            <div class="col-6">
+                        <div class="row">
+                            {{-- <div class="col-6">
                                 <x-form.select-group title="Series Level">
                                     <label class="form-selectgroup-item">
                                         <input type="radio" name="level" value="Beginner" class="form-selectgroup-input">
@@ -52,22 +52,22 @@
                                         </span>
                                     </label>
                                 </x-form.select-group>
-                            </div>
+                            </div> --}}
                             <div class="col-6">
                                 <x-form.checkbox title="Series Status">
                                     <label class="form-check form-check-inline">
                                         <input class="form-check-input @error('status') is-invalid @enderror"
-                                            type="checkbox" name="status" value="0">
-                                        <span class="form-check-label">Developed</span>
+                                            type="radio" name="status" value="0">
+                                        <span class="form-check-label">Coming Soon</span>
                                     </label>
                                     <label class="form-check form-check-inline">
                                         <input class="form-check-input @error('status') is-invalid @enderror"
-                                            type="checkbox" name="status" value="1">
-                                        <span class="form-check-label">Completed</span>
+                                            type="radio" name="status" value="1">
+                                        <span class="form-check-label">Released</span>
                                     </label>
                                 </x-form.checkbox>
                             </div>
-                        </div> --}}
+                        </div>
                         <x-button.button-save title="Save" icon="save" class="btn btn-primary" />
                         <x-button.button-link class="btn btn-dark text-white" title="Go Back" icon="arrow-left"
                             url="{{ route('admin.series.index') }}">

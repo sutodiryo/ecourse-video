@@ -85,7 +85,8 @@ class SeriesController extends Controller
         // user can watch full video if user have this series or user still can watch video only intro video
         if($purchased || $video->intro == 1){
             // if true, get all video by series
-            $videos = Video::where('series_id', $series->id)->orderBy('episode')->paginate(10);
+            $videos = Video::where('series_id', $series->id)->orderBy('episode')->get();
+            // $videos = Video::where('series_id', $series->id)->orderBy('episode')->paginate(10);
         }else{
             // if false, get only intro video
             return back()->with('toast_error', 'You must buy this series first');

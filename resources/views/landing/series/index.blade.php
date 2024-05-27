@@ -71,7 +71,7 @@
                                             <circle cx="12" cy="12" r="9"></circle>
                                             <path d="M9 12l2 2l4 -4"></path>
                                         </svg>
-                                        {{ $data->status == 1 ? 'Completed' : 'Developed' }}
+                                        {{ $data->status == 1 ? 'Released' : 'Coming Soon' }}
                                     </div> --}}
                                 </div>
                             </div>

@@ -52,5 +52,20 @@ class Frontend extends Model
         'section_8_3_text',
         'section_8_4_title',
         'section_8_4_text',
+
+        'footer_1_title',
+        'footer_1_text',
+
+        'footer_2_title',
+        'footer_2_1_text',
+        'footer_2_2_text',
+
+        'footer_3_title',
+        'footer_3_1_text',
+        'footer_3_2_text',
+        'footer_3_3_text',
+        'footer_3_4_text',
+
+        'footer_copyright',
     ];
 }

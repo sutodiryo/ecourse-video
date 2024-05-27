@@ -190,8 +190,8 @@
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-book icon"></i></div>
                             <h4><a class="stretched-link">
-                                {!! $data->section_3_3_title !!}
-                                {{-- Penjelalsan materi yang sederhana dan mudah dipahami --}}
+                                    {!! $data->section_3_3_title !!}
+                                    {{-- Penjelalsan materi yang sederhana dan mudah dipahami --}}
                                 </a>
                             </h4>
                             <p>{!! $data->section_3_3_text !!}</p>
@@ -231,7 +231,8 @@
                     <div class="col-lg-12 d-flex flex-column justify-content-center order-2 order-lg-1">
 
                         <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-                            <h3 class=""><span class=""></span><strong>Cara mengakses E-Course : </strong></h3>
+                            <h3 class=""><span class=""></span><strong>{!! $data->section_4_title !!}</strong></h3>
+                            {{-- <h3 class=""><span class=""></span><strong>Cara mengakses E-Course : </strong></h3> --}}
                             {{-- <p class="">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
@@ -249,52 +250,61 @@
 
                             <div class="faq-item faq-active">
 
-                                <h3><span>01</span> Registrasi Akun (WAJIB)</h3>
+                                <h3><span>01</span> {!! $data->section_4_1_title !!}</h3>
+                                {{-- <h3><span>01</span> Registrasi Akun (WAJIB)</h3> --}}
                                 <div class="faq-content">
-                                    <p>Silahkan buat akun terlebih dahulu. Sebelum membeli akses E-Course kamu WAJIB membuat
+                                    <p>{!! $data->section_4_1_text !!}</p>
+                                    {{-- <p>Silahkan buat akun terlebih dahulu. Sebelum membeli akses E-Course kamu WAJIB membuat
                                         akun terlebih dahulu. Klik <a href="{{ route('register') }}">disini</a> untuk
-                                        membuat akun.</p>
+                                        membuat akun.</p> --}}
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item">
-                                <h3><span>02</span> Pilih E-Course
-                                </h3>
+                                <h3><span>02</span> {!! $data->section_4_2_title !!}</h3>
+                                {{-- <h3><span>02</span> Pilih E-Course</h3> --}}
                                 <div class="faq-content">
-                                    <p>Setelah membuat akun, silahkan pilih E-Course yang akan kamu ikuti. Silahkan pilih
-                                        e-coursenya <a href="{{ route('series.index') }}">disini</a>.</p>
+                                    <p>{!! $data->section_4_2_text !!}</p>
+                                    {{-- <p>Setelah membuat akun, silahkan pilih E-Course yang akan kamu ikuti. Silahkan pilih
+                                        e-coursenya <a href="{{ route('series.index') }}">disini</a>.</p> --}}
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item">
-                                <h3><span>03</span> Checkout & Payment</h3>
+                                <h3><span>03</span> {!! $data->section_4_3_title !!}</h3>
+                                {{-- <h3><span>03</span> Checkout & Payment</h3> --}}
                                 <div class="faq-content">
-                                    <p>Lakukan Pembayaran sesuai dengan nominal harga yang tertera. Pastikan pembayaran
-                                        hanya ke Rekening Resmi Sekolah Bisnis “Muslim Bisnis Comunity”.</p>
+                                    <p>{!! $data->section_4_3_text !!}/p>
+                                        {{-- <p>Lakukan Pembayaran sesuai dengan nominal harga yang tertera. Pastikan pembayaran
+                                        hanya ke Rekening Resmi Sekolah Bisnis “Muslim Bisnis Comunity”.</p> --}}
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item">
-                                <h3><span>04</span> Konfirmasi Pembayaran</h3>
+                                <h3><span>04</span> {!! $data->section_4_4_title !!}</h3>
+                                {{-- <h3><span>04</span> Konfirmasi Pembayaran</h3> --}}
                                 <div class="faq-content">
-                                    <p>Setelah melakukan pembayaran silahkan konfirmasi kepada Admin Sekolah Bisnis “Muslim
+                                    <p>{!! $data->section_4_4_text !!}</p>
+                                    {{-- <p>Setelah melakukan pembayaran silahkan konfirmasi kepada Admin Sekolah Bisnis “Muslim
                                         Bisnis Comunity” dan lampirkan Bukti
                                         Transfernya. Klik <a
                                             href="https://api.whatsapp.com/send/?phone=6285865580653&text">disini</a> untuk
-                                        konfirmasi pembayaran.</p>
+                                        konfirmasi pembayaran.</p> --}}
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item">
-                                <h3><span>05</span> Akses E-Course di Dashboard</h3>
+                                <h3><span>05</span> {!! $data->section_4_5_title !!}</h3>
+                                {{-- <h3><span>05</span> Akses E-Course di Dashboard</h3> --}}
                                 <div class="faq-content">
-                                    <p>Silahkan Akses E-Course yang telah kamu beli di bagian menu Dashboard atau klik
+                                    <p>{!! $data->section_4_5_text !!}</p>
+                                    {{-- <p>Silahkan Akses E-Course yang telah kamu beli di bagian menu Dashboard atau klik
                                         <a href="{{ route('series.index') }}">disini</a> untuk menuju ke E-Course.
-                                    </p>
+                                    </p> --}}
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
@@ -387,9 +397,11 @@
 
                 <div class="row" data-aos="zoom-in" data-aos-delay="100">
                     <div class="col-xl-9 text-center text-xl-start">
-                        <h3>Mengapa Harus Bergabung Sekarang?</h3>
-                        <p>Semakin cepat anda mendaftar semakin cepat mengikuti semakin cepat mendapatkan ilmu dan perubahan
-                            dalam bisnisnya akan semakin besar ...</p>
+                        <h3>{!! $data->section_5_title !!}</h3>
+                        {{-- <h3>Mengapa Harus Bergabung Sekarang?</h3> --}}
+                        <p>{!! $data->section_5_text !!}</p>
+                        {{-- <p>Semakin cepat anda mendaftar semakin cepat mengikuti semakin cepat mendapatkan ilmu dan perubahan
+                            dalam bisnisnya akan semakin besar ...</p> --}}
                     </div>
                     <div class="col-xl-3 cta-btn-container text-center">
                         <a class="cta-btn align-middle" href="{{ route('register') }}">Daftar Sekarang</a>
@@ -654,7 +666,8 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Series</h2>
+                <h2>{!! $data->section_6_title !!}</h2>
+                {{-- <h2>Series</h2> --}}
                 {{-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> --}}
             </div><!-- End Section Title -->
 
@@ -662,21 +675,26 @@
 
                 <div class="row gy-4">
 
-                    @foreach ($series as $data)
+                    @foreach ($series as $s)
                         <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
                             <div class="pricing-item featured">
-                                <h3 class="text-center">{{ $data->name }}</h3>
+                                <h3 class="text-center">{{ $s->name }}</h3>
                                 <div class="mb-3">
 
-                                    <img src="{{ $data->cover }}" class="img-fluid" alt="">
+                                    <img src="{{ $s->cover }}" class="img-fluid" alt="">
                                 </div>
-                                <h5><s>Rp{{ number_format($data->price_x) }}</s></h5>
-                                <h4>
-                                    <sup>Rp</sup>{{ number_format($data->price) }}
-                                    <span>({{ $data->videos->count() }} Episode)</span>
-                                </h4>
+                                @if ($s->status == 1)
+                                    <h5><s>Rp{{ number_format($s->price_x) }}</s></h5>
+                                    <h4>
+                                        <sup>Rp</sup>{{ number_format($s->price) }}
+                                        <span>({{ $s->videos->count() }} Episode)</span>
+                                    </h4>
+                                @else
+                                    <h4 class="text-center">The Series is Coming Soon</h4>
+                                @endif
+
                                 <p>
-                                    {!! $data->description !!}
+                                    {!! $s->description !!}
                                 </p>
                                 {{-- <ul>
                                     <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
@@ -686,7 +704,9 @@
                                     <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
                                 </ul> --}}
                                 <div class="text-center">
-                                    <a href="{{ route('series.show', $data->slug) }}" class="buy-btn">
+                                    @if ($s->status == 1)
+
+                                    <a href="{{ route('series.show', $s->slug) }}" class="buy-btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round"
@@ -698,6 +718,12 @@
                                         </svg>
                                         Detail
                                     </a>
+                                    @else
+
+                                    <a disabled class="buy-btn">
+                                        Coming Soon
+                                    </a>
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -713,8 +739,9 @@
         <section id="testimonials" class="testimonials section">
 
             <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Testimoni</h2>
+            <div class="container section-title">
+                <h2>{{ $data->section_7_title }}</h2>
+                {{-- <h2>Testimoni</h2> --}}
                 {{-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> --}}
             </div><!-- End Section Title -->
 
@@ -857,7 +884,8 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Frequently Asked Questions</h2>
+                <h2>{!! $data->section_8_title !!}</h2>
+                {{-- <h2>Frequently Asked Questions</h2> --}}
                 {{-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
                     consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
                     fugiat sit in iste officiis commodi quidem hic quas.</p> --}}
@@ -873,38 +901,46 @@
 
                             <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
                                 <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>Bagaiamana sistem ecourse Sekolah Bisnis “Muslim Bisnis Comunity”?</h3>
+                                <h3>{!! $data->section_8_1_title !!}</h3>
+                                {{-- <h3>Bagaiamana sistem ecourse Sekolah Bisnis “Muslim Bisnis Comunity”?</h3> --}}
                                 <div class="faq-content">
-                                    <p>Kelas ecourse Sekolah Bisnis Sekolah Bisnis “Muslim Bisnis Comunity” berisi ratusan
+                                    <p>{!! $data->section_8_1_text !!}</p>
+                                    {{-- <p>Kelas ecourse Sekolah Bisnis Sekolah Bisnis “Muslim Bisnis Comunity” berisi ratusan
                                         video panduan bisnis untuk setiap
-                                        seriesnya</p>
+                                        seriesnya</p> --}}
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                                 <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>Apa saja fasilitas yang di dapat jika bergabung Ecourse Sekolah Bisnis?</h3>
+                                <h3>{!! $data->section_8_2_title !!}</h3>
+                                {{-- <h3>Apa saja fasilitas yang di dapat jika bergabung Ecourse Sekolah Bisnis?</h3> --}}
                                 <div class="faq-content">
-                                    <p>Tanya jawab yang dijawab langsung oleh coach Fitra dan materi yg mudah dipahami</p>
+                                    <p>{!! $data->section_8_2_text !!}</p>
+                                    {{-- <p>Tanya jawab yang dijawab langsung oleh coach Fitra dan materi yg mudah dipahami</p> --}}
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
                                 <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>Berapa lama akses yg di dapat jika beli ecourse ini?</h3>
+                                <h3>{!! $data->section_8_3_title !!}</h3>
+                                {{-- <h3>Berapa lama akses yg di dapat jika beli ecourse ini?</h3> --}}
                                 <div class="faq-content">
-                                    <p>Ecourse Sekolah Bisnis bisa diakses selama 1 tahun sejak bergabung</p>
+                                    <p>{!! $data->section_8_3_text !!}</p>
+                                    {{-- <p>Ecourse Sekolah Bisnis bisa diakses selama 1 tahun sejak bergabung</p> --}}
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
                                 <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>Ecourse Sekolah Bisnis cocok untuk pengusaha seperti apa?</h3>
+                                <h3>{!! $data->section_8_4_title !!}</h3>
+                                {{-- <h3>Ecourse Sekolah Bisnis cocok untuk pengusaha seperti apa?</h3> --}}
                                 <div class="faq-content">
-                                    <p>Ecourse ini cocok untuk srmua pengusaha dari semua kalangan</p>
+                                    <p>{!! $data->section_8_4_text !!}</p>
+                                    {{-- <p>Ecourse ini cocok untuk srmua pengusaha dari semua kalangan</p> --}}
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->

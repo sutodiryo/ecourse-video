@@ -54,7 +54,7 @@
                                         <s>Rp. {{ number_format($data->price_x) }}</s>
                                     </td>
                                     <td class="text-muted">
-                                        {{ $data->status == '1' ? 'Completed' : 'Developed' }}
+                                        {{ $data->status == '1' ? 'Released' : 'Coming Soon' }}
                                     </td>
                                     <td>
                                         <x-button.button-dropdown title="Actions" class="btn btn-primary" icon="list">
