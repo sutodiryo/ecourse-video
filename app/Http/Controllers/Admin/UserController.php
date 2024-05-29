@@ -38,7 +38,10 @@ class UserController extends Controller
     public function update(Request $request, User $user)
     {
         // update roles for user
-        $user->syncRoles($request->role);
+        // $user->syncRoles($request->role);
+
+        $data = $request->except('role');
+        $user->update($data);
 
         // return back with toastr
         return back()->with('toast_success', 'User roles updated successfully');

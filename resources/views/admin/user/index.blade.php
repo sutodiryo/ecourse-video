@@ -40,10 +40,10 @@
                                                     value="{{ $user->name }}" />
                                                 <x-form.input type="text" title="Email" name="email" placeholder=""
                                                     value="{{ $user->email }}" />
-                                                <x-form.select title="Role" name="role">
+                                                <x-form.select title="Role" name="role" disabled>
                                                     @foreach ($roles as $role)
                                                         <option value="{{ $role->id }}"
-                                                            {{ $user->roles()->find($role->id) ? 'selected' : '' }}>
+                                                            {{ $user->roles()->find($role->id) ? 'selected' : '' }} disabled>
                                                             {{ $role->name }}
                                                         </option>
                                                     @endforeach
