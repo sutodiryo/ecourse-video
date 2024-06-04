@@ -439,121 +439,64 @@
             </div>
 
         </section>
-        <!-- /Services Section -->
 
-        <!-- Why Us Section -->
-        <section id="join" class="bg-white mt-5 section why-us" data-builder="section">
-
-            <!-- Section Title -->
+        {{-- <section id="join" class="bg-white mt-5 section why-us" data-builder="section">
             <div class="container section-title" data-aos="fade-up">
                 <br>
                 <br>
                 <h2 class="">{!! $data->section_4_title !!}</h2>
-            </div><!-- End Section Title -->
-
-            {{-- <div class="container section-title" data-aos="fade-up">
-                <h2 class="">How To Join</h2>
-            </div><!-- End Section Title --> --}}
+            </div>
 
             <div class="container mb-5">
-
                 <div class="row gy-4">
-
                     <div class="col-lg-12 d-flex flex-column justify-content-center order-2 order-lg-1">
-
-                        {{-- <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100"> --}}
-                        {{-- <h3 class=""><span class=""></span><strong>{!! $data->section_4_title !!}</strong></h3> --}}
-                        {{-- <h3 class=""><span class=""></span><strong>Cara mengakses E-Course : </strong></h3> --}}
-                        {{-- <p class="">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                            </p> --}}
-
-                        {{-- <h3 class=""><span class="">Eum ipsam laborum deleniti </span><strong>velit
-                                    pariatur architecto aut nihil</strong></h3>
-                            <p class="">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                            </p> --}}
-                        {{-- </div> --}}
-
                         <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
 
                             <div class="faq-item faq-active">
-
                                 <h3><span>01</span> {!! $data->section_4_1_title !!}</h3>
-                                {{-- <h3><span>01</span> Registrasi Akun (WAJIB)</h3> --}}
                                 <div class="faq-content">
                                     <p>{!! $data->section_4_1_text !!}</p>
-                                    {{-- <p>Silahkan buat akun terlebih dahulu. Sebelum membeli akses E-Course kamu WAJIB membuat
-                                        akun terlebih dahulu. Klik <a href="{{ route('register') }}">disini</a> untuk
-                                        membuat akun.</p> --}}
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
+                            </div>
 
                             <div class="faq-item">
                                 <h3><span>02</span> {!! $data->section_4_2_title !!}</h3>
-                                {{-- <h3><span>02</span> Pilih E-Course</h3> --}}
                                 <div class="faq-content">
                                     <p>{!! $data->section_4_2_text !!}</p>
-                                    {{-- <p>Setelah membuat akun, silahkan pilih E-Course yang akan kamu ikuti. Silahkan pilih
-                                        e-coursenya <a href="{{ route('series.index') }}">disini</a>.</p> --}}
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
+                            </div>
 
                             <div class="faq-item">
                                 <h3><span>03</span> {!! $data->section_4_3_title !!}</h3>
-                                {{-- <h3><span>03</span> Checkout & Payment</h3> --}}
                                 <div class="faq-content">
                                     <p>{!! $data->section_4_3_text !!}</p>
-                                    {{-- <p>Lakukan Pembayaran sesuai dengan nominal harga yang tertera. Pastikan pembayaran
-                                        hanya ke Rekening Resmi Sekolah Bisnis “Muslim Bisnis Comunity”.</p> --}}
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
+                            </div>
 
                             <div class="faq-item">
                                 <h3><span>04</span> {!! $data->section_4_4_title !!}</h3>
-                                {{-- <h3><span>04</span> Konfirmasi Pembayaran</h3> --}}
                                 <div class="faq-content">
                                     <p>{!! $data->section_4_4_text !!}</p>
-                                    {{-- <p>Setelah melakukan pembayaran silahkan konfirmasi kepada Admin Sekolah Bisnis “Muslim
-                                        Bisnis Comunity” dan lampirkan Bukti
-                                        Transfernya. Klik <a
-                                            href="https://api.whatsapp.com/send/?phone=6285865580653&text">disini</a> untuk
-                                        konfirmasi pembayaran.</p> --}}
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
+                            </div>
 
                             <div class="faq-item">
                                 <h3><span>05</span> {!! $data->section_4_5_title !!}</h3>
-                                {{-- <h3><span>05</span> Akses E-Course di Dashboard</h3> --}}
                                 <div class="faq-content">
                                     <p>{!! $data->section_4_5_text !!}</p>
-                                    {{-- <p>Silahkan Akses E-Course yang telah kamu beli di bagian menu Dashboard atau klik
-                                        <a href="{{ route('series.index') }}">disini</a> untuk menuju ke E-Course.
-                                    </p> --}}
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
+                            </div>
 
                         </div>
-
                     </div>
-
-                    {{-- <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-                        <img src="{{ asset('arsha-assets/img/why-us.png') }}" class="img-fluid" alt=""
-                            data-aos="zoom-in" data-aos-delay="100">
-                    </div> --}}
                 </div>
-
             </div>
-
-        </section>
-        <!-- /Why Us Section -->
+        </section> --}}
 
         <!-- Skills Section -->
         {{-- <section id="skills" class="skills section">
