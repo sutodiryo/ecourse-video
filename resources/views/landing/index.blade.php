@@ -573,7 +573,42 @@
                     <div class="col-xl-9 text-center text-xl-start">
                         <h3>{!! $data->section_5_title !!}</h3>
                         {{-- <h3>Mengapa Harus Bergabung Sekarang?</h3> --}}
-                        <p>{!! $data->section_5_text !!}</p>
+                        {{-- <p>{!! $data->section_5_text !!}</p> --}}
+                        <div class="mb-3 mt-4">
+                            <strong><i class="bi bi-check2-circle"></i> Update Materi Secara Berkala</strong>
+                            <br>
+                            Materi kursus yang selalu diperbarui sesuai dengan perkembangan terbaru di bidang bisnis.
+                        </div>
+
+                        <div class="mb-3">
+                            <strong><i class="bi bi-check2-circle"></i> Panduan Langkah demi Langkah</strong>
+                            <br>
+                            Panduan lengkap langkah demi langkah yang mudah diikuti untuk setiap topik.
+                        </div>
+
+                        <div class="mb-3">
+                            <strong><i class="bi bi-check2-circle"></i> ⁠Konsultasi Bisnis Pribadi</strong>
+                            <br>
+                            Sesi konsultasi pribadi untuk membantu memecahkan masalah bisnis spesifik.
+                        </div>
+
+                        <div class="mb-3">
+                            <strong><i class="bi bi-check2-circle"></i> Akses Seumur Hidup</strong>
+                            <br>
+                            Akses seumur hidup ke materi kursus sehingga bisa belajar kapan saja.
+                        </div>
+
+                        <div class="mb-3">
+                            <strong><i class="bi bi-check2-circle"></i> Testimoni dan Studi Kasus Nyata</strong>
+                            <br>
+                            Testimoni dari peserta sebelumnya dan studi kasus nyata yang menunjukkan keberhasilan kursus.
+                        </div>
+
+                        <div class="mb-3">
+                            <strong><i class="bi bi-check2-circle"></i> Sistem Pembelajaran Interaktif</strong>
+                            <br>
+                            Platform pembelajaran interaktif yang memudahkan proses belajar.
+                        </div>
                         {{-- <h3>
                             <table>
                                 <tr>
