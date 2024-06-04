@@ -661,7 +661,9 @@
                             dalam bisnisnya akan semakin besar ...</p> --}}
                     </div>
                     <div class="col-xl-3 cta-btn-container text-center">
-                        <a class="cta-btn align-middle" href="{{ route('register') }}">Daftar Sekarang</a>
+                        <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                            <a class="cta-btn align-middle" href="{{ route('register') }}">Daftar Sekarang</a>
+                        </div>
                     </div>
                 </div>
 
