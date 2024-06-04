@@ -11,7 +11,7 @@ class TransactionDetail extends Model
     use HasFactory, HasUuids;
 
     protected $fillable = [
-        'transaction_id', 'series_id', 'grand_total'
+        'transaction_id', 'series_id', 'grand_total', 'user_id'
     ];
 
     public function transaction()
@@ -22,6 +22,11 @@ class TransactionDetail extends Model
     public function series()
     {
         return $this->belongsTo(Series::class);
+    }
+
+    public function affiliate()
+    {
+        return $this->belongsTo(User::class);
     }
 
     // public function user()

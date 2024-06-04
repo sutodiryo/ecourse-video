@@ -12,6 +12,8 @@
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+                        {{-- <h1>{{ (50000*12) + ((50000*(11/100) )*12) }}</h1> --}}
+                        {{-- <h1>{{ (87000*12) + ((87000*(11/100) )*12) }}</h1> --}}
                         <h1>{!! $data->hero_text !!}</h1>
                         {{-- <h1>Sekolah Bisnis “Muslim Bisnis Comunity”</h1>
                         <p>Nikmati kemudahan akses belajar bisnis melalui paket video ecourse Sekolah Bisnis
@@ -164,50 +166,273 @@
 
                 <div class="row gy-4">
 
-                    <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item position-relative">
+                            {{-- <div class="icon"><i class="bi bi-chat icon"></i></div> --}}
+                            <h4>
+                                <a class="stretched-link">Sales</a>
+                            </h4>
+                            <i class="bi bi-check2-circle"></i> <span>Teknik Penjualan Efektif</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Strategi Negosiasi</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Psikologi Pembelian</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Proses Penjualan Langkah-demi-Langkah</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Penjualan B2B vs. B2C</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Penjualan Online dan Offline</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Manajemen Pipeline Penjualan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Teknik Cold Calling dan Emailing</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Penjualan Berbasis Nilai</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 " data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item position-relative">
+                            {{-- <div class="icon"><i class="bi bi-chat icon"></i></div> --}}
+                            <h4><a class="stretched-link">Customer Relationship</a>
+                            </h4>
+                            <i class="bi bi-check2-circle"></i> <span>Management (CRM)</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item position-relative">
+                            {{-- <div class="icon"><i class="bi bi-chat icon"></i></div> --}}
+                            <h4>
+                                <a class="stretched-link">Marketing</a>
+                            </h4>
+                            <i class="bi bi-check2-circle"></i> <span>Dasar-dasar Pemasaran</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Strategi Pemasaran Digital</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Branding dan Identitas Merek</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Content Marketing</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Pemasaran Media Sosial</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Email Marketing</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Pemasaran Influencer</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Analisis Pasar dan Riset Konsumen</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Pemasaran Berbasis Data</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item position-relative">
+                            {{-- <div class="icon"><i class="bi bi-chat icon"></i></div> --}}
+                            <h4>
+                                <a class="stretched-link">Service Excellent</a>
+                            </h4>
+                            <i class="bi bi-check2-circle"></i> <span>Customer Journey Mapping</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Pelayanan Pelanggan yang Luar Biasa</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Manajemen Keluhan Pelanggan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Meningkatkan Loyalitas Pelanggan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Penggunaan Teknologi dalam Layanan Pelanggan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Membangun Budaya Layanan Pelanggan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Keterampilan Komunikasi untuk Layanan Pelanggan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Personalisasi Layanan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Menyediakan Layanan Multi-Channel</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Pelatihan Staf Layanan Pelanggan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Mengukur Kepuasan Pelanggan</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item position-relative">
+                            {{-- <div class="icon"><i class="bi bi-chat icon"></i></div> --}}
+                            <h4>
+                                <a class="stretched-link">Operasional</a>
+                            </h4>
+                            <i class="bi bi-check2-circle"></i> <span>Manajemen Operasional</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Optimasi Proses Bisnis</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Lean Management</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Manajemen Rantai Pasokan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Quality Control dan Quality Assurance</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Penggunaan Teknologi dalam Operasional</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Manajemen Risiko Operasional</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Logistik dan Distribusi</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Manajemen Proyek</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Sistem dan Prosedur Operasional Standar (SOP)</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item position-relative">
+                            {{-- <div class="icon"><i class="bi bi-chat icon"></i></div> --}}
+                            <h4>
+                                <a class="stretched-link">Omset</a>
+                            </h4>
+                            <i class="bi bi-check2-circle"></i> <span>Strategi Peningkatan Omset</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Analisis Penjualan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Upselling dan Cross-Selling</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Pengembangan Produk Baru</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Strategi Harga</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Program Loyalitas Pelanggan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Ekspansi Pasar</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Diversifikasi Produk</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Mengelola Penjualan Musiman</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Analisis Biaya dan Keuntungan</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item position-relative">
+                            {{-- <div class="icon"><i class="bi bi-chat icon"></i></div> --}}
+                            <h4>
+                                <a class="stretched-link">Leadership</a>
+                            </h4>
+                            <i class="bi bi-check2-circle"></i> <span>Gaya Kepemimpinan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Kepemimpinan yang Efektif</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Menginspirasi dan Memotivasi Tim</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Pengambilan Keputusan Strategis</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Mengelola Perubahan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Kepemimpinan dalam Krisis</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Komunikasi Kepemimpinan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Pengembangan Tim</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Etika dan Integritas dalam Kepemimpinan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Membangun Budaya Kerja yang Positif</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item position-relative">
+                            {{-- <div class="icon"><i class="bi bi-chat icon"></i></div> --}}
+                            <h4>
+                                <a class="stretched-link">Membangun Sistem Karyawan</a>
+                            </h4>
+                            <i class="bi bi-check2-circle"></i> <span>Rekrutmen dan Seleksi</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Onboarding Karyawan Baru</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Manajemen Kinerja Karyawan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Pengembangan Karir</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Pelatihan dan Pengembangan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Kompensasi dan Benefit</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Retensi Karyawan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Budaya Kerja dan Keterlibatan Karyawan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Kesehatan dan Keselamatan Kerja</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Pengelolaan Konflik Karyawan</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item position-relative">
+                            {{-- <div class="icon"><i class="bi bi-chat icon"></i></div> --}}
+                            <h4>
+                                <a class="stretched-link">Keuangan</a>
+                            </h4>
+                            <i class="bi bi-check2-circle"></i> <span>Dasar-dasar Keuangan Bisnis</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Manajemen Arus Kas</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Analisis Laporan Keuangan</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Perencanaan Anggaran</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Pembiayaan Bisnis</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Pengendalian Biaya</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Pengelolaan Utang dan Piutang</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Investasi Bisnis</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Perencanaan Pajak</span>
+                            <br>
+                            <i class="bi bi-check2-circle"></i> <span>Manajemen Risiko Keuangan</span>
+                        </div>
+                    </div>
+
+
+                    {{-- <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-chat icon"></i></div>
                             <h4><a class="stretched-link">{!! $data->section_3_1_title !!}</a>
-                                {{-- <h4><a class="stretched-link">Tanya-jawab dengan coach Fitra</a> --}}
                             </h4>
                             <p>{!! $data->section_3_1_text !!}</p>
-                            {{-- <p>Setiap pelanggan bisa melakukan tanya jawab dengan coach Fitra di setiap video yang di
-                                tonton. </p> --}}
                         </div>
-                    </div><!-- End Service Item -->
+                    </div>
 
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-camera-video icon"></i></div>
                             <h4><a class="stretched-link">⁠{!! $data->section_3_2_title !!}</a></h4>
-                            {{-- <h4><a class="stretched-link">⁠Akses ecourse 1 tahun</a></h4> --}}
                             <p>{!! $data->section_3_2_text !!}</p>
-                            {{-- <p>E-course sekolah bisnis dapat diakses selama 1 tahun setelah membeli paket</p> --}}
                         </div>
-                    </div><!-- End Service Item -->
+                    </div>
 
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-book icon"></i></div>
                             <h4><a class="stretched-link">
                                     {!! $data->section_3_3_title !!}
-                                    {{-- Penjelalsan materi yang sederhana dan mudah dipahami --}}
                                 </a>
                             </h4>
                             <p>{!! $data->section_3_3_text !!}</p>
-                            {{-- <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p> --}}
                         </div>
-                    </div><!-- End Service Item -->
+                    </div>
 
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-box2-heart icon"></i></div>
                             <h4><a class="stretched-link">{!! $data->section_3_4_title !!}</a></h4>
-                            {{-- <h4><a class="stretched-link">Promo khusus 30 orang pertama</a></h4> --}}
                             <p>{!! $data->section_3_4_text !!}</p>
-                            {{-- <p>Free modul untuk 30 pendaftaran pertama disetiap series</p> --}}
                         </div>
-                    </div><!-- End Service Item -->
+                    </div> --}}
 
                 </div>
 
@@ -217,36 +442,42 @@
         <!-- /Services Section -->
 
         <!-- Why Us Section -->
-        <section id="join" class="section why-us" data-builder="section">
+        <section id="join" class="bg-white mt-5 section why-us" data-builder="section">
 
             <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <br>
+                <br>
+                <h2 class="">{!! $data->section_4_title !!}</h2>
+            </div><!-- End Section Title -->
+
             {{-- <div class="container section-title" data-aos="fade-up">
                 <h2 class="">How To Join</h2>
             </div><!-- End Section Title --> --}}
 
-            <div class="container-fluid">
+            <div class="container mb-5">
 
                 <div class="row gy-4">
 
                     <div class="col-lg-12 d-flex flex-column justify-content-center order-2 order-lg-1">
 
-                        <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-                            <h3 class=""><span class=""></span><strong>{!! $data->section_4_title !!}</strong></h3>
-                            {{-- <h3 class=""><span class=""></span><strong>Cara mengakses E-Course : </strong></h3> --}}
-                            {{-- <p class="">
+                        {{-- <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100"> --}}
+                        {{-- <h3 class=""><span class=""></span><strong>{!! $data->section_4_title !!}</strong></h3> --}}
+                        {{-- <h3 class=""><span class=""></span><strong>Cara mengakses E-Course : </strong></h3> --}}
+                        {{-- <p class="">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
                             </p> --}}
 
-                            {{-- <h3 class=""><span class="">Eum ipsam laborum deleniti </span><strong>velit
+                        {{-- <h3 class=""><span class="">Eum ipsam laborum deleniti </span><strong>velit
                                     pariatur architecto aut nihil</strong></h3>
                             <p class="">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
                             </p> --}}
-                        </div>
+                        {{-- </div> --}}
 
-                        <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+                        <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
 
                             <div class="faq-item faq-active">
 
@@ -277,7 +508,7 @@
                                 {{-- <h3><span>03</span> Checkout & Payment</h3> --}}
                                 <div class="faq-content">
                                     <p>{!! $data->section_4_3_text !!}</p>
-                                        {{-- <p>Lakukan Pembayaran sesuai dengan nominal harga yang tertera. Pastikan pembayaran
+                                    {{-- <p>Lakukan Pembayaran sesuai dengan nominal harga yang tertera. Pastikan pembayaran
                                         hanya ke Rekening Resmi Sekolah Bisnis “Muslim Bisnis Comunity”.</p> --}}
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -400,6 +631,54 @@
                         <h3>{!! $data->section_5_title !!}</h3>
                         {{-- <h3>Mengapa Harus Bergabung Sekarang?</h3> --}}
                         <p>{!! $data->section_5_text !!}</p>
+                        {{-- <h3>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <script>
+                                            CountDownTimer('{{ Carbon\Carbon::now('GMT+7') }}', 'countdown');
+
+                                            function CountDownTimer(dt, id) {
+                                                var end = new Date('{{ Carbon\Carbon::now('GMT+7')->addMinutess(30) }}');
+                                                // var end = new Date('{{ Carbon\Carbon::now()->addHours(12) }}');
+                                                // var end = new Date('{{ Carbon\Carbon::now()->addDays(1) }}');
+                                                var _second = 1000;
+                                                var _minute = _second * 60;
+                                                var _hour = _minute * 60;
+                                                var _day = _hour * 24;
+                                                var timer;
+
+                                                function showRemaining() {
+                                                    var now = new Date();
+                                                    var distance = end - now;
+                                                    if (distance < 0) {
+
+                                                        clearInterval(timer);
+                                                        document.getElementById(id).innerHTML = '';
+                                                        // document.getElementById(id).innerHTML = '<b>TUGAS SUDAH BERAKHIR</b> ';
+                                                        return;
+                                                    }
+                                                    var days = Math.floor(distance / _day);
+                                                    var hours = Math.floor((distance % _day) / _hour);
+                                                    var minutes = Math.floor((distance % _hour) / _minute);
+                                                    var seconds = Math.floor((distance % _minute) / _second);
+
+                                                    // document.getElementById(id).innerHTML = days + ' hari ';
+                                                    // document.getElementById(id).innerHTML += hours + ' jam ';
+                                                    // document.getElementById(id).innerHTML += minutes + ' menit ';
+
+                                                    document.getElementById(id).innerHTML = minutes + ' menit ';
+                                                    document.getElementById(id).innerHTML += seconds + ' detik';
+                                                    document.getElementById(id).innerHTML += '<h2>SEGERA APA?</h2>';
+                                                }
+                                                timer = setInterval(showRemaining, 1000);
+                                            }
+                                        </script>
+                                        <div id="countdown">
+                                    </td>
+                                </tr>
+                            </table>
+                        </h3> --}}
                         {{-- <p>Semakin cepat anda mendaftar semakin cepat mengikuti semakin cepat mendapatkan ilmu dan perubahan
                             dalam bisnisnya akan semakin besar ...</p> --}}
                     </div>
@@ -705,24 +984,22 @@
                                 </ul> --}}
                                 <div class="text-center">
                                     @if ($s->status == 1)
-
-                                    <a href="{{ route('series.show', $s->slug) }}" class="buy-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                            <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                                            <path
-                                                d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
-                                        </svg>
-                                        Detail
-                                    </a>
+                                        <a href="{{ route('series.show', $s->slug) }}" class="buy-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                                <path
+                                                    d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                                            </svg>
+                                            Detail
+                                        </a>
                                     @else
-
-                                    <a disabled class="buy-btn">
-                                        Coming Soon
-                                    </a>
+                                        <a disabled class="buy-btn">
+                                            Coming Soon
+                                        </a>
                                     @endif
                                 </div>
                             </div>
