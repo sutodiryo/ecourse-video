@@ -36,19 +36,34 @@
                                             <form action="{{ route('admin.users.update', $user->id) }}" method="POST">
                                                 @csrf
                                                 @method('PUT')
+
                                                 <x-form.input type="text" title="Username" name="name" placeholder=""
                                                     value="{{ $user->name }}" />
-                                                <x-form.input type="text" title="Email" name="email" placeholder=""
+
+                                                <x-form.input type="email" title="Email" name="email" placeholder=""
                                                     value="{{ $user->email }}" />
+
+                                                <x-form.input type="text" title="UUID" name="uu_id" placeholder=""
+                                                    value="{{ $user->uu_id }}" disabled />
+
+                                                <x-form.checkbox title="">
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="reset_password">
+                                                        <span class="form-check-label">Reset Password (123123123)</span>
+                                                    </label>
+                                                </x-form.checkbox>
+
                                                 <x-form.select title="Role" name="role" disabled>
                                                     @foreach ($roles as $role)
                                                         <option value="{{ $role->id }}"
-                                                            {{ $user->roles()->find($role->id) ? 'selected' : '' }} disabled>
+                                                            {{ $user->roles()->find($role->id) ? 'selected' : '' }}
+                                                            disabled>
                                                             {{ $role->name }}
                                                         </option>
                                                     @endforeach
                                                 </x-form.select>
-                                                <x-button.button-save title="Save" icon="save" class="btn btn-primary" />
+                                                <x-button.button-save title="Save" icon="save"
+                                                    class="btn btn-primary" />
                                             </form>
                                         </x-modal.modal>
                                         <x-button.button-delete id="{{ $user->id }}"
