@@ -54,4 +54,9 @@ class Series extends Model
     {
         return $this->hasMany(Cart::class);
     }
+
+    public function transaction()
+    {
+        return $this->hasMany(TransactionDetail::class);
+    }
 }

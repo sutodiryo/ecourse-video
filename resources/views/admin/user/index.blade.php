@@ -1,6 +1,6 @@
 @extends('layouts.backend.master')
 
-@section('title', 'Roles')
+@section('title', 'Users')
 
 @section('content')
     <div class="container-xl">

@@ -3,7 +3,7 @@
     <div class="card-header">
         <h3 class="card-title">{{ $title }}</h3>
         <div class="card-actions">
-            <form action="{{ $url }}" method="GET">
+            <form action="{{ $url }}" method="GET" id="searchItForm">
                 <x-form.input-group />
             </form>
         </div>

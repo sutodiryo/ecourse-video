@@ -11,10 +11,10 @@ use Illuminate\Support\Facades\Auth;
 
 trait HasSeries
 {
-    public function userSeries()
+    public function userSeries($id = null)
     {
         // get user logged in
-        $userId = Auth::id();
+        $userId = Auth::id() ? Auth::id() : $id;
 
         // count transaction by user logged in
         $transaction = Transaction::where('user_id', $userId)->count();

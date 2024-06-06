@@ -55,7 +55,7 @@ class User extends Authenticatable
     public function getAvatarAttribute($avatar)
     {
         if ($avatar != null) :
-            return asset('storage/avatars/'.$avatar);
+            return asset('storage/avatars/' . $avatar);
         else :
             return 'https://ui-avatars.com/api/?name=' . str_replace(' ', '+', $this->name) . '&background=4e73df&color=ffffff&size=100';
         endif;
@@ -65,5 +65,17 @@ class User extends Authenticatable
     public function carts()
     {
         return $this->hasMany(Cart::class);
+    }
+
+    // relationship with transaction
+    public function transaction()
+    {
+        return $this->hasMany(Transaction::class);
+    }
+
+    // relationship with transaction details or affiliates
+    public function affiliate()
+    {
+        return $this->hasMany(TransactionDetail::class);
     }
 }

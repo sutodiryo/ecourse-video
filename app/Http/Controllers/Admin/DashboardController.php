@@ -29,6 +29,8 @@ class DashboardController extends Controller
         $members = User::with('roles')->role('member')->count();
         // count all series
         $series = Series::count();
+
+        $affilates = User::whereHas('affiliate')->count();
         // sum all transaction
         $income = TransactionDetail::whereHas('transaction', function ($q) {
             $q->where('status', 1);
@@ -40,6 +42,6 @@ class DashboardController extends Controller
         $bestSeries = $this->bestSeries();
 
         // return view
-        return view('admin.dashboard', compact('transactionVerified', 'members', 'series', 'income', 'bestSeries'));
+        return view('admin.dashboard', compact('transactionVerified', 'members', 'series', 'affilates', 'income', 'bestSeries'));
     }
 }

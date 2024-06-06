@@ -8,7 +8,7 @@
             {{-- <h2 class="font-weight-bold text-azure">We<span class="text-red">Learn</span></h2> --}}
 
             <img src="{{ asset('arsha-assets/img/mbc-logo.png') }}" height="32" alt=""
-            class="navbar-brand-image">
+                class="navbar-brand-image">
         </a>
         <div class="navbar-nav flex-row d-lg-none">
             <div class="nav-item dropdown">
@@ -101,11 +101,15 @@
                         <a class="nav-link {{ Route::is('admin.series*') ? 'active' : '' }}"
                             href="{{ route('admin.series.index') }}">
                             <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
+                                    <path
+                                        d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
                                     <path d="M10 9l5 3l-5 3z" />
-                                  </svg>
+                                </svg>
                                 {{-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-video">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <path d="M15 10l4.553 -2.276a1 1 0 0 1 1.447 .894v6.764a1 1 0 0 1 -1.447 .894l-4.553 -2.276v-4z" />
@@ -122,12 +126,15 @@
                         <a class="nav-link {{ Route::is('admin.frontend*') ? 'active' : '' }}"
                             href="{{ route('admin.frontend.index') }}">
                             <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-view-360">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-view-360">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                                     <path d="M12 12m-4 0a4 9 0 1 0 8 0a4 9 0 1 0 -8 0" />
                                     <path d="M3 12c0 2.21 4.03 4 9 4s9 -1.79 9 -4s-4.03 -4 -9 -4s-9 1.79 -9 4z" />
-                                  </svg>
+                                </svg>
                             </span>
                             <span class="nav-link-title">
                                 Front End
@@ -193,6 +200,30 @@
                             </span>
                         </a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link {{ Route::is('admin.affiliates*') ? 'active' : '' }}"
+                            href="{{ route('admin.affiliates.index') }}">
+                            <span class="nav-link-icon d-md-none d-lg-inline-block mr-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-affiliate">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5.931 6.936l1.275 4.249m5.607 5.609l4.251 1.275" />
+                                    <path d="M11.683 12.317l5.759 -5.759" />
+                                    <path d="M5.5 5.5m-1.5 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0" />
+                                    <path d="M18.5 5.5m-1.5 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0" />
+                                    <path d="M18.5 18.5m-1.5 0a1.5 1.5 0 1 0 3 0a1.5 1.5 0 1 0 -3 0" />
+                                    <path d="M8.5 15.5m-4.5 0a4.5 4.5 0 1 0 9 0a4.5 4.5 0 1 0 -9 0" />
+                                </svg>
+                            </span>
+                            <span class="nav-link-title">
+                                Affiliates
+                            </span>
+                        </a>
+                    </li>
+
                     <div class="hr-text hr-text-left ml-2 mb-2 mt-3">Transaction</div>
                     <li class="nav-item">
                         <a class="nav-link {{ Route::is('admin.transactions*') ? 'active' : '' }}"
