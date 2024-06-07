@@ -11,7 +11,7 @@
                     Please transfer first before you confirm your payment.
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-8">
                 <x-card.card title="Carts" class="p-0">
                     <x-table.table-responsive>
                         <thead>
@@ -90,49 +90,22 @@
                     </div>
                 </x-card.card>
             </div>
-            <div class="col-md-4">
+            <div class="col-4">
                 <x-card.card title="Payment Confirmation">
                     <form action="{{ route('transactions.store') }}" method="POST">
                         @csrf
+                        <x-form.input title="Nomor Rekening" name="bank_transfer" value="" placeholder="Nomor Rekening Anda" type="text" />
+                        <x-form.input title="Nama Lengkap Rekening" name="name_of_bank" value="" placeholder="Nama Lengkap Anda"
+                            type="text" />
+                        <x-form.select title="Bank Transfer" name="method_of_payment">
+                            <option value="BCA">Bank BCA</option>
+                            {{-- <option value="gopay">Gopay</option>
+                            <option value="ovo">Ovo</option> --}}
+                        </x-form.select>
                         <x-form.input title="Tanggal Transfer" name="date_transfer" value="" placeholder="" type="date" />
                         <x-form.input title="Total Price" name="" value="Rp. {{ number_format($grandTotal) }}"
                             placeholder="" type="text" disabled />
-
-                            <script>
-                                CountDownTimer('{{ Carbon\Carbon::now("GMT+7") }}', 'countdown');
-
-                                function CountDownTimer(dt, id) {
-                                    var end = new Date('{{ Carbon\Carbon::now("GMT+7")->addMinutess(30) }}');
-                                    var _second = 1000;
-                                    var _minute = _second * 60;
-                                    var _hour = _minute * 60;
-                                    var _day = _hour * 24;
-                                    var timer;
-
-                                    function showRemaining() {
-                                        var now = new Date();
-                                        var distance = end - now;
-                                        if (distance < 0) {
-
-                                            clearInterval(timer);
-                                            document.getElementById(id).innerHTML = '';
-                                            return;
-                                        }
-                                        var days = Math.floor(distance / _day);
-                                        var hours = Math.floor((distance % _day) / _hour);
-                                        var minutes = Math.floor((distance % _hour) / _minute);
-                                        var seconds = Math.floor((distance % _minute) / _second);
-                                        document.getElementById(id).innerHTML = minutes + ' menit ';
-                                        document.getElementById(id).innerHTML += seconds + ' detik';
-                                        document.getElementById(id).innerHTML += '';
-                                        // document.getElementById(id).innerHTML += '<h2>SEGERA APA?</h2>';
-                                    }
-                                    timer = setInterval(showRemaining, 1000);
-                                }
-                            </script>
-                            <div id="countdown">
-                                <br>
-                        <x-button.button-save icon="check" title="Saya sudah transfer"
+                        <x-button.button-save icon="check" title="Confirmation"
                             class="btn btn-primary w-full font-weight-bold text-uppercase" />
                     </form>
                 </x-card.card>
